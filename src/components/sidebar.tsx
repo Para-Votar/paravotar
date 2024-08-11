@@ -122,21 +122,6 @@ export const getSections = (
         route: "/colaboraciones#quien-me-representa",
         isActive: pathname.includes("/colaboraciones#quien-me-representa"),
       },
-      {
-        name: "Tu Voto No Se Deja",
-        route: "/colaboraciones#tu-voto-no-se-deja",
-        isActive: pathname.includes("/colaboraciones#tu-voto-no-se-deja"),
-      },
-      {
-        name: "Microjuris",
-        route: "/colaboraciones#microjuris",
-        isActive: pathname.includes("/colaboraciones#microjuris"),
-      },
-      {
-        name: "Practica tu voto",
-        route: "/colaboraciones#practica-tu-voto",
-        isActive: pathname.includes("/colaboraciones#practica-tu-voto"),
-      },
     ],
   },
 ]
