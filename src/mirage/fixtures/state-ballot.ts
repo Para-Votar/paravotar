@@ -20,116 +20,87 @@ export default [
       ocrResult: "PROYECTO DIGNIDAD\r\n",
       logoImg: "images/partido-logo-5.jpg",
     },
-    {
-      ocrResult: "",
-    },
+    { ocrResult: "" },
     {
       ocrResult:
-        "cóM0 VOTAR NOMINACIÓN DIRECTA\r\nEn esta columna puede votar por otra(s) persona(s) distinta(s) a las que\r\naparecen como candidatos(as) en columnas anteriores de esta\r\npapeleta. Para votar por la(s) persona(s) de su preferencia. escriba su\r\nnombre completo en el encasillado de la columna de nominación directa\r\nque corresponda a la candidatura y también debe hacer una Marca\r\nVálida dentro del rectángulo en blanco al lado de cada nombre escrito.\r\nHOW TO VOTE FOR WRITE W CANDIDATES\r\nIn this column yol,' can vote for another person(s) difterent from those\r\nlisted as candidates in the previous columns ofthis ballot To vote for the\r\nperson(s) of chojce, write their full name on the box of the write-in\r\ncolumn that corresponds to the candidacy, and you must also make a\r\nvalid mark with\\n the blank rectang/e next to gach vritfen name.\r\n",
+        "cóM0 VOTAR NOMINACIÓN DIRECTA\r\n" +
+        "En esta columna puede votar por otra(s) persona(s) distinta(s) a las que\r\n" +
+        "aparecen como candidatos(as) en columnas anteriores de esta\r\n" +
+        "papeleta. Para votar por la(s) persona(s) de su preferencia. escriba su\r\n" +
+        "nombre completo en el encasillado de la columna de nominación directa\r\n" +
+        "que corresponda a la candidatura y también debe hacer una Marca\r\n" +
+        "Válida dentro del rectángulo en blanco al lado de cada nombre escrito.\r\n" +
+        "HOW TO VOTE FOR WRITE W CANDIDATES\r\n" +
+        "In this column yol,' can vote for another person(s) difterent from those\r\n" +
+        "listed as candidates in the previous columns ofthis ballot To vote for the\r\n" +
+        "person(s) of chojce, write their full name on the box of the write-in\r\n" +
+        "column that corresponds to the candidacy, and you must also make a\r\n" +
+        "valid mark with\\n the blank rectang/e next to gach vritfen name.\r\n",
     },
   ],
   [
-    {
-      ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-    },
-    {
-      ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-    },
-    {
-      ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-    },
-    {
-      ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-    },
-    {
-      ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-    },
-    {
-      ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-    },
-    {
-      ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-    },
+    { ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n" },
+    { ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n" },
+    { ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n" },
+    { ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n" },
+    { ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n" },
+    { ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n" },
+    { ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n" },
   ],
   [
     {
-      ocrResult: "1. Pedro Pierluisi",
-      logoImg: "images/gobernador-logo-1.jpg",
+      ocrResult: "1. Jennifer González Colón",
+      logoImg: "static/images/profile_images/jennifer-gonzalez-colon.jpeg",
     },
     {
-      ocrResult: "1. Carlos (Charlie) Delgado Altieri",
-      logoImg: "images/gobernador-logo-2.jpg",
+      ocrResult: "1. Jesús Manuel Ortíz González",
+      logoImg:
+        "/static/images/profile_images/Jesus_Manuel_Ortiz_Gonzalez_4340.jpg",
     },
     {
-      ocrResult: "1. Juan Dalmau Ramírez",
-      logoImg: "images/gobernador-logo-3.jpg",
+      ocrResult: "1. Juan Manuel Dalmau Ramírez",
+      logoImg:
+        "/static/images/profile_images/Juan_Manuel_Dalmau_Ramirez_8321.jpg",
     },
+    { ocrResult: "1. Javier Córdova Iturregui", logoImg: "" },
     {
-      ocrResult: "1. Alexandra Lúgaro",
-      logoImg: "images/gobernador-logo-4.jpg",
+      ocrResult: "1. Javier D. Jiménez Pérez",
+      logoImg: "/static/images/profile_images/Javier_D_Jimenez_Perez_6181.jpg",
     },
-    {
-      ocrResult: "1. César Augusto Vázquez Muñiz",
-      logoImg: "images/gobernador-logo-5.jpg",
-    },
-    {
-      ocrResult: "1. Eliezer Molina Pérez",
-      logoImg: "images/gobernador-logo-6.jpg",
-    },
-    {
-      ocrResult: "1. ",
-    },
+    { ocrResult: "" },
+    { ocrResult: "" },
+  ],
+  [
+    { ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n" },
+    { ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n" },
+    { ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n" },
+    { ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n" },
+    { ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n" },
+    { ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n" },
+    { ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n" },
   ],
   [
     {
-      ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
+      ocrResult: "2. William E. Villafañe Ramos",
+      logoImg:
+        "/static/images/profile_images/William_Ely_Villafañe_Ramos_5484.jpg",
     },
     {
-      ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
+      ocrResult: "2. Pablo José Hernández Rivera",
+      logoImg:
+        "/static/images/profile_images/Pablo_Jose_Hernandez_Rivera_1441.jpg",
     },
     {
-      ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
+      ocrResult: "2. Roberto Karlo Velázquez Correa",
+      logoImg:
+        "/static/images/profile_images/Roberto_Karlo_Velazquez_Correa_2365.jpg",
     },
+    { ocrResult: "2. Ana Irma Rivera Lassén", logoImg: "" },
     {
-      ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
+      ocrResult: "2. Viviana Ramírez Morales",
+      logoImg: "/static/images/profile_images/Viviana_Ramirez_Morales_8125.jpg",
     },
-    {
-      ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
-    },
-    {
-      ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
-    },
-    {
-      ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
-    },
-  ],
-  [
-    {
-      ocrResult: "2. Jenniffer González Colón",
-      logoImg: "images/comisionado-logo-1.jpg",
-    },
-    {
-      ocrResult: "2. Aníbal Acevedo Vilá",
-      logoImg: "images/comisionado-logo-2.jpg",
-    },
-    {
-      ocrResult: "2. Luis Roberto Piñero",
-      logoImg: "images/comisionado-logo-3.jpg",
-    },
-    {
-      ocrResult: "2. Zayira Jordán Conde",
-      logoImg: "images/comisionado-logo-4.jpg",
-    },
-    {
-      ocrResult: "2. Ada Norah Henriquez",
-      logoImg: "images/comisionado-logo-5.jpg",
-    },
-    {
-      ocrResult: "",
-      logoImg: "images/comisionado-logo-6.jpg",
-    },
-    {
-      ocrResult: "",
-    },
+    { ocrResult: "" },
+    { ocrResult: "" },
   ],
 ]

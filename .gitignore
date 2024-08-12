@@ -72,3 +72,6 @@ yarn-error.log
 
 cypress/screenshots
 cypress/videos
+
+
+scripts/2024/all-candidates.csv

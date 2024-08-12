@@ -68,9 +68,10 @@ export default function BaseBallot(props: BallotProps) {
           return (
             <div
               key={`state-ballot-${rowIndex}`}
-              className={`grid ${COLS[row.length - 1]} ${
-                rowIndex !== 0 ? ballotBg : ""
-              }`}
+              className={`grid ${rowIndex !== 0 ? ballotBg : ""}`}
+              style={{
+                gridTemplateColumns: `repeat(${row.length}, 325px)`,
+              }}
             >
               {row.map((col, colIndex) => {
                 const vote = props.votes.find((vote) => {
