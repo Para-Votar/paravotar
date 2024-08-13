@@ -1,1 +1,1 @@
-export const PoliticalParties = ["PNP", "PPD", "PIP", "MVC", "PD", "IND", "WI"]
+export const PoliticalParties = ["PNP", "PPD", "PIP", "MVC", "PD", "INDT", "WI"]

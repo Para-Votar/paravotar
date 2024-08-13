@@ -50,22 +50,20 @@ export default [
   [
     {
       ocrResult: "1. Jennifer González Colón",
-      logoImg: "static/images/profile_images/jennifer-gonzalez-colon.jpeg",
+      logoImg: "jennifer-gonzalez-colon.jpeg",
     },
     {
       ocrResult: "1. Jesús Manuel Ortíz González",
-      logoImg:
-        "/static/images/profile_images/Jesus_Manuel_Ortiz_Gonzalez_4340.jpg",
+      logoImg: "Jesus_Manuel_Ortiz_Gonzalez_4340.jpg",
     },
     {
       ocrResult: "1. Juan Manuel Dalmau Ramírez",
-      logoImg:
-        "/static/images/profile_images/Juan_Manuel_Dalmau_Ramirez_8321.jpg",
+      logoImg: "Juan_Manuel_Dalmau_Ramirez_8321.jpg",
     },
     { ocrResult: "1. Javier Córdova Iturregui", logoImg: "" },
     {
       ocrResult: "1. Javier D. Jiménez Pérez",
-      logoImg: "/static/images/profile_images/Javier_D_Jimenez_Perez_6181.jpg",
+      logoImg: "Javier_D_Jimenez_Perez_6181.jpg",
     },
     { ocrResult: "" },
     { ocrResult: "" },
@@ -82,23 +80,20 @@ export default [
   [
     {
       ocrResult: "2. William E. Villafañe Ramos",
-      logoImg:
-        "/static/images/profile_images/William_Ely_Villafañe_Ramos_5484.jpg",
+      logoImg: "William_Ely_Villafañe_Ramos_5484.jpg",
     },
     {
       ocrResult: "2. Pablo José Hernández Rivera",
-      logoImg:
-        "/static/images/profile_images/Pablo_Jose_Hernandez_Rivera_1441.jpg",
+      logoImg: "Pablo_Jose_Hernandez_Rivera_1441.jpg",
     },
     {
       ocrResult: "2. Roberto Karlo Velázquez Correa",
-      logoImg:
-        "/static/images/profile_images/Roberto_Karlo_Velazquez_Correa_2365.jpg",
+      logoImg: "Roberto_Karlo_Velazquez_Correa_2365.jpg",
     },
     { ocrResult: "2. Ana Irma Rivera Lassén", logoImg: "" },
     {
       ocrResult: "2. Viviana Ramírez Morales",
-      logoImg: "/static/images/profile_images/Viviana_Ramirez_Morales_8125.jpg",
+      logoImg: "Viviana_Ramirez_Morales_8125.jpg",
     },
     { ocrResult: "" },
     { ocrResult: "" },
