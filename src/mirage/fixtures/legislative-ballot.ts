@@ -46,22 +46,24 @@ export default [
   ],
   [
     {
-      ocrResult: "1. Abid Quiñones\r\n",
-      logoImg: "images/3-representates-distrito-logo-1.jpg",
+      ocrResult: "1. Eddie Charbonier Chinea",
+      logoImg: "Eddie_Junior_Charbonier_Chinea_8943.jpg",
     },
     {
-      ocrResult: "1. Jorge Alfredo Rivera Segarra\r\n",
-      logoImg: "images/3-representates-distrito-logo-2.jpg",
+      ocrResult: "1. Ana Virginia Piñero Pares",
+      logoImg: "",
     },
     {
-      ocrResult: "1. Edia Quiñones\r\n",
-      logoImg: "images/3-representates-distrito-logo-3.jpg",
+      ocrResult: "1. Paul Arthur Lippert Figueroa",
+      logoImg: "Paul_Arthur_Lippert_6300.jpg",
     },
     {
-      ocrResult: "",
+      ocrResult: "1. Pedro Cardona Roig",
+      logoImg: "Pedro_Cardona_Roig_3751.jpg",
     },
     {
-      ocrResult: "",
+      ocrResult: "1. Antonio Santos",
+      logoImg: "Antonio_Santos_5243.jpg",
     },
     {
       ocrResult: "",
@@ -89,49 +91,47 @@ export default [
   ],
   [
     {
-      ocrResult: "2. Luis Berdiel\r\n",
-      logoImg: "images/5-senadores-1-logo-1.jpg",
+      ocrResult: "1. Juan Oscar Morales Rodríguez",
+      logoImg: "juan-oscar-morales-rodriguez.jpeg",
     },
     {
-      ocrResult: "2. Marially González\r\n",
-      logoImg: "images/5-senadores-1-logo-2.jpg",
+      ocrResult: "1. Gabriel Pérez Pérez",
+      logoImg: "Gabriel_Adolfo_Perez_Perez_9371.jpg",
     },
     {
-      ocrResult: "2. José (Maché) Ortiz\r\n",
-      logoImg: "images/5-senadores-1-logo-3.jpg",
+      ocrResult: "1. Adrián González Costa",
+      logoImg: "Adrian_Gonzalez_Costa_9734.jpg",
     },
     {
-      ocrResult: "2. Maikel González Alvarado\r\n",
-      logoImg: "images/5-senadores-1-logo-4.jpg",
+      ocrResult: "1. Rosa Seguí Cordero",
+      logoImg: "",
     },
     {
-      ocrResult: "2. Luis Yordán Frau\r\n",
-      logoImg: "images/5-senadores-1-logo-5.jpg",
+      ocrResult: "1. Néstor Muñíz Ramírez",
+      logoImg: "Nestor_Muñiz_Ramirez_3057.jpg",
     },
     {
-      ocrResult: "",
+      ocrResult: "1. Blanca Iris Rodríguez Santiago",
+      logoImg: "",
     },
   ],
   [
     {
-      ocrResult: "3. Nelson Cruz (El Vigilante)\r\n",
-      logoImg: "images/6-senadores-2-logo-1.jpg",
+      ocrResult: "2. Nitza S. Morán Trinidad",
+      logoImg: "Nitza_S_Moran_Trinidad_5459.jpg",
     },
     {
-      ocrResult: "3. Ramón (Ramoncito)\r\n",
-      logoImg: "images/6-senadores-2-logo-2.jpg",
+      ocrResult: "2. Ivonne Lozada Rosas",
+      logoImg: "Ivonne_Lozada_Rosas_7195.jpg",
     },
     {
-      ocrResult: "3. Ángel Comas\r\n",
-      logoImg: "images/6-senadores-2-logo-3.jpg",
+      ocrResult: "",
     },
     {
-      ocrResult: "3. Daniel (Danny) Ortiz\r\n",
-      logoImg: "images/6-senadores-2-logo-4.jpg",
+      ocrResult: "",
     },
     {
-      ocrResult: "3. Elaine M. Arrufat Berastaín\r\n",
-      logoImg: "images/6-senadores-2-logo-5.jpg",
+      ocrResult: "",
     },
     {
       ocrResult: "",
@@ -159,61 +159,38 @@ export default [
   ],
   [
     {
-      ocrResult: "4. José Aponte Hernández",
-      logoImg: "images/8-representates-acumulacion-1-logo-1.jpg",
+      ocrResult: "1. Gabriel F. Rodríguez Aguiló",
+      logoImg: "Gabriel_F_Rodriguez_Aguilo_4053.jpg",
     },
     {
-      ocrResult: "4. Keyliz Méndez Torres\r\n",
-      logoImg: "images/8-representates-acumulacion-1-logo-2.jpg",
+      ocrResult: "1. Gabriel López Arrieta",
+      logoImg: "Gabriel_Jesus_Lopez_Arrieta_1740.jpg",
     },
     {
-      ocrResult: "4. Denis Márquez Lebrón\r\n",
-      logoImg: "images/8-representates-acumulacion-1-logo-3.jpg",
+      ocrResult: "1. Denis Márquez Lebrón",
+      logoImg: "Denis_Marquez_Lebron_4478.jpg",
     },
     {
-      ocrResult: "4. José Bernardo Márquez\r\n",
-      logoImg: "images/8-representates-acumulacion-1-logo-4.jpg",
+      ocrResult: "1. Gladys Myrna Conty Hernández",
+      logoImg: "",
     },
     {
-      ocrResult: "4. Lisie Janet Burgos\r\nMuñiz",
-      logoImg: "images/8-representates-acumulacion-1-logo-5.jpg",
+      ocrResult: "1. Lisie Janet Burgos Muñíz",
+      logoImg: "Lisie_Janet_Burgos_Muñiz_3525.jpg",
     },
     {
-      ocrResult: "",
-    },
-  ],
-  [
-    {
-      ocrResult: "5. Lourdes Ramos\r\n",
-      logoImg: "images/9-representates-acumulacion-2-logo-1.jpg",
-    },
-    {
-      ocrResult: "5. Jesús Manuel Ortiz González\r\n",
-      logoImg: "images/9-representates-acumulacion-2-logo-2.jpg",
-    },
-    {
-      ocrResult: "",
-      logoImg: "images/9-representates-acumulacion-2-logo-3.jpg",
-    },
-    {
-      ocrResult: "5. Mariana Nogales Molinelli\r\n",
-      logoImg: "images/9-representates-acumulacion-2-logo-4.jpg",
-    },
-    {
-      ocrResult: "",
-    },
-    {
-      ocrResult: "",
+      ocrResult: "1. Luis Raúl Torres Cruz",
+      logoImg: "Luis_Raul_Torres_Cruz_0378.jpg",
     },
   ],
   [
     {
-      ocrResult: "6. José (Pichy) Torres Zamora\r\n",
-      logoImg: "images/10-representates-acumulacion-3-logo-1.jpg",
+      ocrResult: "2. José Aponte Hernández",
+      logoImg: "Jose_F_Aponte_Hernandez_4028.jpg",
     },
     {
-      ocrResult: "6. Héctor Ferrer\r\n",
-      logoImg: "images/10-representates-acumulacion-3-logo-2.jpg",
+      ocrResult: "2. Héctor Ferrer",
+      logoImg: "Hector_Enrique_Ferrer_Santiago_0904.jpg",
     },
     {
       ocrResult: "",
@@ -230,34 +207,12 @@ export default [
   ],
   [
     {
-      ocrResult: "7. Jorge Emmanuel Báez Pagán\r\n",
-      logoImg: "images/11-representates-acumulacion-4-logo-1.jpg",
+      ocrResult: "3. José (Che) Pérez",
+      logoImg: "Jose_Jesus_Perez_Cordero_8034.jpg",
     },
     {
-      ocrResult: "7. Gabriel López Arrieta\r\n",
-      logoImg: "images/11-representates-acumulacion-4-logo-2.jpg",
-    },
-    {
-      ocrResult: "",
-    },
-    {
-      ocrResult: "",
-    },
-    {
-      ocrResult: "",
-    },
-    {
-      ocrResult: "",
-    },
-  ],
-  [
-    {
-      ocrResult: "8. José Enrique (Quiquito) Meléndez Ortiz\r\n",
-      logoImg: "images/12-representates-acumulacion-5-logo-1.jpg",
-    },
-    {
-      ocrResult: "8. Enid Monge\r\n",
-      logoImg: "images/12-representates-acumulacion-5-logo-2.jpg",
+      ocrResult: "3. Ramón Torres",
+      logoImg: "Ramon_Antonio_Torres_Cruz_9750.jpg",
     },
     {
       ocrResult: "",
@@ -274,12 +229,54 @@ export default [
   ],
   [
     {
-      ocrResult: "9. (Joven No Vidente) Néstor Alonso\r\n",
-      logoImg: "images/13-representates-acumulacion-6-logo-1.jpg",
+      ocrResult: "4. José (Pichy) Torres Zamora",
+      logoImg: "Jose_Ernesto_Torres_Zamora_5732.jpg",
     },
     {
-      ocrResult: "9. Yaramary Torres\r\n",
-      logoImg: "images/13-representates-acumulacion-6-logo-2.jpg",
+      ocrResult: "4. Swanny Enit Vargas Laureano",
+      logoImg: "Swanny_Enit_Vargas_Laureano_3456.jpg",
+    },
+    {
+      ocrResult: "",
+    },
+    {
+      ocrResult: "",
+    },
+    {
+      ocrResult: "",
+    },
+    {
+      ocrResult: "",
+    },
+  ],
+  [
+    {
+      ocrResult: "5. Lourdes Ramos",
+      logoImg: "lourdes-ramos.jpeg",
+    },
+    {
+      ocrResult: "",
+    },
+    {
+      ocrResult: "",
+    },
+    {
+      ocrResult: "",
+    },
+    {
+      ocrResult: "",
+    },
+    {
+      ocrResult: "",
+    },
+  ],
+  [
+    {
+      ocrResult: "6. Tatiana Pérez Ramírez",
+      logoImg: "Tatiana_Perez_0630.jpg",
+    },
+    {
+      ocrResult: "",
     },
     {
       ocrResult: "",
@@ -316,65 +313,60 @@ export default [
   ],
   [
     {
-      ocrResult: "10. Gregorio Matías\r\n",
-      logoImg: "images/15-senadores-acumulacion-1-logo-1.jpg",
+      ocrResult: "1. Ángel Toledo López",
+      logoImg: "Angel_Antonio_Toledo_Lopez_4475.jpg",
     },
     {
-      ocrResult: "10. Luis Vega Ramos\r\n",
-      logoImg: "images/15-senadores-acumulacion-1-logo-2.jpg",
+      ocrResult: "1. Ada Álvarez Conde",
+      logoImg: "Ada_Mercedes_Alvarez_Conde_8523.jpg",
     },
     {
-      ocrResult: "10. María De Lourdes\r\nSantiago\r\n",
-      logoImg: "images/15-senadores-acumulacion-1-logo-3.jpg",
+      ocrResult: "1. María de Lourdes Santiago Negrón",
+      logoImg: "Maria_De_Lourde_Santiago_Negron_8576.jpg",
     },
     {
-      ocrResult: "10. Ana Irma Rivera\r\nLassén",
-      logoImg: "images/15-senadores-acumulacion-1-logo-4.jpg",
+      ocrResult: "",
     },
     {
-      ocrResult: "10. Joanne Rodríguez Veve\r\n",
-      logoImg: "images/15-senadores-acumulacion-1-logo-5.jpg",
+      ocrResult: "1. Joanne Marie Rodríguez Veve",
+      logoImg: "Joanne_Marie_Rodriguez_Veve_8315.jpg",
     },
     {
-      ocrResult: "10. José Antonio Vargas Vidot\r\n",
-      logoImg: "images/15-senadores-acumulacion-1-logo-6.jpg",
+      ocrResult: "1. Andrés Rua González",
+      logoImg: "",
     },
   ],
   [
     {
-      ocrResult: "11. Keren Riquelme\r\n",
-      logoImg: "images/16-senadores-acumulacion-2-logo-1.jpg",
+      ocrResult: "2. Gregorio Matías Rosario",
+      logoImg: "Gregorio_B_Matias_Rosario_0676.jpg",
     },
     {
-      ocrResult: "11. Juan Zaragoza Gómez\r\n",
-      logoImg: "images/16-senadores-acumulacion-2-logo-2.jpg",
-    },
-    {
-      ocrResult: "",
-      logoImg: "images/16-senadores-acumulacion-2-logo-3.jpg",
-    },
-    {
-      ocrResult: "11. Rafael Bernabe\r\n",
-      logoImg: "images/16-senadores-acumulacion-2-logo-4.jpg",
+      ocrResult: "2. José A. (Josian) Santiago",
+      logoImg: "Jose_A_Santiago_Rivera_9890.jpg",
     },
     {
       ocrResult: "",
     },
     {
       ocrResult: "",
+    },
+    {
+      ocrResult: "",
+    },
+    {
+      ocrResult: "2. Elizabeth Torres Rodríguez",
+      logoImg: "Elizabeth_Torres_Rodriguez_6439.jpg",
     },
   ],
   [
     {
-      ocrResult: "12. Thomas Rivera Schatz\r\n",
-      logoImg: "images/17-senadores-acumulacion-3-logo-1.jpg",
+      ocrResult: "3. Keren Riquelme Cabrera",
+      logoImg: "Keren_Limary_Riquelme_Cabrera_4526.jpg",
     },
     {
-      ocrResult: "12. Ada Álvarez Conde\r\n",
-      logoImg: "images/17-senadores-acumulacion-3-logo-2.jpg",
-    },
-    {
-      ocrResult: "",
+      ocrResult: "3. José Luis Dalmau Santiago",
+      logoImg: "Jose_L_Dalmau_Santiago_1844.jpg",
     },
     {
       ocrResult: "",
@@ -384,19 +376,20 @@ export default [
     },
     {
       ocrResult: "",
+    },
+    {
+      ocrResult: "3. Jorge Luis Oyola Torres",
+      logoImg: "",
     },
   ],
   [
     {
-      ocrResult: "13. Carlos Rodríguez Mateo\r\n",
-      logoImg: "images/18-senadores-acumulacion-4-logo-1.jpg",
+      ocrResult: "4. Leyda Cruz",
+      logoImg: "Leyda_Eunice_Cruz_Berrios_3785.jpg",
     },
     {
-      ocrResult: "13. Aníbal José (Jossie) Torres\r\n",
-      logoImg: "images/18-senadores-acumulacion-4-logo-2.jpg",
-    },
-    {
-      ocrResult: "",
+      ocrResult: "4. Luis Javier (Javy) Hernández",
+      logoImg: "Luis_Javier_Hernandez_Ortiz_5689.jpg",
     },
     {
       ocrResult: "",
@@ -406,16 +399,16 @@ export default [
     },
     {
       ocrResult: "",
+    },
+    {
+      ocrResult: "4. José Antonio Vargas Vidot",
+      logoImg: "Jose_Antonio_Vargas_Vidot_3321.jpg",
     },
   ],
   [
     {
-      ocrResult: "14. William Villafañe\r\n",
-      logoImg: "images/19-senadores-acumulacion-5-logo-1.jpg",
-    },
-    {
-      ocrResult: "14. José Luis Dalmau Santiago\r\n",
-      logoImg: "images/19-senadores-acumulacion-5-logo-2.jpg",
+      ocrResult: "5. Roxanna I. Soto Aguilú (Abogada Motorizada)",
+      logoImg: "Roxanna_Ivette_Soto_Aguilu_8298.jpg",
     },
     {
       ocrResult: "",
@@ -428,16 +421,16 @@ export default [
     },
     {
       ocrResult: "",
+    },
+    {
+      ocrResult: "5. Nelson Raúl Albino Ruíz",
+      logoImg: "Nelson_Raul_Albino_Ruiz_4043.jpg",
     },
   ],
   [
     {
-      ocrResult: "15. Itzamar Peña Ramírez\r\n",
-      logoImg: "images/20-senadores-acumulacion-6-logo-1.jpg",
-    },
-    {
-      ocrResult: "15. Brenda López De Arrarás\r\n",
-      logoImg: "images/20-senadores-acumulacion-6-logo-2.jpg",
+      ocrResult: "6. Thomas Rivera Schatz",
+      logoImg: "Thomas_Rivera_Schatz_8202.jpg",
     },
     {
       ocrResult: "",
@@ -450,6 +443,10 @@ export default [
     },
     {
       ocrResult: "",
+    },
+    {
+      ocrResult: "6. Sharon Rodríguez Díaz",
+      logoImg: "Sharon_Rodriguez_Cruz_4733.jpg",
     },
   ],
 ]

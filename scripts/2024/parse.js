@@ -4,7 +4,7 @@ import { parse } from "csv-parse/sync"
 
 import groupBy from "lodash/groupBy.js"
 import generateStateBallot from "./ballots/state.js"
-import generateLegislativeBallot from "./ballots/legislative.js"
+import generateLegislativeBallots from "./ballots/legislative.js"
 
 const csvFilePath = path.resolve("scripts/2024/all-candidates.csv")
 const csvData = fs.readFileSync(csvFilePath, "utf-8")
@@ -15,12 +15,14 @@ const records = parse(csvData, {
 
 const candidatesByPosition = groupBy(records, "2024_politician_type")
 
-// const candidatesForGovernor = candidatesByPosition["gobernador"]
-// const candidatesForResidentCommissioner = candidatesByPosition["comisionado"]
+const candidatesForGovernor = candidatesByPosition["gobernador"]
+const candidatesForResidentCommissioner = candidatesByPosition["comisionado"]
+const stateBallot = generateStateBallot(
+  candidatesForGovernor,
+  candidatesForResidentCommissioner
+)
 
-// console.log(
-//   generateStateBallot(candidatesForGovernor, candidatesForResidentCommissioner)
-// )
+fs.writeFileSync("stateBallot.json", JSON.stringify(stateBallot, null, 2))
 
 const candidatesForDistrictRepresentatives = groupBy(
   candidatesByPosition["representante"],
@@ -32,7 +34,10 @@ const candidatesForDistrictSenators = groupBy(
   "2024_senate_district"
 )
 
-console.log(
-  Object.keys(candidatesForDistrictRepresentatives),
-  Object.keys(candidatesForDistrictSenators)
+const legislativeBallots = generateLegislativeBallots(
+  candidatesForDistrictRepresentatives,
+  candidatesForDistrictSenators
 )
+
+const jsonData = JSON.stringify(legislativeBallots, null, 2)
+fs.writeFileSync("legislativeBallots.json", jsonData)
