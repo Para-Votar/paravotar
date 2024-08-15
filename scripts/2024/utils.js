@@ -1,3 +1,4 @@
+import uniq from "lodash/uniq.js"
 import { PoliticalParties } from "./constants.js"
 
 export function convertToOcrResult(record, index) {
@@ -16,11 +17,22 @@ export function convertToOcrResult(record, index) {
   }
 }
 
+export function getRepresentedParties(...candidatesByParty) {
+  const parties = candidatesByParty.map((candidates) => Object.keys(candidates))
+  const representedParties = uniq(parties.flat(2))
+
+  return [
+    ...PoliticalParties.filter((party) => representedParties.includes(party)),
+    "WI",
+  ]
+}
+
 export function assignCandidatesToPoliticalParties(
   candidatesByParty,
+  representedParties,
   rowNumber
 ) {
-  return PoliticalParties.map((party) => {
+  return representedParties.map((party) => {
     const candidate = candidatesByParty[party]
 
     if (!candidate) {

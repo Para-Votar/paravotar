@@ -6,13 +6,14 @@ import groupBy from "lodash/groupBy.js"
 import {
   assignCandidatesToPoliticalParties,
   getMaxAmountOfCandidates,
+  getRepresentedParties,
 } from "../utils.js"
 import {
   AtLargeRepresentativeHeader,
   AtLargeSenatorHeader,
   DistrictRepresentativeHeader,
   DistrictSenatorHeader,
-  PartiesHeader,
+  PartiesHeaderMap,
 } from "../constants.js"
 
 const csvFilePath = path.resolve("scripts/2024/data/district-breakdown.csv")
@@ -24,12 +25,10 @@ const records = parse(csvData, {
 
 const precincts = groupBy(records, "PRECINTO")
 
-function getAtLargeRepresentatives(representatives) {
-  const atLargeRepresentatives = representatives["ACUMULACION"]
-  const atLargeRepresentativesByParty = groupBy(
-    atLargeRepresentatives,
-    "2024_party"
-  )
+function getAtLargeRepresentatives(
+  atLargeRepresentativesByParty,
+  representedParties
+) {
   const amountOfAtLargeRepresentatives = getMaxAmountOfCandidates(
     atLargeRepresentativesByParty
   )
@@ -39,6 +38,7 @@ function getAtLargeRepresentatives(representatives) {
   for (let i = 0; i < amountOfAtLargeRepresentatives; i++) {
     const row = assignCandidatesToPoliticalParties(
       atLargeRepresentativesByParty,
+      representedParties,
       i
     )
 
@@ -48,9 +48,7 @@ function getAtLargeRepresentatives(representatives) {
   return representativeRows
 }
 
-function getAtLargeSenators(senators) {
-  const atLargeSenators = senators["ACUMULACION"]
-  const atLargeSenatorsByParty = groupBy(atLargeSenators, "2024_party")
+function getAtLargeSenators(atLargeSenatorsByParty, representedParties) {
   const amountOfAtLargeSenators = getMaxAmountOfCandidates(
     atLargeSenatorsByParty
   )
@@ -58,7 +56,11 @@ function getAtLargeSenators(senators) {
   const senatorRows = []
 
   for (let i = 0; i < amountOfAtLargeSenators; i++) {
-    const row = assignCandidatesToPoliticalParties(atLargeSenatorsByParty, i)
+    const row = assignCandidatesToPoliticalParties(
+      atLargeSenatorsByParty,
+      representedParties,
+      i
+    )
 
     senatorRows.push(row)
   }
@@ -67,30 +69,59 @@ function getAtLargeSenators(senators) {
 }
 
 export default function generateLegislativeBallots(representatives, senators) {
-  const atLargeRepresentativesRows = getAtLargeRepresentatives(representatives)
-  const atLargeSenatorsRows = getAtLargeSenators(senators)
+  const atLargeRepresentatives = representatives["ACUMULACION"]
+  const atLargeRepresentativesByParty = groupBy(
+    atLargeRepresentatives,
+    "2024_party"
+  )
+
+  const atLargeSenators = senators["ACUMULACION"]
+  const atLargeSenatorsByParty = groupBy(atLargeSenators, "2024_party")
 
   const ballots = Object.keys(precincts).map((precinctKey) => {
     const precinct = precincts[precinctKey][0]
 
     const districtSenators = senators[precinct["DIST. SEN"]]
     const districtSenatorsByParty = groupBy(districtSenators, "2024_party")
-    const amountOfDistrictSenators = getMaxAmountOfCandidates(
-      districtSenatorsByParty
-    )
-    const districtSenatorsRows = []
-
-    for (let i = 0; i < amountOfDistrictSenators; i++) {
-      const row = assignCandidatesToPoliticalParties(districtSenatorsByParty, i)
-
-      districtSenatorsRows.push(row)
-    }
 
     const districtRepresentatives = representatives[precinct["DIST. REP."]]
     const districtRepresentativesByParty = groupBy(
       districtRepresentatives,
       "2024_party"
     )
+
+    const representedParties = getRepresentedParties(
+      atLargeRepresentativesByParty,
+      atLargeSenatorsByParty,
+      districtSenatorsByParty,
+      districtRepresentativesByParty
+    )
+    console.log(representedParties)
+
+    const atLargeRepresentativesRows = getAtLargeRepresentatives(
+      atLargeRepresentativesByParty,
+      representedParties
+    )
+    const atLargeSenatorsRows = getAtLargeSenators(
+      atLargeSenatorsByParty,
+      representedParties
+    )
+
+    const amountOfDistrictSenators = getMaxAmountOfCandidates(
+      districtSenatorsByParty
+    )
+    const districtSenatorsRows = []
+
+    for (let i = 0; i < amountOfDistrictSenators; i++) {
+      const row = assignCandidatesToPoliticalParties(
+        districtSenatorsByParty,
+        representedParties,
+        i
+      )
+
+      districtSenatorsRows.push(row)
+    }
+
     const amountOfDistrictRepresentatives = getMaxAmountOfCandidates(
       districtRepresentativesByParty
     )
@@ -99,6 +130,7 @@ export default function generateLegislativeBallots(representatives, senators) {
     for (let i = 0; i < amountOfDistrictRepresentatives; i++) {
       const row = assignCandidatesToPoliticalParties(
         districtRepresentativesByParty,
+        representedParties,
         i
       )
 
@@ -106,14 +138,14 @@ export default function generateLegislativeBallots(representatives, senators) {
     }
 
     return [
-      PartiesHeader,
-      DistrictRepresentativeHeader,
+      representedParties.map((party) => PartiesHeaderMap[party]),
+      representedParties.map(() => DistrictRepresentativeHeader),
       ...districtRepresentativesRows,
-      DistrictSenatorHeader,
+      representedParties.map(() => DistrictSenatorHeader),
       ...districtSenatorsRows,
-      AtLargeRepresentativeHeader,
+      representedParties.map(() => AtLargeRepresentativeHeader),
       ...atLargeRepresentativesRows,
-      AtLargeSenatorHeader,
+      representedParties.map(() => AtLargeSenatorHeader),
       ...atLargeSenatorsRows,
     ]
   })

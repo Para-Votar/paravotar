@@ -9,10 +9,6 @@ export default [
       logoImg: "images/partido-logo-2.jpg",
     },
     {
-      ocrResult: "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
-      logoImg: "images/partido-logo-3.jpg",
-    },
-    {
       ocrResult: "MOVIMIENTO VICTORIA\r\nCIUDADANA\r\n",
       logoImg: "images/partido-logo-4.jpg",
     },
@@ -58,9 +54,6 @@ export default [
       logoImg: "Terestela_Del_C_Gonzalez_Denton_1109.jpg",
     },
     {
-      ocrResult: "",
-    },
-    {
       ocrResult: "1. Manuel Antonio Natal Albelo",
       logoImg: "manuel-antonio-natal-albelo.jpeg",
     },
@@ -71,6 +64,9 @@ export default [
     {
       ocrResult: "1. José Francisco Vargas Cruz",
       logoImg: "Jose_Francisco_Vargas_Cruz_4166.jpg",
+    },
+    {
+      ocrResult: "",
     },
   ],
   [

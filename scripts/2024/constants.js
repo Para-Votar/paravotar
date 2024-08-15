@@ -24,153 +24,35 @@ export const PartiesHeaderMap = {
   INDT: {
     ocrResult: "",
   },
+  WI: {
+    ocrResult:
+      "cóM0 VOTAR NOMINACIÓN DIRECTA\r\nEn esta columna puede votar por otra(s) persona(s) distinta(s) a las que\r\naparecen como candidatos(as) en columnas anteriores de esta\r\npapeleta. Para votar por la(s) persona(s) de su preferencia. escriba su\r\nnombre completo en el encasillado de la columna de nominación directa\r\nque corresponda a la candidatura y también debe hacer una Marca\r\nVálida dentro del rectángulo en blanco al lado de cada nombre escrito.\r\nHOW TO VOTE FOR WRITE W CANDIDATES\r\nIn this column yol,' can vote for another person(s) difterent from those\r\nlisted as candidates in the previous columns ofthis ballot To vote for the\r\nperson(s) of chojce, write their full name on the box of the write-in\r\ncolumn that corresponds to the candidacy, and you must also make a\r\nvalid mark with\\n the blank rectang/e next to gach vritfen name.\r\n",
+  },
 }
 
-export const WriteInInstructions = {
-  ocrResult:
-    "cóM0 VOTAR NOMINACIÓN DIRECTA\r\nEn esta columna puede votar por otra(s) persona(s) distinta(s) a las que\r\naparecen como candidatos(as) en columnas anteriores de esta\r\npapeleta. Para votar por la(s) persona(s) de su preferencia. escriba su\r\nnombre completo en el encasillado de la columna de nominación directa\r\nque corresponda a la candidatura y también debe hacer una Marca\r\nVálida dentro del rectángulo en blanco al lado de cada nombre escrito.\r\nHOW TO VOTE FOR WRITE W CANDIDATES\r\nIn this column yol,' can vote for another person(s) difterent from those\r\nlisted as candidates in the previous columns ofthis ballot To vote for the\r\nperson(s) of chojce, write their full name on the box of the write-in\r\ncolumn that corresponds to the candidacy, and you must also make a\r\nvalid mark with\\n the blank rectang/e next to gach vritfen name.\r\n",
+export const GovernorsRoleHeader = {
+  ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
 }
 
-export const PartiesHeader = [
-  PartiesHeaderMap.PNP,
-  PartiesHeaderMap.PPD,
-  PartiesHeaderMap.PIP,
-  PartiesHeaderMap.MVC,
-  PartiesHeaderMap.PD,
-  PartiesHeaderMap.INDT,
-]
+export const ResidentComissionerHeader = {
+  ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
+}
 
-export const GovernorsRoleHeader = [
-  {
-    ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-  },
-  {
-    ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-  },
-  {
-    ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-  },
-  {
-    ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-  },
-  {
-    ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-  },
-  {
-    ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-  },
-  {
-    ocrResult: "GOBERNADOR\r\nGOVERNOR\r\n",
-  },
-]
+export const DistrictRepresentativeHeader = {
+  ocrResult: "REPRESENTANTE POR DISTRITO\r\nDISTRICT REPRESENTATIVE\r\n",
+}
 
-export const ResidentComissionerHeader = [
-  {
-    ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
-  },
-  {
-    ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
-  },
-  {
-    ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
-  },
-  {
-    ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
-  },
-  {
-    ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
-  },
-  {
-    ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
-  },
-  {
-    ocrResult: "COMISIONADO RESIDENTE\r\nRESIDENT COMMISSIONER\r\n",
-  },
-]
+export const DistrictSenatorHeader = {
+  ocrResult: "SENADOR POR DISTRITO\r\nDISTRICT SENATOR\r\n",
+}
 
-export const DistrictRepresentativeHeader = [
-  {
-    ocrResult: "REPRESENTANTE POR DISTRITO\r\nDISTRICT REPRESENTATIVE\r\n",
-  },
-  {
-    ocrResult: "REPRESENTANTE POR DISTRITO\r\nDISTRICT REPRESENTATIVE\r\n",
-  },
-  {
-    ocrResult: "REPRESENTANTE POR DISTRITO\r\nDISTRICT REPRESENTATIVE\r\n",
-  },
-  {
-    ocrResult: "REPRESENTANTE POR DISTRITO\r\nDISTRICT REPRESENTATIVE\r\n",
-  },
-  {
-    ocrResult: "REPRESENTANTE POR DISTRITO\r\nDISTRICT REPRESENTATIVE\r\n",
-  },
-  {
-    ocrResult: "REPRESENTANTE POR DISTRITO\r\nDISTRICT REPRESENTATIVE\r\n",
-  },
-]
+export const AtLargeSenatorHeader = {
+  ocrResult: "SENADOR POR ACUMULACIÓN\r\nAT-LARGE SENATOR\r\n",
+}
 
-export const DistrictSenatorHeader = [
-  {
-    ocrResult: "SENADOR POR DISTRITO\r\nDISTRICT SENATOR\r\n",
-  },
-  {
-    ocrResult: "SENADOR POR DISTRITO\r\nDISTRICT SENATOR\r\n",
-  },
-  {
-    ocrResult: "SENADOR POR DISTRITO\r\nDISTRICT SENATOR\r\n",
-  },
-  {
-    ocrResult: "SENADOR POR DISTRITO\r\nDISTRICT SENATOR\r\n",
-  },
-  {
-    ocrResult: "SENADOR POR DISTRITO\r\nDISTRICT SENATOR\r\n",
-  },
-  {
-    ocrResult: "SENADOR POR DISTRITO\r\nDISTRICT SENATOR\r\n",
-  },
-]
-
-export const AtLargeSenatorHeader = [
-  {
-    ocrResult: "SENADOR POR ACUMULACIÓN\r\nAT-LARGE SENATOR\r\n",
-  },
-  {
-    ocrResult: "SENADOR POR ACUMULACIÓN\r\nAT-LARGE SENATOR\r\n",
-  },
-  {
-    ocrResult: "SENADOR POR ACUMULACIÓN\r\nAT-LARGE SENATOR\r\n",
-  },
-  {
-    ocrResult: "SENADOR POR ACUMULACIÓN\r\nAT-LARGE SENATOR\r\n",
-  },
-  {
-    ocrResult: "SENADOR POR ACUMULACIÓN\r\nAT-LARGE SENATOR\r\n",
-  },
-  {
-    ocrResult: "SENADOR POR ACUMULACIÓN\r\nAT-LARGE SENATOR\r\n",
-  },
-]
-
-export const AtLargeRepresentativeHeader = [
-  {
-    ocrResult: "REPRESENTANTE POR ACUMULACIÓN\r\nAT-LARGE REPRESENTATIVE\r\n",
-  },
-  {
-    ocrResult: "REPRESENTANTE POR ACUMULACIÓN\r\nAT-LARGE REPRESENTATIVE\r\n",
-  },
-  {
-    ocrResult: "REPRESENTANTE POR ACUMULACIÓN\r\nAT-LARGE REPRESENTATIVE\r\n",
-  },
-  {
-    ocrResult: "REPRESENTANTE POR ACUMULACIÓN\r\nAT-LARGE REPRESENTATIVE\r\n",
-  },
-  {
-    ocrResult: "REPRESENTANTE POR ACUMULACIÓN\r\nAT-LARGE REPRESENTATIVE\r\n",
-  },
-  {
-    ocrResult: "REPRESENTANTE POR ACUMULACIÓN\r\nAT-LARGE REPRESENTATIVE\r\n",
-  },
-]
+export const AtLargeRepresentativeHeader = {
+  ocrResult: "REPRESENTANTE POR ACUMULACIÓN\r\nAT-LARGE REPRESENTATIVE\r\n",
+}
 
 export const MayorsHeader = {
   ocrResult: "ALCALDE\r\nMAYOR\r\n",

@@ -2,14 +2,12 @@ import groupBy from "lodash/groupBy.js"
 import {
   assignCandidatesToPoliticalParties,
   getMaxAmountOfCandidates,
+  getRepresentedParties,
 } from "../utils.js"
 import {
   MayorsHeader,
   MunicipalLegislatorHeader,
-  PartiesHeader,
   PartiesHeaderMap,
-  PoliticalParties,
-  WriteInInstructions,
 } from "../constants.js"
 
 export default function generateMunicipalityBallots(candidates) {
@@ -19,33 +17,25 @@ export default function generateMunicipalityBallots(candidates) {
   Object.entries(candidatesByMunicipality).forEach(
     ([municipality, candidates]) => {
       const candidatesByParty = groupBy(candidates, "2024_party")
-      const partiesRepresented = Object.keys(candidatesByParty)
+      const representedParties = getRepresentedParties(candidatesByParty)
       const amountOfCandidates = getMaxAmountOfCandidates(candidatesByParty)
       const candidateRows = []
 
       for (let i = 0; i < amountOfCandidates; i++) {
-        const row = assignCandidatesToPoliticalParties(candidatesByParty, i)
+        const row = assignCandidatesToPoliticalParties(
+          candidatesByParty,
+          representedParties,
+          i
+        )
 
         candidateRows.push(row)
       }
 
-      const mayorsHeader = []
-
-      for (let i = 0; i < candidateRows[0].length; i++) {
-        mayorsHeader.push(MayorsHeader)
-      }
-
-      const municipalLegislatorsHeader = []
-
-      for (let i = 0; i < candidateRows[0].length; i++) {
-        municipalLegislatorsHeader.push(MunicipalLegislatorHeader)
-      }
-
       ballots[municipality] = [
-        PartiesHeader,
-        mayorsHeader,
+        representedParties.map((party) => PartiesHeaderMap[party]),
+        representedParties.map(() => MayorsHeader),
         ...candidateRows,
-        municipalLegislatorsHeader,
+        representedParties.map(() => MunicipalLegislatorHeader),
       ]
     }
   )

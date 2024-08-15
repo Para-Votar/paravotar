@@ -2,29 +2,36 @@ export default [
   [
     {
       ocrResult: "PARTIDO NUEVO PROGRESISTA\r\n",
-      logoImg: "images/1-partido-logo-1.jpg",
+      logoImg: "images/partido-logo-1.jpg",
     },
     {
       ocrResult: "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
-      logoImg: "images/1-partido-logo-2.jpg",
+      logoImg: "images/partido-logo-2.jpg",
     },
     {
       ocrResult: "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
-      logoImg: "images/1-partido-logo-3.jpg",
+      logoImg: "images/partido-logo-3.jpg",
     },
     {
       ocrResult: "MOVIMIENTO VICTORIA\r\nCIUDADANA\r\n",
-      logoImg: "images/1-partido-logo-4.jpg",
+      logoImg: "images/partido-logo-4.jpg",
     },
     {
       ocrResult: "PROYECTO DIGNIDAD\r\n",
-      logoImg: "images/1-partido-logo-5.jpg",
+      logoImg: "images/partido-logo-5.jpg",
     },
     {
       ocrResult: "",
     },
+    {
+      ocrResult:
+        "cóM0 VOTAR NOMINACIÓN DIRECTA\r\nEn esta columna puede votar por otra(s) persona(s) distinta(s) a las que\r\naparecen como candidatos(as) en columnas anteriores de esta\r\npapeleta. Para votar por la(s) persona(s) de su preferencia. escriba su\r\nnombre completo en el encasillado de la columna de nominación directa\r\nque corresponda a la candidatura y también debe hacer una Marca\r\nVálida dentro del rectángulo en blanco al lado de cada nombre escrito.\r\nHOW TO VOTE FOR WRITE W CANDIDATES\r\nIn this column yol,' can vote for another person(s) difterent from those\r\nlisted as candidates in the previous columns ofthis ballot To vote for the\r\nperson(s) of chojce, write their full name on the box of the write-in\r\ncolumn that corresponds to the candidacy, and you must also make a\r\nvalid mark with\\n the blank rectang/e next to gach vritfen name.\r\n",
+    },
   ],
   [
+    {
+      ocrResult: "REPRESENTANTE POR DISTRITO\r\nDISTRICT REPRESENTATIVE\r\n",
+    },
     {
       ocrResult: "REPRESENTANTE POR DISTRITO\r\nDISTRICT REPRESENTATIVE\r\n",
     },
@@ -68,8 +75,14 @@ export default [
     {
       ocrResult: "",
     },
+    {
+      ocrResult: "",
+    },
   ],
   [
+    {
+      ocrResult: "SENADOR POR DISTRITO\r\nDISTRICT SENATOR\r\n",
+    },
     {
       ocrResult: "SENADOR POR DISTRITO\r\nDISTRICT SENATOR\r\n",
     },
@@ -114,6 +127,9 @@ export default [
       ocrResult: "1. Blanca Iris Rodríguez Santiago",
       logoImg: "",
     },
+    {
+      ocrResult: "",
+    },
   ],
   [
     {
@@ -136,8 +152,14 @@ export default [
     {
       ocrResult: "",
     },
+    {
+      ocrResult: "",
+    },
   ],
   [
+    {
+      ocrResult: "REPRESENTANTE POR ACUMULACIÓN\r\nAT-LARGE REPRESENTATIVE\r\n",
+    },
     {
       ocrResult: "REPRESENTANTE POR ACUMULACIÓN\r\nAT-LARGE REPRESENTATIVE\r\n",
     },
@@ -182,6 +204,9 @@ export default [
       ocrResult: "1. Luis Raúl Torres Cruz",
       logoImg: "Luis_Raul_Torres_Cruz_0378.jpg",
     },
+    {
+      ocrResult: "",
+    },
   ],
   [
     {
@@ -191,6 +216,9 @@ export default [
     {
       ocrResult: "2. Héctor Ferrer",
       logoImg: "Hector_Enrique_Ferrer_Santiago_0904.jpg",
+    },
+    {
+      ocrResult: "",
     },
     {
       ocrResult: "",
@@ -226,6 +254,9 @@ export default [
     {
       ocrResult: "",
     },
+    {
+      ocrResult: "",
+    },
   ],
   [
     {
@@ -248,11 +279,17 @@ export default [
     {
       ocrResult: "",
     },
+    {
+      ocrResult: "",
+    },
   ],
   [
     {
       ocrResult: "5. Lourdes Ramos",
       logoImg: "lourdes-ramos.jpeg",
+    },
+    {
+      ocrResult: "",
     },
     {
       ocrResult: "",
@@ -290,8 +327,14 @@ export default [
     {
       ocrResult: "",
     },
+    {
+      ocrResult: "",
+    },
   ],
   [
+    {
+      ocrResult: "SENADOR POR ACUMULACIÓN\r\nAT-LARGE SENATOR\r\n",
+    },
     {
       ocrResult: "SENADOR POR ACUMULACIÓN\r\nAT-LARGE SENATOR\r\n",
     },
@@ -335,6 +378,9 @@ export default [
       ocrResult: "1. Andrés Rua González",
       logoImg: "",
     },
+    {
+      ocrResult: "",
+    },
   ],
   [
     {
@@ -357,6 +403,9 @@ export default [
     {
       ocrResult: "2. Elizabeth Torres Rodríguez",
       logoImg: "Elizabeth_Torres_Rodriguez_6439.jpg",
+    },
+    {
+      ocrResult: "",
     },
   ],
   [
@@ -381,6 +430,9 @@ export default [
       ocrResult: "3. Jorge Luis Oyola Torres",
       logoImg: "",
     },
+    {
+      ocrResult: "",
+    },
   ],
   [
     {
@@ -404,6 +456,9 @@ export default [
       ocrResult: "4. José Antonio Vargas Vidot",
       logoImg: "Jose_Antonio_Vargas_Vidot_3321.jpg",
     },
+    {
+      ocrResult: "",
+    },
   ],
   [
     {
@@ -426,6 +481,9 @@ export default [
       ocrResult: "5. Nelson Raúl Albino Ruíz",
       logoImg: "Nelson_Raul_Albino_Ruiz_4043.jpg",
     },
+    {
+      ocrResult: "",
+    },
   ],
   [
     {
@@ -447,6 +505,9 @@ export default [
     {
       ocrResult: "6. Sharon Rodríguez Díaz",
       logoImg: "Sharon_Rodriguez_Cruz_4733.jpg",
+    },
+    {
+      ocrResult: "",
     },
   ],
 ]
