@@ -6,7 +6,7 @@ import groupBy from "lodash/groupBy.js"
 import generateStateBallot from "./ballots/state.js"
 import generateLegislativeBallots from "./ballots/legislative.js"
 
-const csvFilePath = path.resolve("scripts/2024/all-candidates.csv")
+const csvFilePath = path.resolve("scripts/2024/data/all-candidates.csv")
 const csvData = fs.readFileSync(csvFilePath, "utf-8")
 
 const records = parse(csvData, {
@@ -28,12 +28,10 @@ const candidatesForDistrictRepresentatives = groupBy(
   candidatesByPosition["representante"],
   "2024_representative_district"
 )
-
 const candidatesForDistrictSenators = groupBy(
   candidatesByPosition["senador"],
   "2024_senate_district"
 )
-
 const legislativeBallots = generateLegislativeBallots(
   candidatesForDistrictRepresentatives,
   candidatesForDistrictSenators
@@ -41,3 +39,7 @@ const legislativeBallots = generateLegislativeBallots(
 
 const jsonData = JSON.stringify(legislativeBallots, null, 2)
 fs.writeFileSync("legislativeBallots.json", jsonData)
+
+// const candidatesForMayor = candidatesByPosition["alcalde"]
+
+// console.log(groupBy(candidatesForMayor, "2024_municipality"))
