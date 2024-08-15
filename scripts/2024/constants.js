@@ -161,3 +161,45 @@ export const AtLargeRepresentativeHeader = [
     ocrResult: "REPRESENTANTE POR ACUMULACIÓN\r\nAT-LARGE REPRESENTATIVE\r\n",
   },
 ]
+
+export const MayorsHeader = [
+  {
+    ocrResult: "ALCALDE\r\nMAYOR\r\n",
+  },
+  {
+    ocrResult: "ALCALDE\r\nMAYOR\r\n",
+  },
+  {
+    ocrResult: "ALCALDE\r\nMAYOR\r\n",
+  },
+  {
+    ocrResult: "ALCALDE\r\nMAYOR\r\n",
+  },
+  {
+    ocrResult: "ALCALDE\r\nMAYOR\r\n",
+  },
+  {
+    ocrResult: "ALCALDE\r\nMAYOR\r\n",
+  },
+]
+
+export const MunicipalLegislatorHeader = [
+  {
+    ocrResult: "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n",
+  },
+  {
+    ocrResult: "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n",
+  },
+  {
+    ocrResult: "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n",
+  },
+  {
+    ocrResult: "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n",
+  },
+  {
+    ocrResult: "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n",
+  },
+  {
+    ocrResult: "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n",
+  },
+]
