@@ -22,7 +22,7 @@ export default function makeServer({ environment }: MakeServerArgs) {
 
       this.get("/ballots/ByPrecint", () => {
         return {
-          estatal: "papeletas/2020/estatal/",
+          estatal: "papeletas/2024/estatal/",
           municipal: "papeletas/2020/aguada/",
           legislativa: "papeletas/2020/aguada-legislativa-038/",
         }
@@ -39,18 +39,18 @@ export default function makeServer({ environment }: MakeServerArgs) {
       // Public bucket routes
       this.urlPrefix = "https://cdn.paravotar.org"
 
-      this.get("/papeletas/:year/:ballot/data.json", function(
-        _,
-        request: Request
-      ) {
-        if (request.params.ballot === "estatal") {
-          return stateBallot
-        } else if (request.params.ballot.includes("legislativa")) {
-          return legislativeBallot
-        }
+      this.get(
+        "/papeletas/:year/:ballot/data.json",
+        function (_, request: Request) {
+          if (request.params.ballot === "estatal") {
+            return stateBallot
+          } else if (request.params.ballot.includes("legislativa")) {
+            return legislativeBallot
+          }
 
-        return municipalBallot
-      })
+          return municipalBallot
+        }
+      )
 
       this.passthrough("http://localhost:8000/**")
     },
