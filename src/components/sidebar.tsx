@@ -4,9 +4,6 @@ import { useTranslation } from "react-i18next"
 
 import Practica from "../assets/icons/practica.svg?url"
 import Logo from "../assets/images/logo.svg?url"
-import Inscribete from "../assets/icons/inscribete.svg?url"
-import Collaborations from "../assets/icons/collaborations.svg?url"
-import SalAVotar from "../assets/icons/sal-a-votar.svg?url"
 import { useSidebar } from "../context/sidebar-context"
 import { Section, SubSection } from "./section"
 import LanguageMenu from "./language-menu"
@@ -46,81 +43,6 @@ export const getSections = (
         name: "Practica tu voto",
         route: "/practica#practica-tu-voto",
         isActive: pathname.includes("/practica#practica-tu-voto"),
-      },
-    ],
-  },
-  {
-    name: t("nav.voter-action"),
-    icon: SalAVotar,
-    isActive:
-      pathname.includes("/sal-a-votar#voto-ausente-y-adelantado") ||
-      pathname.includes("/sal-a-votar#tu-centro-de-votacion"),
-    strikeout: false,
-    subsections: [
-      {
-        name: t("nav.vote-type1"),
-        route: "/sal-a-votar#voto-ausente-y-adelantado",
-        isActive: pathname.includes("/sal-a-votar#voto-ausente-y-adelantado"),
-      },
-      // {
-      //   name: t("nav.find-voter-center"),
-      //   route: "/sal-a-votar#tu-centro-de-votacion",
-      //   isActive: pathname.includes("/sal-a-votar#tu-centro-de-votacion"),
-      // },
-    ],
-  },
-  {
-    name: t("nav.sign-up"),
-    icon: Inscribete,
-    isActive:
-      pathname.includes("/inscribete#tarjeta-electoral") ||
-      pathname.includes("/inscribete#juntas-de-inscripcion-permanentes") ||
-      pathname.includes("/inscribete#electoral-status"),
-    strikeout: true,
-    subsections: [
-      {
-        name: t("nav.voter-card"),
-        route: "/inscribete#tarjeta-electoral",
-        isActive: pathname.includes("/inscribete#tarjeta-electoral"),
-      },
-      {
-        name: t("nav.enrollment-centers"),
-        route: "/inscribete#juntas-de-inscripcion-permanentes",
-        isActive: pathname.includes(
-          "/inscribete#juntas-de-inscripcion-permanentes"
-        ),
-      },
-      {
-        name: t("nav.enrollment-reminder"),
-        route: "/inscribete#enrollment-reminder",
-        isActive: pathname.includes("/inscribete#enrollment-reminder"),
-      },
-      {
-        name: t("nav.voter-status"),
-        route: "/inscribete#electoral-status",
-        isActive: pathname.includes("/inscribete#electoral-status"),
-      },
-    ],
-  },
-  {
-    name: t("nav.collaborations"),
-    icon: Collaborations,
-    isActive: [
-      "/colaboraciones#proyecto-85",
-      "/colaboraciones#tu-voto-no-se-deja",
-      "/colaboraciones#quien-me-representa",
-    ].includes(pathname),
-    strikeout: false,
-    subsections: [
-      {
-        name: "Proyecto 85",
-        route: "/colaboraciones#proyecto-85",
-        isActive: pathname.includes("/colaboraciones#proyecto-85"),
-      },
-      {
-        name: "¿Quién me representa?",
-        route: "/colaboraciones#quien-me-representa",
-        isActive: pathname.includes("/colaboraciones#quien-me-representa"),
       },
     ],
   },
