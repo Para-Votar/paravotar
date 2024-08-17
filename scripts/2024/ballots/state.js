@@ -3,6 +3,7 @@ import groupBy from "lodash/groupBy.js"
 import {
   assignCandidatesToPoliticalParties,
   getRepresentedParties,
+  saveToDisk,
 } from "../utils.js"
 import {
   GovernorsRoleHeader,
@@ -34,11 +35,13 @@ export default function generateStateBallot(
     0
   )
 
-  return [
+  const ballot = [
     representedParties.map((party) => PartiesHeaderMap[party]),
     representedParties.map(() => GovernorsRoleHeader),
     governorRow,
     representedParties.map(() => ResidentComissionerHeader),
     residentCommissionerRow,
   ]
+
+  saveToDisk("estatal", ballot)
 }

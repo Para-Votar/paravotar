@@ -1,5 +1,17 @@
+import fs from "fs"
+import path from "path"
 import uniq from "lodash/uniq.js"
+
 import { PoliticalParties } from "./constants.js"
+
+const ACCENT_MAP = {
+  á: "a",
+  é: "e",
+  í: "i",
+  ó: "o",
+  ú: "u",
+  ñ: "n",
+}
 
 export function convertToOcrResult(record, index) {
   if (!record) {
@@ -53,4 +65,29 @@ export function getMaxAmountOfCandidates(partyCandidates) {
 
     return accum
   }, 0)
+}
+
+export function saveToDisk(folderName, data) {
+  console.log("folder name -->>", folderName)
+  const folder = folderName
+    .replace(" ", "-")
+    .toLowerCase()
+    .split("")
+    .map((char) => ACCENT_MAP[char] || char)
+    .join("")
+  const resultsDir = path.resolve("scripts/2024/results")
+  const folderPath = path.resolve(resultsDir, folder)
+
+  console.log(`Writing to: ${folderPath}`)
+
+  // Create the folder if it doesn't exist
+  if (!fs.existsSync(folderPath)) {
+    fs.mkdirSync(folderPath, { recursive: true })
+  }
+
+  const dataPath = path.join(folderPath, "data.json")
+  const jsonData = JSON.stringify(data, null, 2)
+
+  // Write the data to data.json
+  fs.writeFileSync(dataPath, jsonData)
 }

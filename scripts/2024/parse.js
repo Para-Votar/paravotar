@@ -16,14 +16,10 @@ const records = parse(csvData, {
 
 const candidatesByPosition = groupBy(records, "2024_politician_type")
 
+// State ballot
 const candidatesForGovernor = candidatesByPosition["gobernador"]
 const candidatesForResidentCommissioner = candidatesByPosition["comisionado"]
-const stateBallot = generateStateBallot(
-  candidatesForGovernor,
-  candidatesForResidentCommissioner
-)
-
-fs.writeFileSync("state-ballot.json", JSON.stringify(stateBallot, null, 2))
+generateStateBallot(candidatesForGovernor, candidatesForResidentCommissioner)
 
 const candidatesForDistrictRepresentatives = groupBy(
   candidatesByPosition["representante"],
@@ -33,20 +29,10 @@ const candidatesForDistrictSenators = groupBy(
   candidatesByPosition["senador"],
   "2024_senate_district"
 )
-const legislativeBallots = generateLegislativeBallots(
+generateLegislativeBallots(
   candidatesForDistrictRepresentatives,
   candidatesForDistrictSenators
 )
 
-fs.writeFileSync(
-  "legislative-ballots.json",
-  JSON.stringify(legislativeBallots, null, 2)
-)
-
 const candidatesForMayor = candidatesByPosition["alcalde"]
-const municipalityBallots = generateMunicipalityBallots(candidatesForMayor)
-
-fs.writeFileSync(
-  "municipality-ballots.json",
-  JSON.stringify(municipalityBallots, null, 2)
-)
+generateMunicipalityBallots(candidatesForMayor)

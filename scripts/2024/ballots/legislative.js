@@ -7,6 +7,7 @@ import {
   assignCandidatesToPoliticalParties,
   getMaxAmountOfCandidates,
   getRepresentedParties,
+  saveToDisk,
 } from "../utils.js"
 import {
   AtLargeRepresentativeHeader,
@@ -80,6 +81,7 @@ export default function generateLegislativeBallots(representatives, senators) {
 
   const ballots = Object.keys(precincts).map((precinctKey) => {
     const precinct = precincts[precinctKey][0]
+    const municipality = precinct["MUNICIPIO"]
 
     const districtSenators = senators[precinct["DIST. SEN"]]
     const districtSenatorsByParty = groupBy(districtSenators, "2024_party")
@@ -96,7 +98,6 @@ export default function generateLegislativeBallots(representatives, senators) {
       districtSenatorsByParty,
       districtRepresentativesByParty
     )
-    console.log(representedParties)
 
     const atLargeRepresentativesRows = getAtLargeRepresentatives(
       atLargeRepresentativesByParty,
@@ -137,7 +138,7 @@ export default function generateLegislativeBallots(representatives, senators) {
       districtRepresentativesRows.push(row)
     }
 
-    return [
+    const ballot = [
       representedParties.map((party) => PartiesHeaderMap[party]),
       representedParties.map(() => DistrictRepresentativeHeader),
       ...districtRepresentativesRows,
@@ -148,6 +149,10 @@ export default function generateLegislativeBallots(representatives, senators) {
       representedParties.map(() => AtLargeSenatorHeader),
       ...atLargeSenatorsRows,
     ]
+
+    const folderName = `${municipality.toLowerCase()}-legislativo-${precinctKey}`
+
+    saveToDisk(folderName, ballot)
   })
 
   return ballots

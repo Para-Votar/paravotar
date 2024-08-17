@@ -3,6 +3,7 @@ import {
   assignCandidatesToPoliticalParties,
   getMaxAmountOfCandidates,
   getRepresentedParties,
+  saveToDisk,
 } from "../utils.js"
 import {
   MayorsHeader,
@@ -31,12 +32,14 @@ export default function generateMunicipalityBallots(candidates) {
         candidateRows.push(row)
       }
 
-      ballots[municipality] = [
+      const ballot = [
         representedParties.map((party) => PartiesHeaderMap[party]),
         representedParties.map(() => MayorsHeader),
         ...candidateRows,
         representedParties.map(() => MunicipalLegislatorHeader),
       ]
+
+      saveToDisk(`${municipality.toLowerCase()}`, ballot)
     }
   )
 
