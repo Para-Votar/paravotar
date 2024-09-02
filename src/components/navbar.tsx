@@ -3,7 +3,7 @@ import { useRef, useState, useEffect, useMemo } from "react"
 import Logo from "../assets/images/logo.svg?url"
 import Close from "../assets/icons/close.svg?url"
 import Menu from "../assets/icons/menu.svg?url"
-import { SubSection } from "./section"
+import { Section } from "./section"
 import LanguageMenu from "./language-menu"
 import Link from "./link"
 
@@ -17,6 +17,11 @@ const getSections = (pathname = "") => [
     name: "Practica tu voto",
     route: "/practica",
     isActive: pathname.includes("/practica"),
+  },
+  {
+    name: "Candidatos",
+    route: "https://www.quienmerepresentapr.com",
+    isActive: false,
   },
   {
     name: "Colaboradores",
@@ -56,7 +61,7 @@ export default function Navbar({ pathname }: SidebarProps) {
         <ul className="hidden flex gap-2 lg:flex">
           {sections.map((section) => {
             return (
-              <SubSection
+              <Section
                 key={section.name}
                 name={section.name}
                 route={section.route}
@@ -89,7 +94,7 @@ export default function Navbar({ pathname }: SidebarProps) {
           <ul>
             {sections.map((section) => {
               return (
-                <SubSection
+                <Section
                   key={section.name}
                   name={section.name}
                   route={section.route}
