@@ -8,7 +8,6 @@ import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock"
 
 import { toFriendlyErrorMessages } from "../../../ballot-validator/helpers/messages"
 import { Card, Spinner, Typography } from "../../../components/index"
-import { useSidebar } from "../../../context/sidebar-context"
 import BallotValidator from "../../../ballot-validator/index"
 import { BallotType } from "../../../ballot-validator/types"
 import Arrows from "../../../components/arrows"
@@ -46,6 +45,7 @@ import { FindByType } from "../services/ballot-finder-service"
 import "react-toastify/dist/ReactToastify.css"
 import { TourProvider } from "@reactour/tour"
 import { Tours } from "../constants"
+import useScrollIntoView from "../../../hooks/useScrollIntoView"
 
 const disableBody = (target: Element | null) => {
   if (document == null || target == null) return
@@ -127,7 +127,6 @@ export default function Practice({
   //   transformedVotes
   // )
   const { votesCount, setVotesCount } = useVotesCount(transformedVotes)
-  const { setSidebarIsVisible } = useSidebar()
 
   const handleSubmit = (
     votes: Vote[],
@@ -186,19 +185,10 @@ export default function Practice({
     }
   }
 
-  useEffect(() => {
-    const elem = document.getElementById("practica-tu-voto")
-
-    if (elem) {
-      elem.scrollIntoView && elem.scrollIntoView()
-    }
-  }, [state.value])
-
   const selectBallot = (
     selectedBallot: BallotSelectionEvent["type"],
     eventData: any
   ) => {
-    setSidebarIsVisible(false)
     // setBallotStatus(null)
     setVotesCount(null)
 
@@ -255,6 +245,8 @@ export default function Practice({
     state.context.ballots,
     state.context.votes,
   ])
+
+  useScrollIntoView()
 
   return (
     <div className="relative w-full">

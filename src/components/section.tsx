@@ -1,65 +1,4 @@
-import { useState, ReactNode } from "react"
-
-import Arrows from "./arrows"
-import { ResizeObserver } from "@juggle/resize-observer"
-import useMeasure from "react-use-measure"
-import { useSpring, animated } from "react-spring"
 import { Link } from "react-router-dom"
-
-type SectionProps = {
-  name: string
-  icon: string
-  children?: ReactNode
-  isActive: boolean
-  strikeout: boolean
-}
-
-function Section(props: SectionProps) {
-  const [isOpen, setIsOpen] = useState(props.isActive)
-
-  // Animation
-  const [ref, bounds] = useMeasure({ polyfill: ResizeObserver })
-  const springProps = useSpring({
-    height: isOpen ? bounds.height || "auto" : 0,
-    visibility: isOpen ? ("visible" as const) : ("hidden" as const),
-    opacity: isOpen ? 1 : 0,
-    transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
-  })
-
-  return (
-    <animated.div className="overflow-y-hidden">
-      <hr className="mx-4 text-footer mt-2" />
-      <button
-        className="flex items-center justify-between w-full -px-4 mt-2 px-4 overflow-x-visible"
-        onClick={() => setIsOpen(!isOpen)}
-      >
-        <div className="flex items-center">
-          <img className="w-8" src={props.icon} alt="" />
-          <div
-            className={`text-left ml-2 font-semibold ${
-              props.strikeout ? "line-through" : ""
-            }`}
-          >
-            {props.name}
-          </div>
-        </div>
-        <Arrows
-          className="inline-block ml-1"
-          style={{ transform: springProps.transform }}
-        />
-      </button>
-      <animated.div
-        style={{
-          height: springProps.height,
-          visibility: springProps.visibility,
-          opacity: springProps.opacity,
-        }}
-      >
-        <ul ref={ref}>{props.children}</ul>
-      </animated.div>
-    </animated.div>
-  )
-}
 
 type SubSectionProps = {
   name: string
@@ -68,11 +7,11 @@ type SubSectionProps = {
   onClick?: () => void
 }
 
-function SubSection(props: SubSectionProps) {
+export function SubSection(props: SubSectionProps) {
   return (
     <li
-      className={`px-4 hover:bg-primary hover:text-white hover:font-semibold ${
-        props.isActive ? "bg-primary text-white font-semibold" : ""
+      className={`px-4 hover:bg-primary hover:text-white ${
+        props.isActive ? "bg-primary text-white" : ""
       }`}
     >
       <Link
@@ -85,5 +24,3 @@ function SubSection(props: SubSectionProps) {
     </li>
   )
 }
-
-export { Section, SubSection }

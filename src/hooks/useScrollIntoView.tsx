@@ -1,19 +1,16 @@
-import { useEffect } from "react";
-import { Location } from "react-router-dom";
+import { useEffect } from "react"
+import { Location } from "react-router-dom"
 
-export default function useScrollIntoView(location: Location) {
+export default function useScrollIntoView(location?: Location) {
   useEffect(() => {
-    console.log(document);
-    if (document == null) return;
+    if (document == null) return
 
-    const { hash } = location;
+    let element = location
+      ? document.querySelector(location.hash)
+      : document.querySelector("body")
 
-    if (hash == null || hash == "") return;
+    if (element == null) return
 
-    const element = document.querySelector(hash);
-
-    if (element == null) return;
-
-    element.scrollIntoView();
-  }, [location]);
+    element.scrollIntoView()
+  }, [location])
 }
