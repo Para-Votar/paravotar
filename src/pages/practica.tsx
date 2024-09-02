@@ -3,12 +3,11 @@ import "fetch-ponyfill"
 
 import { Layout, Container } from "../components/index"
 import { Practice } from "../packages/practica/components/index"
-import { SidebarProvider } from "../context/sidebar-context"
 import { BallotType } from "../ballot-validator/types"
 import makeServer from "../mirage"
 import { useLocation } from "react-router-dom"
-import useScrollIntoView from "../hooks/useScrollIntoView"
 import SEO from "../components/seo"
+import useScrollIntoView from "../hooks/useScrollIntoView"
 
 if (import.meta.env.DEV) {
   makeServer({ environment: "development" })
@@ -24,20 +23,18 @@ const Practica = () => {
     ballotType = params.get("ballotType") as BallotType
   }
 
-  useScrollIntoView(location)
+  useScrollIntoView()
 
   return (
-    <SidebarProvider>
-      <Layout location={location}>
-        <SEO title="Practica tu voto" />
-        <Container
-          className="practice-container pt-16 mb-16 text-center lg:pt-5 w-full"
-          id="practica-tu-voto"
-        >
-          <Practice initialPrecint={precinto} initialBallotType={ballotType} />
-        </Container>
-      </Layout>
-    </SidebarProvider>
+    <Layout location={location}>
+      <SEO title="Practica tu voto" />
+      <Container
+        className="practice-container pt-16 mb-16 text-center lg:pt-5 w-full"
+        id="practica-tu-voto"
+      >
+        <Practice initialPrecint={precinto} initialBallotType={ballotType} />
+      </Container>
+    </Layout>
   )
 }
 
