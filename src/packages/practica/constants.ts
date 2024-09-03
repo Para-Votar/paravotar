@@ -4,6 +4,10 @@ export const precintList = [
     precint: "055",
   },
   {
+    value: "Adjuntas - 111",
+    precint: "111",
+  },
+  {
     value: "Aguada - 038",
     precint: "038",
   },
@@ -12,16 +16,16 @@ export const precintList = [
     precint: "035",
   },
   {
+    value: "Aguadilla - 085",
+    precint: "085",
+  },
+  {
     value: "Aguas Buenas - 081",
     precint: "081",
   },
   {
     value: "Aibonito - 069",
     precint: "069",
-  },
-  {
-    value: "Anasco - 040",
-    precint: "040",
   },
   {
     value: "Arecibo - 026",
@@ -36,6 +40,10 @@ export const precintList = [
     precint: "080",
   },
   {
+    value: "Añasco - 040",
+    precint: "040",
+  },
+  {
     value: "Barceloneta - 025",
     precint: "025",
   },
@@ -48,20 +56,20 @@ export const precintList = [
     precint: "071",
   },
   {
-    value: "Bayamon - 009",
-    precint: "009",
-  },
-  {
-    value: "Bayamon - 010",
+    value: "Bayamón - 010",
     precint: "010",
   },
   {
-    value: "Bayamon - 011",
+    value: "Bayamón - 011",
     precint: "011",
   },
   {
-    value: "Bayamon - 012",
+    value: "Bayamón - 012",
     precint: "012",
+  },
+  {
+    value: "Bayamón - 041",
+    precint: "041",
   },
   {
     value: "Cabo Rojo - 046",
@@ -80,11 +88,11 @@ export const precintList = [
     precint: "030",
   },
   {
-    value: "Canovanas - 104",
+    value: "Canóvanas - 104",
     precint: "104",
   },
   {
-    value: "Canovanas - 105",
+    value: "Canóvanas - 105",
     precint: "105",
   },
   {
@@ -100,8 +108,12 @@ export const precintList = [
     precint: "108",
   },
   {
-    value: "Catano - 008",
+    value: "Cataño - 008",
     precint: "008",
+  },
+  {
+    value: "Cataño - 009",
+    precint: "009",
   },
   {
     value: "Cayey - 077",
@@ -128,12 +140,16 @@ export const precintList = [
     precint: "075",
   },
   {
-    value: "Comerio - 074",
+    value: "Comerío - 074",
     precint: "074",
   },
   {
     value: "Corozal - 072",
     precint: "072",
+  },
+  {
+    value: "Corozal - 112",
+    precint: "112",
   },
   {
     value: "Culebra - 097",
@@ -150,10 +166,6 @@ export const precintList = [
   {
     value: "Florida - 024",
     precint: "024",
-  },
-  {
-    value: "Guanica - 048",
-    precint: "048",
   },
   {
     value: "Guayama - 079",
@@ -174,6 +186,14 @@ export const precintList = [
   {
     value: "Gurabo - 084",
     precint: "084",
+  },
+  {
+    value: "Gurabo - 114",
+    precint: "114",
+  },
+  {
+    value: "Guánica - 048",
+    precint: "048",
   },
   {
     value: "Hatillo - 028",
@@ -204,11 +224,11 @@ export const precintList = [
     precint: "057",
   },
   {
-    value: "Juana Diaz - 063",
+    value: "Juana Díaz - 063",
     precint: "063",
   },
   {
-    value: "Juana Diaz - 064",
+    value: "Juana Díaz - 064",
     precint: "064",
   },
   {
@@ -236,7 +256,7 @@ export const precintList = [
     precint: "090",
   },
   {
-    value: "Loiza - 103",
+    value: "Loíza - 103",
     precint: "103",
   },
   {
@@ -244,11 +264,11 @@ export const precintList = [
     precint: "100",
   },
   {
-    value: "Manati - 021",
+    value: "Manatí - 021",
     precint: "021",
   },
   {
-    value: "Manati - 022",
+    value: "Manatí - 022",
     precint: "022",
   },
   {
@@ -260,11 +280,7 @@ export const precintList = [
     precint: "092",
   },
   {
-    value: "Mayaguez - 041",
-    precint: "041",
-  },
-  {
-    value: "Mayaguez - 042",
+    value: "Mayagüez - 042",
     precint: "042",
   },
   {
@@ -296,7 +312,7 @@ export const precintList = [
     precint: "091",
   },
   {
-    value: "Penuelas - 059",
+    value: "Peñuelas - 059",
     precint: "059",
   },
   {
@@ -316,35 +332,27 @@ export const precintList = [
     precint: "031",
   },
   {
-    value: "Rincon - 039",
+    value: "Rincón - 039",
     precint: "039",
   },
   {
-    value: "Rio Grande - 101",
+    value: "Río Grande - 101",
     precint: "101",
   },
   {
-    value: "Rio Grande - 102",
+    value: "Río Grande - 102",
     precint: "102",
-  },
-  {
-    value: "Sabana Grande - 049",
-    precint: "049",
   },
   {
     value: "Salinas - 078",
     precint: "078",
   },
   {
-    value: "Salinas - 085",
-    precint: "085",
-  },
-  {
-    value: "San German - 043",
+    value: "San Germán - 043",
     precint: "043",
   },
   {
-    value: "San German - 044",
+    value: "San Germán - 044",
     precint: "044",
   },
   {
@@ -376,12 +384,20 @@ export const precintList = [
     precint: "087",
   },
   {
-    value: "San Sebastian - 033",
+    value: "San Sebastián - 033",
     precint: "033",
   },
   {
     value: "Santa Isabel - 067",
     precint: "067",
+  },
+  {
+    value: "Santa Isabel - 113",
+    precint: "113",
+  },
+  {
+    value: "Sábana Grande - 049",
+    precint: "049",
   },
   {
     value: "Toa Alta - 013",
