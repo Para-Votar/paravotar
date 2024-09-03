@@ -5,7 +5,7 @@ import Heart from "../assets/icons/heart.svg?url"
 import { Container, Link } from "../components/index"
 
 export default function Footer() {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <Container
@@ -13,7 +13,7 @@ export default function Footer() {
       className="text-center p-4 border border-solid border-b-0 border-r-0 border-l-0 border-footer md:w-10/12"
     >
       <Link
-        to="https://github.com/Code4PuertoRico/papeleta-pr/blob/master/CONTRIBUTING.md"
+        to="https://github.com/Para-Votar/paravotar/blob/master/CONTRIBUTING.md"
         target="_blank"
       >
         {t("footer.contribute")}
@@ -25,13 +25,8 @@ export default function Footer() {
       </p>
       <p className="mt-2">
         {t("footer.contribute-note3")}
-        <Link
-          to="https://github.com/Code4PuertoRico/papeleta-pr"
-          target="_blank"
-        >
-          <span className="sr-only">
-            {t("footer.contribute-note5")}
-          </span>
+        <Link to="https://github.com/Para-Votar/paravotar" target="_blank">
+          <span className="sr-only">{t("footer.contribute-note5")}</span>
           {t("footer.contribute-note4")}
         </Link>
         .
@@ -68,24 +63,13 @@ export default function Footer() {
         </Link>
         {t("footer.support2")}
         <Link
-          to="https://github.com/Code4PuertoRico/papeleta-pr/issues/new"
+          to="https://github.com/Para-Votar/paravotar/issues/new"
           target="_blank"
         >
           Github
         </Link>
         .
       </p>
-      <Link
-        to="https://www.twitter.com/code4puertorico"
-        target="_blank"
-        className="inline-block"
-      >
-        <img
-          className="h-12 w-12 mx-auto mt-4"
-          src={Code4PR}
-          alt="Hecho bajo la organización de Code for Puerto Rico"
-        />
-      </Link>
     </Container>
   )
 }
