@@ -1,10 +1,12 @@
-export const baseUrl = "https://api.paravotar.org"
+export const baseUrl =
+  "https://9siy3jjb1g.execute-api.us-east-1.amazonaws.com/dev"
 
 export enum APIPaths {
   GET_VOTER_DETAILS = "/voterStatus",
 }
 
-export const API_URL = "https://api.paravotar.org"
+export const API_URL =
+  "https://9siy3jjb1g.execute-api.us-east-1.amazonaws.com/dev"
 export const PUBLIC_S3_BUCKET = "https://paravotar.s3.amazonaws.com"
 export const CDN_URL = "https://cdn.paravotar.org"
 

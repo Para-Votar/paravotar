@@ -85,7 +85,7 @@ export class StateBallotConfig {
   cols: number
 
   constructor(ballot: OcrResult[][], path: string) {
-    const url = `${CDN_URL}/${path}`
+    const url = `${CDN_URL}/papeletas/2024/candidates/`
 
     const parties: PartyRow = generateHeaders(ballot[0], url)
     const governorHeader: Header[] = ballot[1].map(
@@ -143,7 +143,7 @@ export class MunicipalBallotConfig {
   amountOfMunicipalLegislators: number
 
   constructor(ballot: OcrResult[][], path: string) {
-    const url = `${CDN_URL}/${path}`
+    const url = `${CDN_URL}/papeletas/2024/candidates/`
 
     const parties: PartyRow = generateHeaders(ballot[0], url)
     const mayorHeader: Header[] = ballot[1].map(
@@ -208,8 +208,8 @@ export class LegislativeBallotConfig {
   structure: LegislativeBallotStructure
   cols: number
 
-  constructor(ballot: OcrResult[][], path: string) {
-    const url = `${CDN_URL}/${path}`
+  constructor(ballot: OcrResult[][]) {
+    const url = `${CDN_URL}/papeletas/2024/candidates/`
 
     // HACK: Add one item to every ocr result to we can generate the correct amount of columns
     const fixedBallots: OcrResult[][] = ballot.map(

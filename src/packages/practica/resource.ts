@@ -10,7 +10,9 @@ export const VoterInformationResource = {
 
 export const BallotResource = {
   getBallotsByPrecint(precint: string) {
-    return api.get<BallotsResponse>(`/ballots/ByPrecint?precintId=${precint}`)
+    return api.get<BallotsResponse>(
+      `/ballots/ByPrecint?precintId=${precint}&ballotYear=2024`
+    )
   },
 
   getBallotsByTown(town: string) {
