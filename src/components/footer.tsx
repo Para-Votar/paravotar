@@ -70,17 +70,6 @@ export default function Footer() {
         </Link>
         .
       </p>
-      <Link
-        to="https://www.twitter.com/code4puertorico"
-        target="_blank"
-        className="inline-block"
-      >
-        <img
-          className="h-12 w-12 mx-auto mt-4"
-          src={Code4PR}
-          alt="Hecho bajo la organización de Code for Puerto Rico"
-        />
-      </Link>
     </Container>
   )
 }
