@@ -1,21 +1,15 @@
-import { ReactNode } from "react";
-import { Footer, Sidebar, Navbar } from "../components/index";
-import Logo from "../assets/images/logo.svg?url";
-import { useSidebar } from "../context/sidebar-context";
-import Arrows from "./arrows";
-import { useTranslation } from "react-i18next";
-import { Location } from "react-router-dom";
+import { ReactNode } from "react"
+import { Footer, Navbar } from "../components/index"
+import { Location } from "react-router-dom"
 
 type Props = {
-  children: ReactNode;
-  location: Location;
-};
+  children: ReactNode
+  location: Location
+}
 
 const Layout = ({ children, location }: Props) => {
-  const hash = location.hash || "";
-  const pathname = location.pathname || "";
-  const { t } = useTranslation();
-  const { sidebarIsVisible, setSidebarIsVisible } = useSidebar();
+  const hash = location.hash || ""
+  const pathname = location.pathname || ""
 
   return (
     <>
@@ -26,44 +20,16 @@ const Layout = ({ children, location }: Props) => {
         Ir al contenido principal
       </a>
       <Navbar pathname={`${pathname}${hash}`} />
-      {!sidebarIsVisible && (
-        <nav className="hidden justify-center lg:flex lg:items-center lg:px-4 lg:py-2 lg:block lg:bg-secondary lg:shadow lg:sticky lg:top-0 lg:z-10">
-          <button
-            className="flex items-center absolute left-0 ml-6"
-            onClick={() => setSidebarIsVisible(!sidebarIsVisible)}
-          >
-            <Arrows className="mr-4" style={{ transform: "rotate(-90deg)" }} />
-            {t("nav.show-menu")}
-          </button>
-          <img className="h-12 flex" src={Logo} alt="Para Votar" />
-          <div></div>
-        </nav>
-      )}
-      <div
-        className={`wrapper ${
-          sidebarIsVisible ? "wrapper-with-sidebar" : "wrapper-without-sidebar"
-        }`}
-      >
-        {sidebarIsVisible && <Sidebar pathname={`${pathname}${hash}`} />}
-        <div
-          id="main-container"
-          className={`main ${
-            sidebarIsVisible ? "main-with-sidebar" : "main-without-sidebar"
-          }`}
-        >
-          <main
-            id="main-content"
-            className={`main-content ${
-              sidebarIsVisible ? "main-content-with-sidebar" : "max-w-full"
-            }`}
-          >
+      <div className="wrapper wrapper-without-sidebar">
+        <div id="main-container" className="main main-without-sidebar">
+          <main id="main-content" className="main-content max-w-full">
             {children}
           </main>
           <Footer />
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

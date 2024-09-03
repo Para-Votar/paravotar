@@ -1,14 +1,29 @@
 import { useRef, useState, useEffect, useMemo } from "react"
 
-import { useTranslation } from "react-i18next"
-
-// import Practica from "../assets/icons/practica.svg?url"
 import Logo from "../assets/images/logo.svg?url"
 import Close from "../assets/icons/close.svg?url"
 import Menu from "../assets/icons/menu.svg?url"
-import { Section, SubSection } from "./section"
+import { SubSection } from "./section"
 import LanguageMenu from "./language-menu"
-import { getSections } from "./sidebar"
+import Link from "./link"
+
+const getSections = (pathname = "") => [
+  {
+    name: "Tipos de votos",
+    route: "/haz-que-tu-voto-cuente#como-votar",
+    isActive: pathname.includes("/haz-que-tu-voto-cuente#como-votar"),
+  },
+  {
+    name: "Practica tu voto",
+    route: "/practica",
+    isActive: pathname.includes("/practica"),
+  },
+  {
+    name: "Colaboradores",
+    route: "/colaboraciones",
+    isActive: pathname.includes("/colaboraciones"),
+  },
+]
 
 type SidebarProps = {
   pathname: string
@@ -21,8 +36,7 @@ interface HTMLDivElementWithInert extends HTMLDivElement {
 export default function Navbar({ pathname }: SidebarProps) {
   const [isOpen, setIsOpen] = useState(false)
   const menuRef = useRef<HTMLDivElementWithInert>(null)
-  const { t } = useTranslation()
-  const sections = useMemo(() => getSections(pathname, t), [pathname, t])
+  const sections = useMemo(() => getSections(pathname), [pathname])
 
   useEffect(() => {
     if (menuRef && menuRef.current) {
@@ -32,12 +46,26 @@ export default function Navbar({ pathname }: SidebarProps) {
 
   return (
     <>
-      <nav className="flex items-center justify-between bg-navbar sticky h-16 px-2 top-0 z-50 shadow-md lg:hidden">
-        <button onClick={() => setIsOpen(!isOpen)}>
+      <nav className="flex items-center justify-between bg-navbar sticky h-16 px-4 top-0 z-50 shadow-md">
+        <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
           <img className="h-6 w-6" src={Menu} alt="Mobile Menu" />
         </button>
-        <img className="h-12 -mt-1" src={Logo} alt="Para Votar" />
-        <div className="h-6 w-6"></div>
+        <Link to="/">
+          <img className="h-12 -mt-1" src={Logo} alt="Para Votar" />
+        </Link>
+        <ul className="hidden flex gap-2 lg:flex">
+          {sections.map((section) => {
+            return (
+              <SubSection
+                key={section.name}
+                name={section.name}
+                route={section.route}
+                isActive={section.isActive}
+              />
+            )
+          })}
+        </ul>
+        <div className="lg:hidden" />
       </nav>
       <div
         className={`fixed bg-navbar h-screen w-screen z-50 pt-12 transform ease-linear duration-300 ${
@@ -58,29 +86,18 @@ export default function Navbar({ pathname }: SidebarProps) {
           </div>
         </div>
         <div className="mt-10">
-          {sections.map((section, index) => {
-            return (
-              <Section
-                key={`${section.name}-${index}`}
-                name={section.name}
-                icon={section.icon}
-                isActive={section.isActive}
-                strikeout={section.strikeout}
-              >
-                {section.subsections.map((subsection, index) => {
-                  return (
-                    <SubSection
-                      key={`${section.subsections}-${index}`}
-                      name={subsection.name}
-                      route={subsection.route}
-                      onClick={() => setIsOpen(false)}
-                      isActive={subsection.isActive}
-                    />
-                  )
-                })}
-              </Section>
-            )
-          })}
+          <ul>
+            {sections.map((section) => {
+              return (
+                <SubSection
+                  key={section.name}
+                  name={section.name}
+                  route={section.route}
+                  isActive={section.isActive}
+                />
+              )
+            })}
+          </ul>
         </div>
       </div>
     </>

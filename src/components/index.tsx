@@ -5,7 +5,6 @@ import Container from "./container"
 import Highlight from "./highlight"
 import Typography from "./typography"
 import Button from "./button"
-import Sidebar from "./sidebar"
 import Navbar from "./navbar"
 import Card from "./card"
 import Tab from "./tab"
@@ -20,7 +19,6 @@ export {
   Link,
   Spinner,
   Typography,
-  Sidebar,
   Navbar,
   Card,
   Tab,
