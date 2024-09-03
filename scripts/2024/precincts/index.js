@@ -12,7 +12,7 @@ const records = parse(csvData, {
   columns: true,
 })
 
-const precints = sortBy(
+const precincts = sortBy(
   sortBy(
     records.map((record) => {
       return {
@@ -24,4 +24,4 @@ const precints = sortBy(
   )
 )
 
-saveToDisk("precints", precints)
+saveToDisk("precincts", precincts)
