@@ -40,7 +40,14 @@ function generateCandidates(
         ocrResult.ocrResult,
         receivesImplicitVote,
         accumulationNumber,
-        url ? `${url}${ocrResult.logoImg}` : undefined
+        // Normalize the logo url to comply with AWSs normalization.
+        url
+          ? `${url}${(ocrResult.logoImg ?? "")
+              .normalize("NFD")
+              .split("")
+              .map((char) => encodeURIComponent(char))
+              .join("")}`
+          : undefined
       )
     }
 
