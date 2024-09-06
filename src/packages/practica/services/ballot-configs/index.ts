@@ -211,41 +211,23 @@ export class LegislativeBallotConfig {
   constructor(ballot: OcrResult[][]) {
     const url = `${CDN_URL}/papeletas/2024/candidates/`
 
-    // HACK: Add one item to every ocr result to we can generate the correct amount of columns
-    const fixedBallots: OcrResult[][] = ballot.map(
-      (result: OcrResult[], index: number) => {
-        if (
-          index + 1 === 2 ||
-          index + 1 === 4 ||
-          index + 1 === 7 ||
-          index + 1 === 14
-        ) {
-          result.push({ ocrResult: ballot[index][0].ocrResult })
-        } else {
-          result.push({ ocrResult: "" })
-        }
-
-        return result
-      }
-    )
-
-    const parties: PartyRow = generateHeaders(fixedBallots[0], url)
-    const districtRepresentativeHeader: Header[] = fixedBallots[1].map(
+    const parties: PartyRow = generateHeaders(ballot[0], url)
+    const districtRepresentativeHeader: Header[] = ballot[1].map(
       (ocrResult: OcrResult) =>
         new Header(ocrResult.ocrResult, "district-representative-header")
     )
     const candidatesForDistrictRepresentative = generateCandidates(
-      fixedBallots[BallotPositions.legislative.districtRepresentative.start],
+      ballot[BallotPositions.legislative.districtRepresentative.start],
       true,
       1,
       url
     )
 
-    const districtSenatorHeader: Header[] = fixedBallots[3].map(
+    const districtSenatorHeader: Header[] = ballot[3].map(
       (ocrResult: OcrResult) =>
         new Header(ocrResult.ocrResult, "district-senator-header")
     )
-    const districtSenators = fixedBallots.slice(
+    const districtSenators = ballot.slice(
       BallotPositions.legislative.districtSenators.start,
       BallotPositions.legislative.districtSenators.end
     )
@@ -264,11 +246,11 @@ export class LegislativeBallotConfig {
       }
     )
 
-    const atLargeRepresentativeHeader: Header[] = fixedBallots[6].map(
+    const atLargeRepresentativeHeader: Header[] = ballot[6].map(
       (ocrResult: OcrResult) =>
         new Header(ocrResult.ocrResult, "at-large-representative-header")
     )
-    const atLargeRepresentatives = fixedBallots.slice(
+    const atLargeRepresentatives = ballot.slice(
       BallotPositions.legislative.atLargeRepresentative.start,
       BallotPositions.legislative.atLargeRepresentative.end
     )
@@ -287,11 +269,11 @@ export class LegislativeBallotConfig {
       }
     )
 
-    const atLargeSenatorHeader: Header[] = fixedBallots[13].map(
+    const atLargeSenatorHeader: Header[] = ballot[13].map(
       (ocrResult: OcrResult) =>
         new Header(ocrResult.ocrResult, "at-large-senator-header")
     )
-    const atLargeSenators = fixedBallots.slice(
+    const atLargeSenators = ballot.slice(
       BallotPositions.legislative.atLargeSenator.start
     )
     const candidatesForAtLargeSenators = atLargeSenators.map(

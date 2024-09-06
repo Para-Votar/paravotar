@@ -1,4 +1,4 @@
-export const PoliticalParties = ["PNP", "PPD", "PIP", "MVC", "PD", "INDT"]
+export const PoliticalParties = ["PNP", "PPD", "MVC", "PIP", "PD", "INDT"]
 
 export const PartiesHeaderMap = {
   PNP: {
@@ -9,13 +9,13 @@ export const PartiesHeaderMap = {
     ocrResult: "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
     logoImg: "images/partido-logo-2.jpg",
   },
-  PIP: {
-    ocrResult: "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
-    logoImg: "images/partido-logo-3.jpg",
-  },
   MVC: {
     ocrResult: "MOVIMIENTO VICTORIA\r\nCIUDADANA\r\n",
     logoImg: "images/partido-logo-4.jpg",
+  },
+  PIP: {
+    ocrResult: "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+    logoImg: "images/partido-logo-3.jpg",
   },
   PD: {
     ocrResult: "PROYECTO DIGNIDAD\r\n",

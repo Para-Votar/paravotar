@@ -74,5 +74,5 @@ cypress/screenshots
 cypress/videos
 
 
-scripts/2024/data/all-candidates.csv
+scripts/2024/data/*
 scripts/2024/results/*

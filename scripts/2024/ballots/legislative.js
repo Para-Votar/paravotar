@@ -24,6 +24,17 @@ const records = parse(csvData, {
   columns: true,
 })
 
+const sortingFilePath = path.resolve(
+  "scripts/2024/data/legislative-ballot-order.csv"
+)
+const sortingData = fs.readFileSync(sortingFilePath, "utf-8")
+
+const candiadtesSortingRecords = parse(sortingData, {
+  columns: true,
+})
+
+const candidateSortingByPrecinct = groupBy(candiadtesSortingRecords, "Precinct")
+
 const precincts = groupBy(records, "PRECINTO")
 
 function getAtLargeRepresentatives(
@@ -69,6 +80,34 @@ function getAtLargeSenators(atLargeSenatorsByParty, representedParties) {
   return senatorRows
 }
 
+function sortPartyCandidates(candidatesByParty, sortingByPrecinct) {
+  const result = {}
+
+  Object.keys(candidatesByParty).forEach((party) => {
+    const candidates = candidatesByParty[party]
+    const sortedCandidates = new Array(candidates.length - 1)
+
+    candidates.forEach((candidate) => {
+      const fullName = `${candidate["first_name"]} ${candidate["last_name"]}`
+      const sorting = sortingByPrecinct.find(
+        (sorting) => sorting["Full Name"] === fullName
+      )
+
+      if (!sorting) {
+        console.log("Missing sorting for", fullName)
+        return
+      }
+
+      const index = Number(sorting["Order"]) - 1
+      sortedCandidates[index] = candidate
+    })
+
+    result[party] = sortedCandidates
+  })
+
+  return result
+}
+
 export default function generateLegislativeBallots(representatives, senators) {
   const atLargeRepresentatives = representatives["ACUMULACION"]
   const atLargeRepresentativesByParty = groupBy(
@@ -82,6 +121,8 @@ export default function generateLegislativeBallots(representatives, senators) {
   const ballots = Object.keys(precincts).map((precinctKey) => {
     const precinct = precincts[precinctKey][0]
     const municipality = precinct["MUNICIPIO"]
+    const candidateSortingOnPrecinct =
+      candidateSortingByPrecinct[precinct["PRECINTO"]]
 
     const districtSenators = senators[precinct["DIST. SEN"]]
     const districtSenatorsByParty = groupBy(districtSenators, "2024_party")
@@ -100,11 +141,14 @@ export default function generateLegislativeBallots(representatives, senators) {
     )
 
     const atLargeRepresentativesRows = getAtLargeRepresentatives(
-      atLargeRepresentativesByParty,
+      sortPartyCandidates(
+        atLargeRepresentativesByParty,
+        candidateSortingOnPrecinct
+      ),
       representedParties
     )
     const atLargeSenatorsRows = getAtLargeSenators(
-      atLargeSenatorsByParty,
+      sortPartyCandidates(atLargeSenatorsByParty, candidateSortingOnPrecinct),
       representedParties
     )
 
@@ -115,7 +159,10 @@ export default function generateLegislativeBallots(representatives, senators) {
 
     for (let i = 0; i < amountOfDistrictSenators; i++) {
       const row = assignCandidatesToPoliticalParties(
-        districtSenatorsByParty,
+        sortPartyCandidates(
+          districtSenatorsByParty,
+          candidateSortingOnPrecinct
+        ),
         representedParties,
         i
       )
