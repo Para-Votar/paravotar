@@ -91,7 +91,7 @@ export class StateBallotConfig {
   structure: StateBallotStructure
   cols: number
 
-  constructor(ballot: OcrResult[][], path: string) {
+  constructor(ballot: OcrResult[][]) {
     const url = `${CDN_URL}/papeletas/2024/candidates/`
 
     const parties: PartyRow = generateHeaders(ballot[0], url)
@@ -149,7 +149,7 @@ export class MunicipalBallotConfig {
   cols: number
   amountOfMunicipalLegislators: number
 
-  constructor(ballot: OcrResult[][], path: string) {
+  constructor(ballot: OcrResult[][]) {
     const url = `${CDN_URL}/papeletas/2024/candidates/`
 
     const parties: PartyRow = generateHeaders(ballot[0], url)

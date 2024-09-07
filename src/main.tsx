@@ -14,6 +14,8 @@ import HazQueTuVotoCuente from "./pages/haz-que-tu-voto-cuente"
 import NotFoundPage from "./pages/404"
 import Colaboraciones from "./pages/colaboraciones"
 import { StrictMode } from "react"
+import Papeletas from "./pages/papeletas"
+import Papeleta from "./pages/papeleta"
 
 i18n.use(initReactI18next).init({
   fallbackLng: "es",
@@ -66,6 +68,14 @@ const router = createBrowserRouter([
   {
     path: "/colaboraciones",
     element: <Colaboraciones />,
+  },
+  {
+    path: "/papeletas",
+    element: <Papeletas />,
+  },
+  {
+    path: "/papeletas/:id",
+    element: <Papeleta />,
   },
 ])
 

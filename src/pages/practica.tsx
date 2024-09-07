@@ -4,14 +4,14 @@ import "fetch-ponyfill"
 import { Layout, Container } from "../components/index"
 import { Practice } from "../packages/practica/components/index"
 import { BallotType } from "../ballot-validator/types"
-import makeServer from "../mirage"
+// import makeServer from "../mirage"
 import { useLocation } from "react-router-dom"
 import SEO from "../components/seo"
 import useScrollIntoView from "../hooks/useScrollIntoView"
 
-if (import.meta.env.DEV) {
-  makeServer({ environment: "development" })
-}
+// if (import.meta.env.DEV) {
+//   makeServer({ environment: "development" })
+// }
 
 const Practica = () => {
   const location = useLocation()

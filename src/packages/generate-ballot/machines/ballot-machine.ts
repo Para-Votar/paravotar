@@ -63,15 +63,13 @@ export const BallotMachine = createMachine<
           target: "success",
           actions: assign({
             ballot: (context, event) => {
-              const path = `${context.path.replace("/", "")}/`
-
               if (context.type === "estatal") {
-                return new StateBallotConfig(event.data, path).structure
+                return new StateBallotConfig(event.data).structure
               } else if (context.type === "municipal") {
-                return new MunicipalBallotConfig(event.data, path).structure
+                return new MunicipalBallotConfig(event.data).structure
               }
 
-              return new LegislativeBallotConfig(event.data, path).structure
+              return new LegislativeBallotConfig(event.data).structure
             },
           }),
         },
