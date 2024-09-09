@@ -36,8 +36,6 @@ type CandidateProps = {
 function CandidateCard(props: CandidateProps) {
   const link = getProfileLink(props.name)
 
-  console.log({ link })
-
   return (
     <div className="flex items-center px-4 py-2 shadow-md bg-white rounded">
       <>

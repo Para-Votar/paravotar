@@ -13,6 +13,15 @@ const ACCENT_MAP = {
   ñ: "n",
 }
 
+function getCandidateImage(picture) {
+  if (!picture) {
+    return ""
+  }
+
+  const picturePath = picture.split("/")
+  return picturePath[picturePath.length - 1]
+}
+
 export function convertToOcrResult(record, index) {
   if (!record) {
     return {
@@ -20,12 +29,14 @@ export function convertToOcrResult(record, index) {
     }
   }
 
-  const picturePath = record["picture"].split("/")
-  const candidateImg = picturePath[picturePath.length - 1]
+  const name =
+    record["2024_display_name"] !== ""
+      ? record["2024_display_name"]
+      : `${record["first_name"]} ${record["last_name"]}`
 
   return {
-    ocrResult: `${index}. ${record["first_name"]} ${record["last_name"]}`,
-    logoImg: candidateImg,
+    ocrResult: `${index}. ${name}`,
+    logoImg: getCandidateImage(record["picture"]),
   }
 }
 

@@ -29,6 +29,7 @@ const candidatesForDistrictSenators = groupBy(
   candidatesByPosition["senador"],
   "2024_senate_district"
 )
+
 generateLegislativeBallots(
   candidatesForDistrictRepresentatives,
   candidatesForDistrictSenators

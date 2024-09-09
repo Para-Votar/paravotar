@@ -85,7 +85,7 @@ function sortPartyCandidates(candidatesByParty, sortingByPrecinct) {
 
   Object.keys(candidatesByParty).forEach((party) => {
     const candidates = candidatesByParty[party]
-    const sortedCandidates = new Array(candidates.length - 1)
+    const sortedCandidates = new Array(candidates.length)
 
     candidates.forEach((candidate) => {
       const fullName = `${candidate["first_name"]} ${candidate["last_name"]}`
@@ -94,7 +94,7 @@ function sortPartyCandidates(candidatesByParty, sortingByPrecinct) {
       )
 
       if (!sorting) {
-        console.log("Missing sorting for", fullName)
+        console.error("Missing sorting for", fullName)
         return
       }
 
