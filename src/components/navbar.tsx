@@ -9,7 +9,7 @@ import Link from "./link"
 
 const getSections = (pathname = "") => [
   {
-    name: "Tipos de votos",
+    name: "¿Cómo votar?",
     route: "/haz-que-tu-voto-cuente#como-votar",
     isActive: pathname.includes("/haz-que-tu-voto-cuente#como-votar"),
   },

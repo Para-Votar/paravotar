@@ -3,30 +3,30 @@ import { PropsWithChildren, ReactNode } from "react"
 import { Typography } from "../../../components"
 import Avatar from "../../../assets/images/avatar.svg?url"
 
-const QUIEN_ME_REPRESENTA = "https://www.quienmerepresentapr.com/search"
+// const QUIEN_ME_REPRESENTA = "https://www.quienmerepresentapr.com/search"
 
-function getProfileLink(name: string) {
-  const params = new URLSearchParams()
-  const splittedName = name.split(" ")
-  const firstName =
-    splittedName.length === 2
-      ? `${splittedName[0]}`
-      : `${splittedName[0]} ${splittedName[1]}`
-  const lastName =
-    splittedName.length === 2
-      ? `${splittedName[1]}`
-      : `${splittedName[2]} ${splittedName[3]}`
+// function getProfileLink(name: string) {
+//   const params = new URLSearchParams()
+//   const splittedName = name.split(" ")
+//   const firstName =
+//     splittedName.length === 2
+//       ? `${splittedName[0]}`
+//       : `${splittedName[0]} ${splittedName[1]}`
+//   const lastName =
+//     splittedName.length === 2
+//       ? `${splittedName[1]}`
+//       : `${splittedName[2]} ${splittedName[3]}`
 
-  // https://www.quienmerepresentapr.com/search?type=todos&id=0&firstname=Jos%C3%A9%20Bernardo&lastname=Jos%C3%A9%20Bernardo&address=Puerto%20Rico
+//   // https://www.quienmerepresentapr.com/search?type=todos&id=0&firstname=Jos%C3%A9%20Bernardo&lastname=Jos%C3%A9%20Bernardo&address=Puerto%20Rico
 
-  params.set("type", "todos")
-  params.set("id", "0")
-  params.set("address", "Puerto Rico")
-  params.set("firstname", firstName)
-  params.set("lastname", lastName)
+//   params.set("type", "todos")
+//   params.set("id", "0")
+//   params.set("address", "Puerto Rico")
+//   params.set("firstname", firstName)
+//   params.set("lastname", lastName)
 
-  return `${QUIEN_ME_REPRESENTA}?${params.toString()}`
-}
+//   return `${QUIEN_ME_REPRESENTA}?${params.toString()}`
+// }
 
 type CandidateProps = {
   name: string
@@ -34,8 +34,6 @@ type CandidateProps = {
 }
 
 function CandidateCard(props: CandidateProps) {
-  const link = getProfileLink(props.name)
-
   return (
     <div className="flex items-center px-4 py-2 shadow-md bg-white rounded">
       <>
@@ -47,9 +45,6 @@ function CandidateCard(props: CandidateProps) {
         >
           {props.name}
         </Typography>
-        <a href={link} target="_blank" rel="noreferrer">
-          Más información
-        </a>
       </>
     </div>
   )
