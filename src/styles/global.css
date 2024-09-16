@@ -28,7 +28,7 @@ button:focus {
 }
 
 .bg-gradient {
-  background: rgba(253,250,247,1);
+  background: rgba(253, 250, 247, 1);
 }
 
 .bg-gray-100 {
@@ -61,7 +61,7 @@ button:focus {
 }
 
 .rules-description {
-  line-height: 0.90rem;
+  line-height: 0.9rem;
 }
 
 .practice-container {
@@ -78,7 +78,7 @@ button:focus {
 
 .practice-step::before {
   @apply text-4xl font-bold text-white-hover;
-  content: counter(counter)".";
+  content: counter(counter) ".";
   display: block;
   position: absolute;
   left: -32px;
@@ -99,7 +99,6 @@ button:focus {
     transform: rotate(360deg);
   }
 }
-
 
 @-webkit-keyframes tada {
   from {
@@ -231,7 +230,8 @@ button:focus {
   }
 }
 
-@screen xl {}
+@screen xl {
+}
 
 .sidebar__translate {
   @apply absolute;

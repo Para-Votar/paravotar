@@ -1,4 +1,4 @@
-import { Button, Typography } from "../../../components"
+import { Button, Link, Typography } from "../../../components"
 
 interface NoVoterIdFoundProps {
   send: any
@@ -12,23 +12,19 @@ export const NoVoterIdFound = ({ send }: NoVoterIdFoundProps) => {
       </Typography>
 
       <Typography tag="p" variant="p" className="mt-4">
-        Puede intentar de nuevo o si conoce su numero de precinto puede
-        ingresarlo
+        Puede intentarlo nuevamente o utilizar{" "}
+        <Link to="https://www.practicatuvoto.com/" target="_blank">
+          Practica tu voto
+        </Link>
+        .
       </Typography>
-      <div className="grid grid-cols-1 gap-4 mt-6 lg:grid-cols-2">
-        <div className="w-full my-1">
-          <Button className="block w-full" onClick={() => send("RETRY")}>
-            Número de tarjeta electoral
-          </Button>
-        </div>
-        <div className="w-full my-1">
-          <Button
-            className="block w-full"
-            onClick={() => send("ENTER_VOTING_CENTER")}
-          >
-            Número de precinto
-          </Button>
-        </div>
+      <div className="w-full my-1 mt-6">
+        <Button
+          className="block w-full"
+          onClick={() => send("ENTER_VOTING_CENTER")}
+        >
+          Número de precinto
+        </Button>
       </div>
     </div>
   )

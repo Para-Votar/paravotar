@@ -22,7 +22,7 @@ const Layout = ({ children, location }: Props) => {
       <Navbar pathname={`${pathname}${hash}`} />
       <div className="wrapper wrapper-without-sidebar">
         <div id="main-container" className="main main-without-sidebar">
-          <main id="main-content" className="main-content max-w-full">
+          <main id="main-content" className="main-content max-w-screen-2xl">
             {children}
           </main>
           <Footer />
