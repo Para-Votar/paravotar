@@ -1,32 +1,8 @@
 import { PropsWithChildren, ReactNode } from "react"
 
-import { Typography } from "../../../components"
+import { Link, Typography } from "../../../components"
 import Avatar from "../../../assets/images/avatar.svg?url"
-
-// const QUIEN_ME_REPRESENTA = "https://www.quienmerepresentapr.com/search"
-
-// function getProfileLink(name: string) {
-//   const params = new URLSearchParams()
-//   const splittedName = name.split(" ")
-//   const firstName =
-//     splittedName.length === 2
-//       ? `${splittedName[0]}`
-//       : `${splittedName[0]} ${splittedName[1]}`
-//   const lastName =
-//     splittedName.length === 2
-//       ? `${splittedName[1]}`
-//       : `${splittedName[2]} ${splittedName[3]}`
-
-//   // https://www.quienmerepresentapr.com/search?type=todos&id=0&firstname=Jos%C3%A9%20Bernardo&lastname=Jos%C3%A9%20Bernardo&address=Puerto%20Rico
-
-//   params.set("type", "todos")
-//   params.set("id", "0")
-//   params.set("address", "Puerto Rico")
-//   params.set("firstname", firstName)
-//   params.set("lastname", lastName)
-
-//   return `${QUIEN_ME_REPRESENTA}?${params.toString()}`
-// }
+import getQmrLink from "../../qmr/get-link"
 
 type CandidateProps = {
   name: string
@@ -34,17 +10,17 @@ type CandidateProps = {
 }
 
 function CandidateCard(props: CandidateProps) {
+  const qmrLink = getQmrLink(props.name)
   return (
     <div className="flex items-center px-4 py-2 shadow-md bg-white rounded">
       <>
         <img className="h-12 w-12" src={props.img || Avatar} alt="" />
-        <Typography
-          variant="p"
-          tag="p"
-          className="font-semibold ml-2 text-left"
-        >
-          {props.name}
-        </Typography>
+        <div className="text-left ml-2">
+          <Typography variant="p" tag="p" className="font-semibold">
+            {props.name}
+          </Typography>
+          {qmrLink && <Link to={qmrLink}>Ver más información</Link>}
+        </div>
       </>
     </div>
   )

@@ -202,7 +202,7 @@ export const PracticeMachine = createMachine<PracticeContext, PracticeEvent>(
             target: "practicing",
             actions: "saveActiveBallotType",
           },
-          BACK: "mainScreen",
+          BACK: "enterPrecint",
         },
       },
       practicing: {
