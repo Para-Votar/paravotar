@@ -239,4 +239,10 @@ button:focus {
   margin-left: 28%;
 }
 
+@screen sm {
+  .practice-container {
+    width: 96%;
+  }
+}
+
 /* purgecss end ignore */
