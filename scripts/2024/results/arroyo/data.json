@@ -1,0 +1,258 @@
+[
+  [
+    {
+      "ocrResult": "PARTIDO NUEVO PROGRESISTA\r\n",
+      "logoImg": "images/partido-logo-1.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
+      "logoImg": "images/partido-logo-2.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+      "logoImg": "images/partido-logo-3.jpg"
+    },
+    {
+      "ocrResult": "PROYECTO DIGNIDAD\r\n",
+      "logoImg": "images/partido-logo-5.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Evelyn Díaz Suárez",
+      "logoImg": "Evelyn_Diaz_Suarez_3094.jpg"
+    },
+    {
+      "ocrResult": "1. Eric Enrique Bachier Román",
+      "logoImg": "Eric_Enrique_Bachier_Roman_1300.jpg"
+    },
+    {
+      "ocrResult": "1. Edra Díaz",
+      "logoImg": "Edra_Ivelisse_Diaz_Santiago_1242.jpg"
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Sergio Ruiz Sánchez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. José Alberto Bilbraut Montañez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Roberto Luis Sastre Velázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Félix Enrique De Jesús Velázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "2. Abigail Caraballo Berríos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Ángel Luis Ramos González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Juan M. Santiago Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "3. Alejandro Figueroa Figueroa",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Roselyn Mariel Morales Hernández",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Tomás O. Rodríguez Acosta",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "4. Sonia (Ivy) Rivera Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Manuel Ortiz Cruz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Jacob Soto López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "5. Cyd Mary Alicea Cora",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Víctor Omar De Jesús Ortiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Noemí Cotto Morales",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "6. Jennifer Martínez Alemany",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Marianne Guadalupe Bones",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Francis Carrasquillo Sáez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "7. Luis A. Soto Cruz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Félix José Ramos Ocasio",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Héctor Manuel Torres Morales",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "8. Nelson Acosta Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Brenda Enid Bilbraut Martínez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Carmen María De Jesús Figueroa",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "9. Héctor Iván Vega Santiago (Machito)",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Amos Rafael Bachier Ayala",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Miguel Adolfo Sánchez Clavell",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ]
+]

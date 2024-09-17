@@ -1,0 +1,349 @@
+[
+  [
+    {
+      "ocrResult": "PARTIDO NUEVO PROGRESISTA\r\n",
+      "logoImg": "images/partido-logo-1.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
+      "logoImg": "images/partido-logo-2.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+      "logoImg": "images/partido-logo-3.jpg"
+    },
+    {
+      "ocrResult": "PROYECTO DIGNIDAD\r\n",
+      "logoImg": "images/partido-logo-5.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Roberto López",
+      "logoImg": "Roberto_Jesus_Lopez_Roman_5936.jpg"
+    },
+    {
+      "ocrResult": "1. William Miranda Torres",
+      "logoImg": "William_Miranda_Torres_2995.jpg"
+    },
+    {
+      "ocrResult": "1. Jason Luis Domenech Miller",
+      "logoImg": "Jason_Luis_Domenech_Miller_8433.jpg"
+    },
+    {
+      "ocrResult": "1. Dora E. Colón Almodóvar",
+      "logoImg": "dora-e.-colon-almodovar.jpeg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Sonia Delgado Cotto",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Myrna L. Carrión Parrilla",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Carmen M. Ortiz Roque",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Nomar Oscar Cruz Esteves",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "2. Wilson Omar Molina Vázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Luis Raúl Pérez Rosario",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Cindaly Cancel Negrón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Nicole Danielle Bloom Colón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "3. Brenda Liz Fontanez Vicente",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Félix Rivera Ortiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Yezibelle Rivera Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Jaime Ruiz Aguirre",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "4. Carmen Judith Figueroa Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Edgar Gómez Cortés",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Jane Miller Rosenberg",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Pablo Rodríguez Cotto",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "5. Irving Reyes Vergara",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Miguel Ángel Cestero Cavo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Carmen M. Muñoz Carrasquillo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Nydia Barreiro Sotomayor",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "6. Glamarie Rodríguez Aponte",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Adelaida Vidal Gambaro",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. María Teresa Pérez Illade",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Vimarie Massa Olmeda",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "7. Christian Omar Díaz Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Sylvia Rodríguez Aponte",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Reyner Cruz Quiles",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Joseph Bloom Oquendo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "8. Zeiledh Rivera Ferra",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Félix Guzmán Alejandro",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Ismael Coriano Colón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Wilfredo Vélez Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "9. Kamila Victoria González Echeverría",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Ismael González Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Juan Vega Martínez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Mario Félix De Jesús",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "10. Arnaldo Yamil Báez Morales",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Ramón Colón Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Michael Arroyo Boada",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Marisabel Villamil Porrata",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "11. Juan C. Pereira Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. David A. Trinidad Ortiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Rafael Archilla Isern",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Sharlone Marie Olán",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "12. Arielida Del Carmen González Paulino",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "12. Ruth N. Figueroa Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "12. Joaquín Lugo Nazario",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "13. José Luis Román",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "13. Karla Ramos Ramos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "13. Ángel Rafael López Faura",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ]
+]

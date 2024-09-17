@@ -1,0 +1,414 @@
+[
+  [
+    {
+      "ocrResult": "PARTIDO NUEVO PROGRESISTA\r\n",
+      "logoImg": "images/partido-logo-1.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
+      "logoImg": "images/partido-logo-2.jpg"
+    },
+    {
+      "ocrResult": "MOVIMIENTO VICTORIA\r\nCIUDADANA\r\n",
+      "logoImg": "images/partido-logo-4.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+      "logoImg": "images/partido-logo-3.jpg"
+    },
+    {
+      "ocrResult": "PROYECTO DIGNIDAD\r\n",
+      "logoImg": "images/partido-logo-5.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Cobo Estrella Humberto",
+      "logoImg": "Humberto_Felix_Cobo_Estrella_1286.jpg"
+    },
+    {
+      "ocrResult": "1. José Carlos Aponte Dalmau",
+      "logoImg": "Jose_C_Aponte_Dalmau_6215.jpg"
+    },
+    {
+      "ocrResult": "1. David Rodríguez",
+      "logoImg": "david-antonio-rodriguez-diaz.jpeg"
+    },
+    {
+      "ocrResult": "1. Emanuel Dufrasne González",
+      "logoImg": "Joseph_E_Dufrasne_Gonzalez_8240.jpg"
+    },
+    {
+      "ocrResult": "1. Yeinny Rivera Ureña",
+      "logoImg": "Yeimy_Sujel_Rivera_Ureña_3720.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. José Tanco",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Mirta Andrades Ruiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Tiffany Rohena",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Cruz Cecilia López Falú",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Jonathan Quiñones López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "2. Milagros (Milly) López Campos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Maribel López Vázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Jessary Teresa Berlanga Escobar",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Alexis García Soto",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Pedro Colón Carrasquillo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "3. Francis (Babi) Negrón Álvarez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Ivette Pagán Montalvo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Jorge Valle Sánchez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Carmen Luisa Rivera González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Cynthia Ferrer Ramos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "4. Phillip Love Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Danilo Carmona Castro",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Gina Rosa Cillo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Johannes's Kal Díaz Merced",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Mario Guillermo Torres Arguelles",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "5. Braulio (Braki) Hernández Jiménez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Luis Manuel Mangual Ocasio",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Misael Correa Robles",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Ana Luisa Merced Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Stefanie Soto Delgado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "6. José E. Dalmau Martínez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. María E. Rodríguez Rohena",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Esdras Juarbe",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Eutimio Santiago Díaz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Carlos R. Torres Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "7. José Javier Rivera Navarro",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. José E. Rivera Verdejo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Raúl Manuel González Resto",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Reyson Alexis Morales Soto",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Ileana Caraballo Cruz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "8. Frank Rodríguez Maldonado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Ángel Viera Encarnación",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Ramón Pérez Gatell",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Valeria Alexandra Navarro Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Miguel Carbonell Burgos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "9. Christian Arroyo Ovalles",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Aidyn Denise Alers Talavera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Evan Ortiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Fé Milagros Figueroa Santiago",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. José Orlando Castro Serrano",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "10. Héctor (Chete) Rivera Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Lissette Rosario Guzmán",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Javier Reyes",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Alondra Gabriela S. Belaval Seda",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. María S. Figueroa Gómez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "11. Caralabre Biriell",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Leocadia De La Cruz García",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Eusebio A. Padró Rohena",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Tirsa Ivonne Rodríguez Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "12. José Manuel González Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "12. Johanan Javier García Reyes",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "12. Sheila Betancourt López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "12. José Hiraldo Díaz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "13. Luis (Pochy) González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "13. Juan Antonio Lugo Ramos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "13. Joel Betancourt Lanzó",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "13. John Alexander Navarro Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ]
+]

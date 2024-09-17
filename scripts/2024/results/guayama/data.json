@@ -1,0 +1,353 @@
+[
+  [
+    {
+      "ocrResult": "PARTIDO NUEVO PROGRESISTA\r\n",
+      "logoImg": "images/partido-logo-1.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
+      "logoImg": "images/partido-logo-2.jpg"
+    },
+    {
+      "ocrResult": "MOVIMIENTO VICTORIA\r\nCIUDADANA\r\n",
+      "logoImg": "images/partido-logo-4.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+      "logoImg": "images/partido-logo-3.jpg"
+    },
+    {
+      "ocrResult": "PROYECTO DIGNIDAD\r\n",
+      "logoImg": "images/partido-logo-5.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Glorimari Jaime",
+      "logoImg": "Glorimari_Jaime_Rodriguez_4829.jpg"
+    },
+    {
+      "ocrResult": "1. O'Brain Vázquez Molina",
+      "logoImg": "O`_Brain_Vazquez_Molina_4757.jpg"
+    },
+    {
+      "ocrResult": "1. Juan (Nesty) Cotto Bristol ",
+      "logoImg": "juan-alberto-cotto-bristol.jpeg"
+    },
+    {
+      "ocrResult": "1. Ranffy Rivera Lebrón",
+      "logoImg": "Ranffy_Rivera_Lebron_2912.jpg"
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Jeffrey Quiñones González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Jannice Socorro Pérez Figueroa",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Diane Morea Vázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Fariam Valdés Cotto",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Maribel Enid Caraballo Collazo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "2. Neftalí Ortiz Ortiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Víctor Carmelo Rodríguez Cintrón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Gazehound Soto Cora",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Yandir Omar Mora Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Milton Echandy Caraballo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "3. María Deida",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Carlos Acosta Meléndez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Wanda I. Bristol López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Roberto Luis Vázquez Figueroa",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Christine Lopez Gonzalez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "4. Francisco Paco Cruz Alicea",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Carlos Manuel Enchautegui Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Erica María Rivera Hernández",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Sol Amarilis De Jesús Alicea",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Alexis Suárez Ortiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "5. Yachira García Velázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Sergio Gómez Velázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Daisy Cruz Bastián",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Anthony Rivera Morales",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "6. Domingo Escobar Clausell",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Francisca M. Pomales Suárez (Paquita)",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "6. Jelimarie Díaz Moret",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "7. Mildred Guzmán Jorge",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Everida Tirado Santiago",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "7. Juan Valentín Morales",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "8. (Cano Carite) González De Jesús Wilbert Alexi",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Enid Milagros González Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "8. Sol Marielis Malvet De Jesús",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "9. José Juan Pomales Montes",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Ruth Miriam García Meléndez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "9. Kenneth Rolando De León Colón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "10. Glorydeliz García Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Nixalis Peña Santiago",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "10. Christian E. García Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "11. Johnny Vázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. José Cordero Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "11. Luis Enrique Aponte Vázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ]
+]

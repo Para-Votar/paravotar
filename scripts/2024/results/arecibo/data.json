@@ -1,0 +1,410 @@
+[
+  [
+    {
+      "ocrResult": "PARTIDO NUEVO PROGRESISTA\r\n",
+      "logoImg": "images/partido-logo-1.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
+      "logoImg": "images/partido-logo-2.jpg"
+    },
+    {
+      "ocrResult": "MOVIMIENTO VICTORIA\r\nCIUDADANA\r\n",
+      "logoImg": "images/partido-logo-4.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+      "logoImg": "images/partido-logo-3.jpg"
+    },
+    {
+      "ocrResult": "PROYECTO DIGNIDAD\r\n",
+      "logoImg": "images/partido-logo-5.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. José (Memo) González Mercado",
+      "logoImg": "Jose_Orlando_Gonzalez_Mercado_0395.jpg"
+    },
+    {
+      "ocrResult": "1. Carlos Rubén (Tito) Ramírez Irizarry",
+      "logoImg": "Carlos_Ruben_Ramirez_Irizarry_0009.jpg"
+    },
+    {
+      "ocrResult": "1. Lauce Colón Pérez",
+      "logoImg": "Lauce_Enrique_Colon_Perez_2089.jpg"
+    },
+    {
+      "ocrResult": "1. Javier Biaggi Caballero",
+      "logoImg": "Javier_Biaggi_Caballero_7131.jpg"
+    },
+    {
+      "ocrResult": "1. Luis E. (Ricky) Del Río Morales",
+      "logoImg": "Luis_Enrique_Del_Rio_Morales_2489.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Roberto Rivera Miranda",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Joaquín Faría Serrano",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Eilat Soé García Correa",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Carolina Del Mar Vélez Tosado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Luis Gerena Ramos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "2. José (Joe) Ríos González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Pablo Rodríguez Marrero",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Milagros C. Rodríguez Núñez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Juan Ignacio Mercado Puig",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Abimael Santiago Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "3. Benjamín (Benji) Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Gabir Ginott Gómez Rada",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Reynaldo (Reyi) Torres Quiles",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Heriberto Pérez Serrano",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Juan José Miguel Olóriz (Papo)",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "4. Kareline Marie Vázquez Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. María Vilella Montalvo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Euclides Brignoni Echevarría",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Héctor Díaz Díaz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Félix García Muñiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "5. José Feliciano Santiago",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Olga Vélez Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Ian Enrique Colón Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Ernesto Delgado Betancourt",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Carmelo Batista Santiago",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "6. Marisol Feliciano Feliciano",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Leonardo Rafael Guadarrama Reyes",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Julio Armando González López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Carmen Julia Valencia Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Santos Acevedo Acevedo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "7. (Teo) Teodoro Rolón Balseiro",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Diana S. Soto Acosta",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Josué Colón Oyola",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Moisés R. Reyes Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Saúl Millet Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "8. Luis Cruz Nieves",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Félix A. Rosario Serrano",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Yarmarie Serrano Reyes",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Luis F. Mercado Méndez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Mary I. Medina Medina",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "9. Rita James Bernat",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Carmen Evelyn Quintana Vargas",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Henry González Natal",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Francisco A. Rivera Meléndez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Virginia Ríos González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "10. José Emilio González Velázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Heriberto Moya Maldonado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Carmen Molina Cruz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. José F. Segarra González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "11. (Juanma) Juan Martínez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Juan Carrión Urdaz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "11. Pedro R. Cruz Ginés",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "12. Luis M. De Jesús (Jueya)",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "12. Neil Osvaldo Torres Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "12. Juan Manuel Mercado Nieves",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "13. César Omar González Cordero",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "13. Letsie Ivette Ramírez Vilella",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "13. Apolinar Cintrón Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ]
+]

@@ -1,0 +1,251 @@
+[
+  [
+    {
+      "ocrResult": "PARTIDO NUEVO PROGRESISTA\r\n",
+      "logoImg": "images/partido-logo-1.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
+      "logoImg": "images/partido-logo-2.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+      "logoImg": "images/partido-logo-3.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Luis A. (Luiggi) García Rolón",
+      "logoImg": "Luis_Alberto_Garcia_Rolon_5795.jpg"
+    },
+    {
+      "ocrResult": "1. José A. Cruz Lugo",
+      "logoImg": "jose-a.-cruz-lugo.jpeg"
+    },
+    {
+      "ocrResult": "1. Andrés Miranda Rosado",
+      "logoImg": "Andres_Miranda_Rosado_5325.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. José (Joewy) Ocasio",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Eric Javián Cordero Vázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Ángel R. Negrón Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "2. Yoadis Rodríguez Berríos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Norma Matos Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Rosalina Vega Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "3. María A. Santiago Meléndez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Abinoel Rosado Feliciano",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Esteban Ocasio Ortiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "4. Yolanda Cartagena Ortiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Grisela Guzmán González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Gisela Soler Román",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "5. Kenny Rivera López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Yarsimar Torres Jiménez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Edgardo Hernández Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "6. Anthony (Falo) Martínez Matos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. José R. Rodríguez Sánchez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Wigberto Berríos Herlos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "7. María L. Rolón Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Adalberto Ortiz López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Ana Luz Ortiz Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "8. Christian Yomar Rivera Santiago",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Mirta Matos Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Anderís Rivera Santiago",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "9. Víctor Solís Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Nitza Rosado Centeno",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Alondra Sofía Díaz Ortiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "10. Frances M. Lugo Santiago",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Keithsarys Feliciano Cruz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Merzaida Ríos Guzmán",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "11. Lilliam Santiago Guevara",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Careliz Torres Sánchez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Rafael Rivera Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ]
+]

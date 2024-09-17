@@ -1,0 +1,355 @@
+[
+  [
+    {
+      "ocrResult": "PARTIDO NUEVO PROGRESISTA\r\n",
+      "logoImg": "images/partido-logo-1.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
+      "logoImg": "images/partido-logo-2.jpg"
+    },
+    {
+      "ocrResult": "MOVIMIENTO VICTORIA\r\nCIUDADANA\r\n",
+      "logoImg": "images/partido-logo-4.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+      "logoImg": "images/partido-logo-3.jpg"
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Karina Nieves Serrano",
+      "logoImg": "Karina_Nieves_Serrano_8193.jpg"
+    },
+    {
+      "ocrResult": "1. Fabián Carrión",
+      "logoImg": "Carlos_Frabian_Pagan_Carrion_6959.jpg"
+    },
+    {
+      "ocrResult": "1. José (Pepe) Córdova",
+      "logoImg": "jose-f.-cordova-iturregui.bin"
+    },
+    {
+      "ocrResult": "1. Omar (Akiles) Falcón Velázquez",
+      "logoImg": "Omar_Domingo_Falcon_Velazquez_6512.jpg"
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Rafael Medina López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Andrés S. Massa",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Marta Elsa Fernández Pabellón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Roberto Velázquez Nieves",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Antonio (Tony) Reyes Montañez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "2. Aurea E. (Aurita) Rivera Colón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Roberto Luis Zayas Maldonado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Carlos José Román Hernández",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Edna Matos Cruz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "3. Griselle Hernández Batalla",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Omar Alexis López Del Ríos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Harry Olivero Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Sianais Ocasio Coriano",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "4. José Manuel Sánchez Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Adelaida Vargas Cotto",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Wilfredo López Montañez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Reina Eugenia Velázquez Correa",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "5. Miguel Valdés Morales",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Diana Victoria López Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Yesenia Román Martínez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Miguel Ángel Zavala Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "6. Noelia Ortiz Medina",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Jessica Pérez Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Ángel Nieves Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Amanda M. Rosario Matos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "7. José J. Otaño Malavé",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Carmen Cintrón Nieves",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Iván Ramos Acosta",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Luis Ángel Malavé Ramos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "8. Edgardo Cotto Gómez (Chape)",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Linette López López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. María J. Latorre Álvarez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Melvin Negrón Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "9. José Antonio (Pochy) Rosario Díaz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Lefbia Enid Cotto Flores",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Luis Meléndez Vázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Juan Rafael Valdés Sierra",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "10. Miguel (Megui) Resto Mejías",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Joan Marie Pagán Garay",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Lida Orta Anés",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. María Milagros Molina Núñez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "11. Erika Marie Hernández Quintana",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Julio Jabneel Mojica Cotto",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Melissa Villanueva Matos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Juan Francisco Hernández Matos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ]
+]

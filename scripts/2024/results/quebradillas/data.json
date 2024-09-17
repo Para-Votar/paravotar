@@ -1,0 +1,358 @@
+[
+  [
+    {
+      "ocrResult": "PARTIDO NUEVO PROGRESISTA\r\n",
+      "logoImg": "images/partido-logo-1.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
+      "logoImg": "images/partido-logo-2.jpg"
+    },
+    {
+      "ocrResult": "MOVIMIENTO VICTORIA\r\nCIUDADANA\r\n",
+      "logoImg": "images/partido-logo-4.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+      "logoImg": "images/partido-logo-3.jpg"
+    },
+    {
+      "ocrResult": "PROYECTO DIGNIDAD\r\n",
+      "logoImg": "images/partido-logo-5.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Jerón Muñiz Lasalle",
+      "logoImg": "jose-jeron-muniz-lasalle.jpeg"
+    },
+    {
+      "ocrResult": "1. Heriberto Vélez Vélez",
+      "logoImg": "Heriberto_Velez_Velez_6318.jpg"
+    },
+    {
+      "ocrResult": "1. Ramses Ocasio Jiménez",
+      "logoImg": "Ramses_Ocasio_Jimenez_3015.jpg"
+    },
+    {
+      "ocrResult": "1. René Román Iglesias",
+      "logoImg": "Rene_Roman_Iglesias_3188.jpg"
+    },
+    {
+      "ocrResult": "1. Luis Rafael Quijano López",
+      "logoImg": "Luis_Rafael_Quijano_Lopez_7909.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Elias Nieves",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Sergio Nieves Valle",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Ramón José Amador Vélez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Carlos R. García Ramírez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Naila Luet González Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "2. Sandra Feliciano Nieves",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Luz Molinari García",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Melanie Ramos García",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. José Feliciano Acevedo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Loyda Inés Rivera Febres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "3. Noelia Medina Tosado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Héctor Luis Rojas Cuevas",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Anthony Morales Lorenzo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Haydie Joahn Laboy",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "4. Haydee Lasalle López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Migdalia Mercado Sánchez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Lenier Shamil Román González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Víctor E. Laboy Jiménez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "5. Javier Oscar Tomás Saavedra",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. María E. Mercado Tañón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Miguel D. Sarriera Román",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Héctor Vélez De Jesús",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "6. Luis Alfredo Butler Marrero",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Víctor Pérez Cabrera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Juan Anthony Guzmán Martínez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Jorge Luis Vélez Albino",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "7. Félix Muñiz Vega",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Alejandro Vera Cruz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Raúl Antonio Rosado Román",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Reinaldo Ávila Barreto",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "8. Ángel Román Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Tomás Butler Feliciano",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Javier García Mejías",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Ángel D. Castillo Castillo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "9. Roberto Javier Vázquez Soto",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. José A. Hernández Acevedo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Cecilio Pérez González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Rafael Ángel Méndez Estremera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "10. Waldy Arbelo Esteves",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Mirta Enid Nieves Feliciano",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Pablo Américo Boschetti Merced",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Haydée Jiménez Hernández",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "11. Bethzaida Avilés Vera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Juan (Chacho) Muñiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Eric (Pito) Carire",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Víctor M. Laboy Moctezuma",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ]
+]

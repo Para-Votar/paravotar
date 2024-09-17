@@ -1,0 +1,360 @@
+[
+  [
+    {
+      "ocrResult": "PARTIDO NUEVO PROGRESISTA\r\n",
+      "logoImg": "images/partido-logo-1.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
+      "logoImg": "images/partido-logo-2.jpg"
+    },
+    {
+      "ocrResult": "MOVIMIENTO VICTORIA\r\nCIUDADANA\r\n",
+      "logoImg": "images/partido-logo-4.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+      "logoImg": "images/partido-logo-3.jpg"
+    },
+    {
+      "ocrResult": "PROYECTO DIGNIDAD\r\n",
+      "logoImg": "images/partido-logo-5.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Jorge (Jorgito) Pérez",
+      "logoImg": "Jorge_A_Perez_Heredia_2360.jpg"
+    },
+    {
+      "ocrResult": "1. Rafael Ángel Juarbe Pagán",
+      "logoImg": "Rafael_Angel_Juarbe_Pagan_9667.jpg"
+    },
+    {
+      "ocrResult": "1. Maritza Feliciano Jordan",
+      "logoImg": "Maritza_Feliciano_Jordan_4137.jpg"
+    },
+    {
+      "ocrResult": "1. Ramón Cruz Martínez",
+      "logoImg": "Ramon_Cruz_Martinez_9339.jpg"
+    },
+    {
+      "ocrResult": "1. David Irizarry González",
+      "logoImg": "david-irizarry-gonzalez.jpeg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Rafael A. Arvelo Maldonado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Nancy Afanador Romero",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Diana De La Paz González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Wigberto Meléndez Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Daniel Vélez Martínez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "2. Jonathan Torres Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Manuel A. García Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Wilson Viruet Ríos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Laura Enid Moreno Orama",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Milton Afanador Acevedo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "3. Onell (Monti) Montalvo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Ángel Torres Román",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Pedro Cartagena Mercado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Rubén Marín Miranda",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Jorge L. Santos Maldonado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "4. Reynaldo Gutiérrez Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Rafael Torres Crespo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Néstor Luis Rodríguez Afanador",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Jenny Lannette Rivera González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Miguel A. Martell Vélez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "5. Coralys Mair Vega Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Yahaira María Maldonado Hernández",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Carmen L. Martínez Afanador",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Marcos Dariel Collazo Nieves",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "6. Janette Torres Cuevas",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Carlos Eduardo Ríos Acevedo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. José T. Torres García",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Sayil Soto Toledo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "7. Kayla Camila Touct Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Marilyn (Mita) De La Rosa Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Fernando Casalduc Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Ángel Luis Pérez Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "8. Liz Michelle Negrón Soria",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Wilson Ramón Román Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Radamés Marín Montalvo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Carmen Millet Méndez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "9. Edgardo L. Ralat Avilés",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Damari Viruet Pabón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Dennis De La Paz González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Lionel Alberto Collazo González",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "10. Valerie Pons Ríos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Sebastián Rodríguez Matos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Ángel Luis Díaz Hernández",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. José A. Castañer Bermúdez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "11. María E. Rivera Santiago",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Osvaldo Doel Pérez Salva",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Pedro J. Maldonado Negrón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Jorge J. Escudero Franceschini",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ]
+]

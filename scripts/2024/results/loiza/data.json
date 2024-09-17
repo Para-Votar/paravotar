@@ -1,0 +1,298 @@
+[
+  [
+    {
+      "ocrResult": "PARTIDO NUEVO PROGRESISTA\r\n",
+      "logoImg": "images/partido-logo-1.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
+      "logoImg": "images/partido-logo-2.jpg"
+    },
+    {
+      "ocrResult": "MOVIMIENTO VICTORIA\r\nCIUDADANA\r\n",
+      "logoImg": "images/partido-logo-4.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+      "logoImg": "images/partido-logo-3.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Jhondee Canales",
+      "logoImg": "Jhondee_Nell_Canales_Lora_4430.jpg"
+    },
+    {
+      "ocrResult": "1. Julia M. Nazario Fuentes",
+      "logoImg": "Julia_M_Nazario_Fuentes_0364.jpg"
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "1. Aquila Lebrón Ríos",
+      "logoImg": "Aquila_Lebron_Rios_9105.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Víctor Siárez Osorio",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Joel A. Osorio Chiclana",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Elaida Rosa Del Valle Carrión",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Carlos Gabriel Márquez Arroyo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "2. Wanda De Jesús Dávila",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Rafael Rivera Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "2. Mariela Márquez Arroyo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "3. José Gabriel Santos López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. María E. Pérez Maisonet",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "3. Adriana Márquez Arroyo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "4. Julimar Fuentes Mercado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Dwight Colón Fuentes",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "4. Miguel Ángel Andino Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "5. Jorge (Mr. Pi) Pizarro Osorio",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Sonia E. Pérez Ortega",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "5. José A. Plata Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "6. Gladiarys Figueroa Carrión",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Yolanda Pizarro Quiñones",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "6. Carlos M. Plaza Osorio",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "7. Lormariel Delgado Maysonet",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Eliabel Ferrer Osorio",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "7. José Carlos Carrasquillo Arce",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "8. Leonel Rivera De Jesús",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Luis Alberto Ayala Asencio",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "8. Marta Vázquez Ortega",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "9. Eliezer Torres Peguero",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Paulina Delerme Bonano",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "9. Juanita Márquez López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "10. Lorainy M. Escobar Fuentes",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. José (Kiko) Osorio",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "10. Héctor William Avilés Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "11. Jesiel Manuel Pérez Ayala",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Bryant Villegas",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "11. Carlos Márquez López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ]
+]

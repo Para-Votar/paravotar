@@ -1,0 +1,409 @@
+[
+  [
+    {
+      "ocrResult": "PARTIDO NUEVO PROGRESISTA\r\n",
+      "logoImg": "images/partido-logo-1.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
+      "logoImg": "images/partido-logo-2.jpg"
+    },
+    {
+      "ocrResult": "MOVIMIENTO VICTORIA\r\nCIUDADANA\r\n",
+      "logoImg": "images/partido-logo-4.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+      "logoImg": "images/partido-logo-3.jpg"
+    },
+    {
+      "ocrResult": "PROYECTO DIGNIDAD\r\n",
+      "logoImg": "images/partido-logo-5.jpg"
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Joshua Rivera Carrasquillo",
+      "logoImg": "Joshua_Rivera_Carrasquillo_0465.jpg"
+    },
+    {
+      "ocrResult": "1. Karilyn Bonilla Colón",
+      "logoImg": "karilyn-bonilla-colon.jpeg"
+    },
+    {
+      "ocrResult": "1. Wanda Janette Ríos Colorado",
+      "logoImg": "Wanda_J_Rios_Colorado_2801.jpg"
+    },
+    {
+      "ocrResult": "1. Litzy Alvarado Antonetty",
+      "logoImg": "Litzy_Alvarado_Antonetty_6802.jpg"
+    },
+    {
+      "ocrResult": "1. Edwin Santiago Domínguez",
+      "logoImg": "Edwin_Santiago_Dominguez_5469.jpg"
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Rómulo Burgos Jr. Ortiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Edgar Antonio González Moreno",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Pedro Javier Lugo Lebrón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Yadira Vélez Figueroa",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Daniel Romero Cruz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Ada R. Miranda Alvarado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "2. Maribel Baerga Colón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Elvin E. Negrón Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Brandon Lee Torres Reyes",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Emilio Nieves Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. José M. Vázquez Burgos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "3. Edraul Colón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Mildred Correa Padilla",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Aníbal Márquez Santiago",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Manuel Ortiz Guzmán",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Miguel A. Soliván Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "4. Rafael León Vázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Lisandra Alvarado López",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Joel Ramos Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. José Juan Cora Collazo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Mirna Idalia Ramírez Cruz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "5. Luis Daniel Torres Ortiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. María Esther Torres Núñez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Zinnia Vélez Figueroa",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Danny Roche Cartagena",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Antonio Rosado Suárez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "6. Alexis José López Febus",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Fremiot Santos Rosado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Jorge Marie Rodríguez Ríos",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Alexandra Aristud Alvarado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. José Augusto Rivera Cádiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "7. Mabel Maldonado Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Juan G. Colón Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Emanuel Lebrón Pérez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Abdiel Colón Maldonado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Jenny I. Cintrón Aponte",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "8. Oscar Martínez Colón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Jorge Luis Ortiz García",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Tomasa De Jesús Giraud",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Yamimette Rodríguez Sierra",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Emmanuel Medina Vázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "9. Diana Denisse Lebrón Velázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Carlos Colón Beltrán",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Daniel Enrique Rivera Williams",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Egda Iris Cruz Cardona",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Emmanuel Zambrana Santiago",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "10. Adarissa Colón Rivera",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "10. Antonio (Ansé) Santiago Morales",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "10. Nancy Alvarado Antonetty",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "11. Visconisleli Marín",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "11. Nora Melcie Pérez Alvarado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "11. María Del C. Guzmán Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ]
+]

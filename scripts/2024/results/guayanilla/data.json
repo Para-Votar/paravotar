@@ -1,0 +1,258 @@
+[
+  [
+    {
+      "ocrResult": "PARTIDO NUEVO PROGRESISTA\r\n",
+      "logoImg": "images/partido-logo-1.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO POPULAR\r\nDEMOCRÁTICO\r\n",
+      "logoImg": "images/partido-logo-2.jpg"
+    },
+    {
+      "ocrResult": "MOVIMIENTO VICTORIA\r\nCIUDADANA\r\n",
+      "logoImg": "images/partido-logo-4.jpg"
+    },
+    {
+      "ocrResult": "PARTIDO INDEPENDENTISTA\r\nPUERTORRIQUEÑO\r\n",
+      "logoImg": "images/partido-logo-3.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    },
+    {
+      "ocrResult": "ALCALDE\r\nMAYOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Raúl Rivera Rodríguez",
+      "logoImg": "Raul_Rivera_Rodriguez_5718.jpg"
+    },
+    {
+      "ocrResult": "1. Nelson Luis Santiago Serrano (Yanyun)",
+      "logoImg": "Nelson_Luis_Santiago_Serrano_2343.jpg"
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "1. Luis A. Echevarría Cofresí",
+      "logoImg": "Luis_A_Echevarria_Cofresi_2305.jpg"
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    },
+    {
+      "ocrResult": "LEGISLADOR MUNICIPAL\r\nMUNICIPAL LEGISLATOR\r\n"
+    }
+  ],
+  [
+    {
+      "ocrResult": "1. Francisco Quirós Orengo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Adan Feliciano Irizarry",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Saimé Figueroa Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "1. Ramón Ernesto Nazario Pascual",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "2. Glenda Alvarado Pagán",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "2. Jashira Acevedo García",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "2. José A. Sierra Ruiz",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "3. Miriam Caraballo Malavé",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "3. Joel Pagán Pagán",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "3. Ángela María Irizarry Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "4. Rubén Cedeño Feliciano",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "4. Nayda López Maldonado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "4. María Mercedes Quirós Lugo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "5. Yarelis (Yayi) Correa Velázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "5. Nitza Rodríguez Ghiglioty",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "5. José Francisco Sáez Cintrón",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "6. Germín Báez Vélez (Nenuco)",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "6. Samuel González Rodríguez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "6. Pedro L. Torres",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "7. Emilio Isaac Quirindongo Fraticelli",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "7. Luis A. López Velázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "7. Jesús Emmanuelli Molinari",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "8. Anthoney Anavitate Cuadrado",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "8. Carlos (Purin) Caraballo",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "8. Luz Divina Rodríguez Robles",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ],
+  [
+    {
+      "ocrResult": "9. Johanna Marrero Oliveras",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": "9. Luiseeles Torres Fernández",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    },
+    {
+      "ocrResult": "9. Luis Manuel González Velázquez",
+      "logoImg": ""
+    },
+    {
+      "ocrResult": ""
+    }
+  ]
+]
