@@ -40,9 +40,9 @@ export default function Papeletas() {
   ]
   Object.entries(municipalityBallots).map(
     ([municipality, precincts]) => {
-      dropdownOptions.push({ value: getNormalizedName(municipality), name: `${municipality} - Municipal` });
+      dropdownOptions.push({ value: `municipal/${getNormalizedName(municipality)}`, name: `${municipality} - Municipal` });
       precincts.map((precinct) => {
-        dropdownOptions.push({ value: precinct, name: `${municipality} - ${precinct} - Legislativa`});
+        dropdownOptions.push({ value: `legislativa/${getNormalizedName(precinct)}`, name: `${municipality} - ${precinct} - Legislativa`});
       })
     }
   )
