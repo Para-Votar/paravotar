@@ -69,10 +69,12 @@ export default function Papeleta() {
     return <div>Loading...</div>
   }
 
+  const title = params.ballotType === "legislativa" ? `Papeleta ${params.ballotType} ${precinctMap[params.id]} ${params.id}` : `Papeleta ${params.ballotType} ${params.id || ""}`
+
   return (
     <div>
       <Typography tag="h2" variant="h3" className="uppercase text-center my-4">
-        Papeleta {params.ballotType} {params.id}
+        {title}
       </Typography>
       <Ballot type={ballot.type} structure={ballot.structure} votes={[]} />
     </div>
