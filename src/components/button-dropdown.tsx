@@ -21,7 +21,7 @@ export default function Dropdown({ options, selectedOption, onSelect, isSearchEn
     <div>
       {isSearchEnabled ? <input
         type="text"
-        placeholder="Search..."
+        placeholder="Escribe para filtrar las opciones..."
         className="w-full p-2 mb-2 border border-primary rounded"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
