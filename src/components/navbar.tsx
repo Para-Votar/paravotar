@@ -19,6 +19,11 @@ const getSections = (pathname = "") => [
     isActive: pathname.includes("/practica"),
   },
   {
+    name: "Papeletas",
+    route: "/papeletas",
+    isActive: pathname.includes("/papeletas"),
+  },
+  {
     name: "Candidatos",
     route: "https://www.quienmerepresentapr.com",
     isActive: false,

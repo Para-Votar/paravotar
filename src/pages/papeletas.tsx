@@ -1,5 +1,8 @@
-import { Link } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import { precintList } from "../packages/practica/constants"
+import { Button, Layout } from "../components"
+import Dropdown from "../components/button-dropdown"
+import { useState } from "react"
 
 function getMunicipalityBallots() {
   return precintList.reduce<{ [municipality: string]: string[] }>(
@@ -29,28 +32,38 @@ function getMunicipalityBallots() {
 const municipalityBallots = getMunicipalityBallots()
 
 export default function Papeletas() {
+
+  const location = useLocation()
+  const navigate = useNavigate();
+  
+  const dropdownOptions = [
+    { value: "estatal"},
+  ]
+  Object.entries(municipalityBallots).map(
+    ([municipality, precincts]) => {
+      dropdownOptions.push({ value: municipality });
+      precincts.map((precinct) => {
+        dropdownOptions.push({ value: precinct });
+      })
+    }
+  )
+
+  const [selectedBallot, setSelectedBallot] = useState('estatal');
+
+
   return (
-    <div>
-      <h1>Papeletas</h1>
-      <ul>
-        <li>
-          <Link to="/papeletas/estatal">Estatal</Link>
-        </li>
-        {Object.entries(municipalityBallots).map(
-          ([municipality, precincts]) => (
-            <>
-              <li key={municipality}>
-                <Link to={`/papeletas/${municipality}`}>{municipality}</Link>
-              </li>
-              {precincts.map((precinct) => (
-                <li key={precinct}>
-                  <Link to={`/papeletas/${precinct}`}>{precinct}</Link>
-                </li>
-              ))}
-            </>
-          )
-        )}
-      </ul>
+    <Layout location={location}>
+    <div className='m-4'>
+      <h1>Escoge una papeleta</h1>
+      <Dropdown
+        options={dropdownOptions}
+        selectedOption={'estatal'}
+        onSelect={(t: string) => {
+          setSelectedBallot(t);
+        }}
+      />
+      <Button className="my-4" onClick={() => navigate(`/papeletas/${selectedBallot}`)}>Navegar a la papeleta</Button>
     </div>
+    </Layout>
   )
 }
