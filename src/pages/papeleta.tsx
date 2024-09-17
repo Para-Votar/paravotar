@@ -9,29 +9,46 @@ import {
   StateBallotConfig,
 } from "../packages/practica/services/ballot-configs"
 import { BallotStructure } from "../packages/practica/services/ballot-configs/types"
+import { precinctMap } from "../packages/practica/constants"
+import getNormalizedName from "../packages/practica/services/normalize-name"
 
 interface BallotConfig {
   type: BallotType
   structure: BallotStructure
 }
 
+function getBallotId(id?: string, ballotType?: string) {
+  // State ballot doesn't have an id
+  if (ballotType === "estatal") {
+    return ballotType
+  }
+
+  if (ballotType === "legislativa") {
+    const municipality = precinctMap[id]
+
+    return `${getNormalizedName(municipality)}-legislativo-${id}`
+  }
+
+  // Municipal ballots only use the town's name.
+  return id
+}
+
 export default function Papeleta() {
   const [ballot, setBallot] = useState<BallotConfig | null>(null)
-  const params = useParams<{ id: string }>()
+  const params = useParams<{ id: string; ballotType: string }>()
 
   useEffect(() => {
     const getBallot = async () => {
-      const res = await fetch(
-        `${CDN_URL}/papeletas/2024/${params.id}/data.json`
-      )
+      const ballotId = getBallotId(params.id, params.ballotType)
+      const res = await fetch(`${CDN_URL}/papeletas/2024/${ballotId}/data.json`)
       const result = await res.json()
 
-      if (params.id === "estatal") {
+      if (params.ballotType === "estatal") {
         setBallot({
           type: BallotType.state,
           structure: new StateBallotConfig(result).structure,
         })
-      } else if (params.id?.includes("legislativo")) {
+      } else if (params.ballotType === "legislativa") {
         setBallot({
           type: BallotType.legislative,
           structure: new LegislativeBallotConfig(result).structure,

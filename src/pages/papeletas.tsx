@@ -1,32 +1,31 @@
 import { Link } from "react-router-dom"
 import { precintList } from "../packages/practica/constants"
+import getNormalizedName from "../packages/practica/services/normalize-name"
 
-function getMunicipalityBallots() {
+function getBallots() {
   return precintList.reduce<{ [municipality: string]: string[] }>(
     (accum, precinct) => {
       const result = precinct.value.split("-")
-      const municipality = result[0].toLowerCase().trim().replace(" ", "-")
+      const municipality = result[0].trim()
       const precinctNumber = result[1].trim()
-
-      const legislativeBallot = `${municipality}-legislativo-${precinctNumber}`
 
       if (!accum[municipality]) {
         return {
           ...accum,
-          [municipality]: [legislativeBallot],
+          [municipality]: [precinctNumber],
         }
       }
 
       return {
         ...accum,
-        [municipality]: [...accum[municipality], legislativeBallot],
+        [municipality]: [...accum[municipality], precinctNumber],
       }
     },
     {}
   )
 }
 
-const municipalityBallots = getMunicipalityBallots()
+const municipalityBallots = getBallots()
 
 export default function Papeletas() {
   return (
@@ -40,11 +39,17 @@ export default function Papeletas() {
           ([municipality, precincts]) => (
             <>
               <li key={municipality}>
-                <Link to={`/papeletas/${municipality}`}>{municipality}</Link>
+                <Link
+                  to={`/papeletas/municipal/${getNormalizedName(municipality)}`}
+                >
+                  {municipality} - Municipal
+                </Link>
               </li>
               {precincts.map((precinct) => (
                 <li key={precinct}>
-                  <Link to={`/papeletas/${precinct}`}>{precinct}</Link>
+                  <Link to={`/papeletas/legislativa/${precinct}`}>
+                    {municipality} - {precinct} - Legislativa
+                  </Link>
                 </li>
               ))}
             </>

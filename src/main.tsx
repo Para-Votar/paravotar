@@ -74,7 +74,11 @@ const router = createBrowserRouter([
     element: <Papeletas />,
   },
   {
-    path: "/papeletas/:id",
+    path: "/papeletas/:ballotType",
+    element: <Papeleta />,
+  },
+  {
+    path: "/papeletas/:ballotType/:id",
     element: <Papeleta />,
   },
   {
