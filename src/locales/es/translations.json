@@ -215,5 +215,10 @@
     "StateMixedVoteSelectionSameColumnRule": "Los votos por los candidatos que se encuentran bajo el partido seleccionado serán adjudicados automáticamente. No es necesario marcarlos explicitamente.",
     "LegislativeMixedVoteSelectionSameColumn": "Los votos por los candidatos que se encuentran bajo el partido seleccionado serán adjudicados automáticamente. No es necesario marcarlos explicitamente.",
     "MunicipalMixedVoteSelectionSameColumn": "Los votos por los candidatos que se encuentran bajo el partido seleccionado serán adjudicados automáticamente. No es necesario marcarlos explicitamente."
+  },
+  "papeletas": {
+    "escoge-una-papeleta": "Escoge una papeleta",
+    "escoge-y-ve-directo-a-la-papeleta": "Escoge y ve directo a la papeleta de tu municipio",
+    "papeletas-no-interactivas": "La papeleta a continuación no es interactiva. Para practicar tu voto ve a 'Practica tu voto' en el menú."
   }
 }
