@@ -39,7 +39,7 @@ i18n.use(initReactI18next).init({
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Navigate to="/practica" />,
+    element: <Practica />,
   },
   {
     path: "/practica",
@@ -76,6 +76,10 @@ const router = createBrowserRouter([
   {
     path: "/papeletas/:id",
     element: <Papeleta />,
+  },
+  {
+    path: "*",
+    element: <Navigate to="/" />,
   },
 ])
 
