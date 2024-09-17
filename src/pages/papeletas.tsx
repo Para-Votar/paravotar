@@ -77,6 +77,7 @@ export default function Papeletas() {
           onSelect={(t: string) => {
             setSelectedBallot(t)
           }}
+          isSearchEnabled={true}
         />
         <Button
           className="my-4"
