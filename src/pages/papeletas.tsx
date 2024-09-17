@@ -1,6 +1,11 @@
-import { Link } from "react-router-dom"
+import { useLocation, useNavigate } from "react-router-dom"
 import { precintList } from "../packages/practica/constants"
+import { Button, Container, Layout, Typography } from "../components"
+import Dropdown from "../components/button-dropdown"
+import { useState } from "react"
 import getNormalizedName from "../packages/practica/services/normalize-name"
+import SEO from "../components/seo"
+import { useTranslation } from "react-i18next"
 
 function getBallots() {
   return precintList.reduce<{ [municipality: string]: string[] }>(
@@ -28,34 +33,59 @@ function getBallots() {
 const municipalityBallots = getBallots()
 
 export default function Papeletas() {
+  const { t } = useTranslation()
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  const dropdownOptions = [{ value: "estatal", name: "Estatal" }]
+  Object.entries(municipalityBallots).map(([municipality, precincts]) => {
+    dropdownOptions.push({
+      value: `municipal/${getNormalizedName(municipality)}`,
+      name: `${municipality} - Municipal`,
+    })
+    precincts.map((precinct) => {
+      dropdownOptions.push({
+        value: `legislativa/${getNormalizedName(precinct)}`,
+        name: `${municipality} - ${precinct} - Legislativa`,
+      })
+    })
+  })
+
+  const [selectedBallot, setSelectedBallot] = useState("estatal")
+
   return (
-    <div>
-      <h1>Papeletas</h1>
-      <ul>
-        <li>
-          <Link to="/papeletas/estatal">Estatal</Link>
-        </li>
-        {Object.entries(municipalityBallots).map(
-          ([municipality, precincts]) => (
-            <>
-              <li key={municipality}>
-                <Link
-                  to={`/papeletas/municipal/${getNormalizedName(municipality)}`}
-                >
-                  {municipality} - Municipal
-                </Link>
-              </li>
-              {precincts.map((precinct) => (
-                <li key={precinct}>
-                  <Link to={`/papeletas/legislativa/${precinct}`}>
-                    {municipality} - {precinct} - Legislativa
-                  </Link>
-                </li>
-              ))}
-            </>
-          )
-        )}
-      </ul>
-    </div>
+    <Layout location={location}>
+      <SEO title="Lista de Papeletas de Puerto Rico (2024)" />
+      <Container className="m-4 text-center" id="practica-tu-voto">
+        <Typography tag="h2" variant="h3" className="uppercase">
+          {t("papeletas.escoge-una-papeleta")}
+        </Typography>
+        <Typography
+          tag="h3"
+          variant="h2"
+          weight="base"
+          className="font-normal mt-4"
+        >
+          {t("papeletas.escoge-y-ve-directo-a-la-papeleta")}
+        </Typography>
+        <Typography tag="p" variant="p" className="my-4">
+          {t("papeletas.papeletas-no-interactivas")}
+        </Typography>
+        <Dropdown
+          options={dropdownOptions}
+          selectedOption={"estatal"}
+          onSelect={(t: string) => {
+            setSelectedBallot(t)
+          }}
+          isSearchEnabled={true}
+        />
+        <Button
+          className="my-4"
+          onClick={() => navigate(`/papeletas/${selectedBallot}`)}
+        >
+          Navegar a la papeleta
+        </Button>
+      </Container>
+    </Layout>
   )
 }

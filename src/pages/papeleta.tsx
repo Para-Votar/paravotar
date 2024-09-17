@@ -11,6 +11,7 @@ import {
 import { BallotStructure } from "../packages/practica/services/ballot-configs/types"
 import { precinctMap } from "../packages/practica/constants"
 import getNormalizedName from "../packages/practica/services/normalize-name"
+import { Typography } from "../components"
 
 interface BallotConfig {
   type: BallotType
@@ -68,9 +69,13 @@ export default function Papeleta() {
     return <div>Loading...</div>
   }
 
+  const title = params.ballotType === "legislativa" ? `Papeleta ${params.ballotType} ${precinctMap[params.id]} ${params.id}` : `Papeleta ${params.ballotType} ${params.id || ""}`
+
   return (
     <div>
-      <h1>{params.id}</h1>
+      <Typography tag="h2" variant="h3" className="uppercase text-center my-4">
+        {title}
+      </Typography>
       <Ballot type={ballot.type} structure={ballot.structure} votes={[]} />
     </div>
   )
