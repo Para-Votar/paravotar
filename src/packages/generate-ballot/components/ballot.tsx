@@ -41,7 +41,7 @@ export default function BaseBallot(props: BallotProps) {
   const isLegislativeBallot = props.type === BallotType.legislative
   const ballotWidth =
     props.structure && props.structure[0] && props.structure[0].length
-      ? props.structure[0].length * 325
+      ? props.structure[0].length * 290
       : 2000
 
   return (
@@ -53,7 +53,7 @@ export default function BaseBallot(props: BallotProps) {
               key={`state-ballot-${rowIndex}`}
               className={`grid ${rowIndex !== 0 ? ballotBg : ""}`}
               style={{
-                gridTemplateColumns: `repeat(${row.length}, 325px)`,
+                gridTemplateColumns: `repeat(${row.length}, 290px)`,
               }}
             >
               {row.map((col, colIndex) => {

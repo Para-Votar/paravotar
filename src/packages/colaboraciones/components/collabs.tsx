@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next"
 import { Typography, Card, Link } from "../../../components"
 import Proyecto85 from "../../../assets/images/proyecto-85.jpg"
 import QuienMeRepresenta from "../../../assets/images/quien-me-representa.svg?url"
+import PTV from "../../../assets/images/ptv.png"
 
 export default function Collabs() {
   const { t } = useTranslation()
@@ -21,6 +22,13 @@ export default function Collabs() {
       name: "¿Quién me representa?",
       description: t("collabs.quien-me-representa"),
       url: "https://www.quienmerepresentapr.com",
+    },
+    {
+      id: "practica-tu-voto",
+      logo: PTV,
+      name: "Practica tu voto",
+      description: t("collabs.ptv"),
+      url: "https://www.practicatuvoto.com/practicatuvoto/main.jsp?jsCheck=5868563",
     },
   ]
 

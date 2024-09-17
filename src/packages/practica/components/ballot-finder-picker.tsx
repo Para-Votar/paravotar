@@ -11,9 +11,15 @@ export default function BallotFinderPicker(props: BallotFinderPickerProps) {
       <Typography tag="p" variant="h3" className="uppercase">
         Busquemos tus papeletas
       </Typography>
-      <Typography tag="p" variant="p" className="mt-1">
-        Selecciona una de las siguientes maneras para ver tus papeletas
-      </Typography>
+      <div className="w-full my-6">
+        <Button
+          className="block w-full"
+          onClick={props.selectPrecint}
+          data-testid="find-by-precint"
+        >
+          Número de precinto o pueblo
+        </Button>
+      </div>
       <Typography className="mt-4" tag="p" variant="p">
         Si su pueblo tiene más de un precinto y usted no conoce a cuál precinto
         pertenece puede ir a{" "}
@@ -23,26 +29,6 @@ export default function BallotFinderPicker(props: BallotFinderPickerProps) {
         , entrar su número electoral, presionar el botón de buscar y usar el
         número que aparece en el encasillado de Precinto.
       </Typography>
-      <div className="grid grid-cols-1 gap-4 mt-6 lg:grid-cols-2">
-        <div className="w-full my-1">
-          <Button
-            className="block w-full"
-            onClick={props.selectPrecint}
-            data-testid="find-by-precint"
-          >
-            Número de precinto o pueblo
-          </Button>
-        </div>
-        <div className="w-full my-1">
-          <Button
-            className="block w-full"
-            onClick={props.selectVoterId}
-            data-testid="find-by-voter-id"
-          >
-            Número de tarjeta electoral
-          </Button>
-        </div>
-      </div>
     </div>
   )
 }

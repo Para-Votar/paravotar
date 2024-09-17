@@ -3,33 +3,32 @@ import { precintList } from "../packages/practica/constants"
 import { Button, Layout } from "../components"
 import Dropdown from "../components/button-dropdown"
 import { useState } from "react"
+import getNormalizedName from "../packages/practica/services/normalize-name"
 
-function getMunicipalityBallots() {
+function getBallots() {
   return precintList.reduce<{ [municipality: string]: string[] }>(
     (accum, precinct) => {
       const result = precinct.value.split("-")
-      const municipality = result[0].toLowerCase().trim().replace(" ", "-")
+      const municipality = result[0].trim()
       const precinctNumber = result[1].trim()
-
-      const legislativeBallot = `${municipality}-legislativo-${precinctNumber}`
 
       if (!accum[municipality]) {
         return {
           ...accum,
-          [municipality]: [legislativeBallot],
+          [municipality]: [precinctNumber],
         }
       }
 
       return {
         ...accum,
-        [municipality]: [...accum[municipality], legislativeBallot],
+        [municipality]: [...accum[municipality], precinctNumber],
       }
     },
     {}
   )
 }
 
-const municipalityBallots = getMunicipalityBallots()
+const municipalityBallots = getBallots()
 
 export default function Papeletas() {
 
@@ -37,13 +36,13 @@ export default function Papeletas() {
   const navigate = useNavigate();
   
   const dropdownOptions = [
-    { value: "estatal"},
+    { value: "estatal", name: "Estatal"},
   ]
   Object.entries(municipalityBallots).map(
     ([municipality, precincts]) => {
-      dropdownOptions.push({ value: municipality });
+      dropdownOptions.push({ value: getNormalizedName(municipality), name: `${municipality} - Municipal` });
       precincts.map((precinct) => {
-        dropdownOptions.push({ value: precinct });
+        dropdownOptions.push({ value: precinct, name: `${municipality} - ${precinct} - Legislativa`});
       })
     }
   )
@@ -63,7 +62,7 @@ export default function Papeletas() {
         }}
       />
       <Button className="my-4" onClick={() => navigate(`/papeletas/${selectedBallot}`)}>Navegar a la papeleta</Button>
-    </div>
+      </div>
     </Layout>
   )
 }

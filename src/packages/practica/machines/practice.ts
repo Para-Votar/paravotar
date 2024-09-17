@@ -80,7 +80,7 @@ export const PracticeMachine = createMachine<PracticeContext, PracticeEvent>(
       },
       mainScreen: {
         on: {
-          START_PRACTICE: "ballotFinderPicker",
+          START_PRACTICE: "enterPrecint",
         },
       },
       ballotFinderPicker: {
@@ -93,7 +93,7 @@ export const PracticeMachine = createMachine<PracticeContext, PracticeEvent>(
       enterVoterId: {
         initial: "idle",
         on: {
-          BACK: "ballotFinderPicker",
+          BACK: "mainScreen",
           ADDED_VOTER_ID: [
             {
               target: ".empty",
@@ -114,7 +114,7 @@ export const PracticeMachine = createMachine<PracticeContext, PracticeEvent>(
       enterPrecint: {
         initial: "idle",
         on: {
-          BACK: "ballotFinderPicker",
+          BACK: "mainScreen",
           ADDED_PRECINT: [
             {
               target: ".empty",
@@ -166,7 +166,7 @@ export const PracticeMachine = createMachine<PracticeContext, PracticeEvent>(
           },
         },
         on: {
-          BACK: "ballotFinderPicker",
+          BACK: "mainScreen",
         },
       },
       noVoterIdFound: {
@@ -202,7 +202,7 @@ export const PracticeMachine = createMachine<PracticeContext, PracticeEvent>(
             target: "practicing",
             actions: "saveActiveBallotType",
           },
-          BACK: "ballotFinderPicker",
+          BACK: "enterPrecint",
         },
       },
       practicing: {

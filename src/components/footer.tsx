@@ -35,7 +35,10 @@ export default function Footer() {
         {t("site.made-with")}{" "}
         <img className="inline-block h-4 w-4" src={Heart} alt="amor" />{" "}
         {t("site.from-pr")}{" "}
-        <Link to="https://twitter.com/eluciiano" target="_blank">
+        <Link
+          to="https://www.linkedin.com/in/emmanuel-luciano-304529b2"
+          target="_blank"
+        >
           Emmanuel Luciano Bernal
         </Link>
         ,{" "}

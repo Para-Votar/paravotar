@@ -127,7 +127,7 @@ export const Results = ({ state, send }: ResultsProps) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Twitter
+          X
         </a>
       </div>
       <Typography variant="h3" tag="h3" className="mt-12">

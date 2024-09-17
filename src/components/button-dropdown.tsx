@@ -1,5 +1,5 @@
 type Props = {
-  options: Array<{ value: string }>
+  options: Array<{ value: string, name?: string }>
   onSelect: (selection: string) => void
   selectedOption: string | null
 }
@@ -18,7 +18,7 @@ export default function Dropdown({ options, selectedOption, onSelect }: Props) {
           value={option.value}
           selected={selectedOption == option.value}
         >
-          {option.value}
+          {option.name ? option.name : option.value}
         </option>
       ))}
     </select>
