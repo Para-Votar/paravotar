@@ -14,10 +14,12 @@ import getNormalizedName from "../packages/practica/services/normalize-name"
 import { Container, Layout, Typography } from "../components"
 import { useMachine } from "@xstate/react"
 import { PracticeMachine } from "../packages/practica/machines/practice"
+import useErrorMessages from "../packages/practica/hooks/use-error-messages"
 
 interface BallotConfig {
   type: BallotType
   structure: BallotStructure
+  config: StateBallotConfig | LegislativeBallotConfig | MunicipalBallotConfig
 }
 
 function getBallotId(id?: string, ballotType?: string) {
@@ -37,7 +39,6 @@ function getBallotId(id?: string, ballotType?: string) {
 }
 
 export default function Papeleta() {
-  const location = useLocation()
   const [ballot, setBallot] = useState<BallotConfig | null>(null)
   const params = useParams<{ id: string; ballotType: string }>()
 
@@ -48,19 +49,25 @@ export default function Papeleta() {
       const result = await res.json()
 
       if (params.ballotType === "estatal") {
+        const config = new StateBallotConfig(result)
         setBallot({
           type: BallotType.state,
           structure: new StateBallotConfig(result).structure,
+          config,
         })
       } else if (params.ballotType === "legislativa") {
+        const config = new LegislativeBallotConfig(result)
         setBallot({
           type: BallotType.legislative,
           structure: new LegislativeBallotConfig(result).structure,
+          config,
         })
       } else {
+        const config = new MunicipalBallotConfig(result)
         setBallot({
           type: BallotType.municipality,
           structure: new MunicipalBallotConfig(result).structure,
+          config,
         })
       }
     }
@@ -72,17 +79,57 @@ export default function Papeleta() {
     return <div>Loading...</div>
   }
 
+  return (
+    <InteractiveBallot
+      ballot={ballot}
+      ballotType={params.ballotType || "municipal"}
+      precintId={params.id}
+    />
+  )
+}
+
+function InteractiveBallot(props: {
+  ballot: BallotConfig
+  ballotType: string
+  precintId?: string
+}) {
+  const { ballot, ballotType, precintId } = props
+  const location = useLocation()
+  const params = useParams<{ id: string; ballotType: string }>()
+
   const title =
-    params.ballotType === "legislativa"
-      ? `Papeleta ${params.ballotType} ${precinctMap[params.id]} ${params.id}`
-      : `Papeleta ${params.ballotType} ${params.id || ""}`
+    ballotType === "legislativa"
+      ? `Papeleta ${ballotType} ${precinctMap[precintId]} ${params.id}`
+      : `Papeleta ${ballotType} ${params.id || ""}`
 
   const [state, send] = useMachine(PracticeMachine, {
     context: {
       ballotType: ballot.type,
+      ballots: {
+        estatal: ballot.config,
+        legislativa: ballot.config,
+        municipal: ballot.config,
+      },
+      userInput: params.id || "004",
     },
   })
-  
+
+  console.log('state', state.toJSON());
+
+  useEffect(() => {
+    send({ type: "SKIP_TO_PRACTICE" })
+    return
+  }, [])
+
+  const { setIsPristine } = useErrorMessages(state as any, [
+    state,
+    state.value,
+    state.context.votes,
+    state.context.ballots?.estatal,
+    state.context.ballots?.legislativa,
+    state.context.ballots?.municipal,
+  ])
+
   return (
     <Layout location={location}>
       <Container className="overflow-hidden">
@@ -98,15 +145,15 @@ export default function Papeleta() {
             <Ballot
               type={ballot.type}
               structure={ballot.structure}
-              votes={[]}
-              // toggleVote={(candidate, position) => {
-              //   send("SELECTED_ELECTIVE_FIELD", {
-              //     candidate,
-              //     position,
-              //     ballotType: BallotType.legislative,
-              //   })
-              //   setIsPristine(false)
-              // }}
+              votes={state.context.votes}
+              toggleVote={(candidate, position) => {
+                send("SELECTED_ELECTIVE_FIELD", {
+                  candidate,
+                  position,
+                  ballotType: ballot.type,
+                })
+                setIsPristine(false)
+              }}
             />
           </div>
         </div>
