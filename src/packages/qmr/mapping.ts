@@ -5863,7 +5863,7 @@ export default {
     firstName: "Gabir Ginott",
     lastName: "Gómez Rada",
   },
-  "Gabriel Vicens Rivera": {
+  "Gabriel Vicéns Rivera": {
     id: "4959",
     firstName: "Gabriel",
     lastName: "Vicens Rivera",
@@ -8052,7 +8052,7 @@ export default {
     firstName: "Jesús Manuel",
     lastName: "Sierra Miranda",
   },
-  "Jesús Manuel Ortíz González": {
+  "Jesús Manuel Ortíz": {
     id: "2971",
     firstName: "Jesús Manuel",
     lastName: "Ortíz González",
@@ -8940,7 +8940,7 @@ export default {
     firstName: "José (Barbero)",
     lastName: "Pérez Carrasquillo",
   },
-  "José Bernardo (Betito) Márquez": {
+  "José Bernardo 'Betito' Márquez": {
     id: "2302",
     firstName: "José Bernardo (Betito)",
     lastName: "Márquez",
@@ -16342,7 +16342,7 @@ export default {
     firstName: "Rotsen Eduardo",
     lastName: "Rivera Rivera",
   },
-  "Roxanna I. Soto Aguilú (Abogada Motorizada)": {
+  "(Abogada Motorizada) Roxanna I. Soto Aguilú": {
     id: "4452",
     firstName: "Roxanna I.",
     lastName: "Soto Aguilú (Abogada Motorizada)",
@@ -17669,7 +17669,7 @@ export default {
     firstName: "Wanda (Tata)",
     lastName: "Soler",
   },
-  "Wanda (Wandy) Soto Tolentino": {
+  "(Wandy) Wanda Soto Tolentino": {
     id: "4476",
     firstName: "Wanda (Wandy)",
     lastName: "Soto Tolentino",

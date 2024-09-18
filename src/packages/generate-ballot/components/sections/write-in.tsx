@@ -38,7 +38,7 @@ export default function WriteIn(props: WriteInProps) {
           onMouseLeave={() => setIsHighlighted(false)}
         />
         <input
-          className="border border-black border-t-0 border-r-0 border-l-0 bg-transparent h-8 pl-2"
+          className="border border-black border-t-0 border-r-0 border-l-0 bg-transparent h-8 ml-2"
           type="text"
           disabled={!props.hasVote}
           defaultValue={props.initialTextValue}

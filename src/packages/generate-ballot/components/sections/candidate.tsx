@@ -2,6 +2,7 @@ import { useState } from "react"
 
 import Checkbox from "./checkbox"
 import getQmrLink from "../../../qmr/get-link"
+import "./candidate.css"
 
 type CandidateProps = {
   name: string
@@ -22,7 +23,7 @@ export default function Candidate(props: CandidateProps) {
   return (
     <div className="border">
       <div
-        className="flex items-center mx-auto py-1 px-3"
+        className="candidate items-center mx-auto py-1 px-3"
         data-vote-type={props.voteType}
       >
         {!props.accumulationNumber ? (
@@ -42,7 +43,7 @@ export default function Candidate(props: CandidateProps) {
         />
         {props.img ? (
           <img
-            className="h-10 w-10"
+            className="h-10 w-10 object-cover"
             src={props.img}
             alt={`Foto de ${props.name}`}
           />
