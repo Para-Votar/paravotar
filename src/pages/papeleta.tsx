@@ -12,6 +12,8 @@ import { BallotStructure } from "../packages/practica/services/ballot-configs/ty
 import { precinctMap } from "../packages/practica/constants"
 import getNormalizedName from "../packages/practica/services/normalize-name"
 import { Container, Layout, Typography } from "../components"
+import { useMachine } from "@xstate/react"
+import { PracticeMachine } from "../packages/practica/machines/practice"
 
 interface BallotConfig {
   type: BallotType
@@ -75,6 +77,12 @@ export default function Papeleta() {
       ? `Papeleta ${params.ballotType} ${precinctMap[params.id]} ${params.id}`
       : `Papeleta ${params.ballotType} ${params.id || ""}`
 
+  const [state, send] = useMachine(PracticeMachine, {
+    context: {
+      ballotType: ballot.type,
+    },
+  })
+  
   return (
     <Layout location={location}>
       <Container className="overflow-hidden">
@@ -91,6 +99,14 @@ export default function Papeleta() {
               type={ballot.type}
               structure={ballot.structure}
               votes={[]}
+              // toggleVote={(candidate, position) => {
+              //   send("SELECTED_ELECTIVE_FIELD", {
+              //     candidate,
+              //     position,
+              //     ballotType: BallotType.legislative,
+              //   })
+              //   setIsPristine(false)
+              // }}
             />
           </div>
         </div>
