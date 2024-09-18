@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useLocation, useParams } from "react-router-dom"
 import { CDN_URL } from "../packages/generate-ballot/constants"
 import { Ballot } from "../packages/generate-ballot/components"
 import { BallotType } from "../ballot-validator/types"
@@ -11,7 +11,7 @@ import {
 import { BallotStructure } from "../packages/practica/services/ballot-configs/types"
 import { precinctMap } from "../packages/practica/constants"
 import getNormalizedName from "../packages/practica/services/normalize-name"
-import { Typography } from "../components"
+import { Container, Layout, Typography } from "../components"
 
 interface BallotConfig {
   type: BallotType
@@ -35,6 +35,7 @@ function getBallotId(id?: string, ballotType?: string) {
 }
 
 export default function Papeleta() {
+  const location = useLocation()
   const [ballot, setBallot] = useState<BallotConfig | null>(null)
   const params = useParams<{ id: string; ballotType: string }>()
 
@@ -69,14 +70,31 @@ export default function Papeleta() {
     return <div>Loading...</div>
   }
 
-  const title = params.ballotType === "legislativa" ? `Papeleta ${params.ballotType} ${precinctMap[params.id]} ${params.id}` : `Papeleta ${params.ballotType} ${params.id || ""}`
+  const title =
+    params.ballotType === "legislativa"
+      ? `Papeleta ${params.ballotType} ${precinctMap[params.id]} ${params.id}`
+      : `Papeleta ${params.ballotType} ${params.id || ""}`
 
   return (
-    <div>
-      <Typography tag="h2" variant="h3" className="uppercase text-center my-4">
-        {title}
-      </Typography>
-      <Ballot type={ballot.type} structure={ballot.structure} votes={[]} />
-    </div>
+    <Layout location={location}>
+      <Container className="overflow-hidden">
+        <Typography
+          tag="h2"
+          variant="h3"
+          className="uppercase text-center my-4"
+        >
+          {title}
+        </Typography>
+        <div className="w-full overflow-x-auto">
+          <div className="scale-86 origin-top-left">
+            <Ballot
+              type={ballot.type}
+              structure={ballot.structure}
+              votes={[]}
+            />
+          </div>
+        </div>
+      </Container>
+    </Layout>
   )
 }

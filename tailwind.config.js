@@ -32,6 +32,9 @@ export default {
       display: ["Inter", "Helvetica"],
     },
     extend: {
+      scale: {
+        86: "0.86",
+      },
       fontSize: {
         "9xl": "72px",
       },
