@@ -42,7 +42,7 @@ Alejandro,López Cruz,,M,TRUE,,,,,,,,,FALSE,FALSE,
 Alejandro,Santiago Calderón,,M,FALSE,,,ACUMULACION,,senador,MVC,,,FALSE,FALSE,
 Alejandro,Vera Cruz,/static/images/profile_images/Alejandro_Vera_Cruz_2816.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
 Alex,García Quiñones,/static/images/profile_images/Alex_Garcia_6992.jpg,M,TRUE,,Yauco,,,alcalde,PPD,,,FALSE,TRUE,Alex (Chapu) García
-Alex,López Rodríguez,/static/images/profile_images/Alex_Lopez_6173.jpg,M,TRUE,,Sabana Grande,,,alcalde,PNP,,,FALSE,TRUE,
+Alex,López Rodríguez,/static/images/profile_images/Alex_Lopez_6173.jpg,M,TRUE,,Sabana Grande,,,alcalde,PNP,,,FALSE,TRUE,Alex López
 Alex,Torres Luzunaris,/static/images/profile_images/Alex_Torres_Luzunaris_8777.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
 Alexander,Burgos Otero,/static/images/profile_images/Alexander_Burgos_Otero_7082.jpg,M,FALSE,,,,,,,,,FALSE,FALSE,
 Alexander,Burgos Otero,/static/images/profile_images/Alexander_Burgos_Otero_7082.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
@@ -53,7 +53,7 @@ Alex F.,Vargas Segarra,,M,FALSE,,,,19,representante,PPD,,,FALSE,FALSE,
 Alexis,García Yulfo,/static/images/profile_images/Alexis_Garcia_Yulfo_4521.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
 Alexis,Montes García,,M,TRUE,,,,,,,,,FALSE,FALSE,
 Alexis,Valle Martínez,,M,FALSE,,,,13,representante,PNP,,,FALSE,FALSE,
-Alexis Orlando,Silva Bonet,/static/images/profile_images/Alexis_Orlando_Silva_Bonet_6973.jpg,M,TRUE,,Rincón,,,alcalde,PIP,,,FALSE,TRUE,
+Alexis Orlando,Silva Bonet,/static/images/profile_images/Alexis_Orlando_Silva_Bonet_6973.jpg,M,TRUE,,Rincón,,,alcalde,PIP,,,FALSE,TRUE,Alexis Silva Bonet
 Alex José II,López Millan,,M,TRUE,,,,,,,,,FALSE,FALSE,
 Alfonso,Vega,,M,TRUE,,,,,,,,,FALSE,FALSE,
 Alfonso André,Questell Ortíz,/static/images/profile_images/Alfonso_Andre_Questell_Ortiz_6169.jpg,M,TRUE,,,,2,representante,PIP,,,FALSE,FALSE,
@@ -286,7 +286,7 @@ Catherine,Pagán Rodríguez,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Cecilio,Díaz Serra,/static/images/profile_images/Cecilio_Diaz_Serra_8142.jpg,M,TRUE,,Orocovis,,,alcalde,PIP,,,FALSE,TRUE,
 Cesar,Mercado Cuevas,/static/images/profile_images/Cesar_Mercado_Cuevas_6946.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
 Cesar,Rivera Tiburcio,,M,TRUE,,,,,,,,,FALSE,FALSE,
-César Augusto,Vázquez Muñíz,/static/images/profile_images/Cesar_Augusto_Vazquez_Muñiz_9390.jpg,M,TRUE,,,2,,senador,PD,,,FALSE,TRUE,César Vázquez Muñiz
+César Augusto,Vázquez Muñíz,/static/images/profile_images/Cesar_Augusto_Vazquez_Muñiz_9390.jpg,M,TRUE,,,2,,senador,PD,,,FALSE,TRUE,César Vázquez Muñíz
 Cesar Joaquín,Santiago Ortíz,,M,TRUE,,,,,,,,,FALSE,FALSE,
 César (Monchito),Corales Cotty,/static/images/profile_images/Cesar_R_Corales_Cotty_0063.jpg,M,TRUE,,Lajas,,,alcalde,PD,,,FALSE,TRUE,
 Charles Anthony,Pérez Rodríguez,/static/images/profile_images/Charlie_Perez_Rodriguez_3824.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
@@ -327,7 +327,7 @@ Daniel,Lugo Mercado,/static/images/profile_images/Jose_Daniel_Lugo_Mercado_1140.
 Daniel,Márquez García,/static/images/profile_images/Daniel_Marquez_Garcia_5552.jpg,M,TRUE,,,,3,representante,PIP,,,FALSE,FALSE,
 Daniel,Nelson Montalvo,,M,TRUE,,,,,,,,,FALSE,FALSE,
 Daniel,Ortíz Vargas,/static/images/profile_images/Daniel_Ortiz_Vargas_3541.jpg,M,TRUE,,,,23,representante,MVC,,,FALSE,TRUE,
-Daniel,Rodríguez Cabrera,,M,TRUE,,Toa Baja,,,alcalde,PD,,,FALSE,TRUE,Daniel (Tito) Rodríguez Cabrera
+Daniel,Rodríguez Cabrera,/static/images/profile_images/daniel-rodriguez-cabrera.jpeg,M,TRUE,,Toa Baja,,,alcalde,PD,,,FALSE,TRUE,Daniel (Tito) Rodríguez Cabrera
 Daniel,Vega Ortíz,/static/images/profile_images/Daniel_Vega_Ortiz_6835.jpg,M,TRUE,,,,25,representante,PNP,,,TRUE,TRUE,
 Daniel (Danny),Sepúlveda,/static/images/profile_images/Jose_Daniel_Sepulveda_Sanchez_3983.jpg,M,FALSE,,Yabucoa,,,alcalde,PNP,,,FALSE,FALSE,
 Daniel Jr.,Torres Martínez,/static/images/profile_images/Daniel_Jr_Torres_Martinez_1621.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
@@ -411,7 +411,7 @@ Edward,Cancel Rodríguez,/static/images/profile_images/Edward_Cancel_Rodriguez_9
 Edward Alexis,O'Neill Rosa,/static/images/profile_images/edward-alexis-o'neill-rosa.jpeg,M,TRUE,,Guaynabo,,,alcalde,PNP,,,FALSE,TRUE,
 Edwin,Del Valle Ruíz,/static/images/profile_images/Edwin_Del_Valle_Ruiz_2467.jpg,M,TRUE,,Hatillo,,,alcalde,PD,,,FALSE,TRUE,
 Edwin,Galarza Quiñónez,/static/images/profile_images/Edwin_Galarza_Quinonez_0474.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
-Edwin,Marrero Santiago,static/images/profile_images/edwin-marrero-santiago.bin,M,TRUE,,Vega Baja,,,alcalde,MVC,,,FALSE,TRUE,Edwin (Win) Marrero Santiago
+Edwin,Marrero Santiago,static/images/profile_images/edwin-marrero-santiago.jpeg,M,TRUE,,Vega Baja,,,alcalde,MVC,,,FALSE,TRUE,Edwin (Win) Marrero Santiago
 Edwin,Mieles Richard,/static/images/profile_images/Edwin_C_Mieles_Richard_6054.jpg,M,TRUE,,,3,,senador,PD,,,FALSE,TRUE,
 Edwin,Santiago Domínguez,/static/images/profile_images/Edwin_Santiago_Dominguez_5469.jpg,M,TRUE,,Salinas,,,alcalde,PD,,,FALSE,TRUE,
 Edwin,Soto Santiago,/static/images/profile_images/Edwin_Soto_Santiago_8417.jpg,M,TRUE,,Las Marías,,,alcalde,PNP,,,FALSE,TRUE,
@@ -546,7 +546,7 @@ Francisco,Rivera Sánchez,,M,TRUE,,,,,,,,,FALSE,FALSE,
 Francisco,Ruíz Morales,/static/images/profile_images/Francisco_Ruiz_Morales_5616.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
 Francisco (Frank),Santiago Pérez,/static/images/profile_images/Francisco_Santiago_Perez_3234.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
 Francisco G,Aponte Hernández,,M,TRUE,,,,,,,,,FALSE,FALSE,
-Francisco Javier,Rodríguez NapoLeóni,/static/images/profile_images/francisco-javier-rodriguez-napoleoni.jpeg,M,TRUE,,,5,,senador,PD,,,FALSE,TRUE,Francisco Javier Rodríguez Napoleóni
+Francisco Javier,Rodríguez NapoLeóni,/static/images/profile_images/francisco-javier-rodriguez-napoleoni.jpeg,M,TRUE,,,5,,senador,PD,,,FALSE,TRUE,Francisco Javier Rodríguez Napoleoni
 Francisco R.,Aponte Rivera,/static/images/profile_images/Francisco_R_Aponte_Rivera_1433.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
 Frank (Franco),Alicea Quiñones,,M,TRUE,,,,,,,,,FALSE,FALSE,
 Frankie,Guerra Morales,/static/images/profile_images/Frankie_Guerra_Morales_6031.jpg,M,TRUE,,,8,,senador,PPD,,,FALSE,TRUE,
@@ -769,7 +769,7 @@ Jesús (Jerry),Márquez Rodríguez,/static/images/profile_images/Jesus_Marquez_R
 Jesús M.,Dávila Molina,/static/images/profile_images/Jesus_Davila_Molina_0956.jpg,M,TRUE,,,,8,representante,PIP,,,FALSE,TRUE,Jesús M. Dávila
 Jesús M.,Rodríguez Rivera,,M,TRUE,,,,,,,,,FALSE,FALSE,
 Jesús M.,Roque Cabrera,/static/images/profile_images/Jesus_M_Roque_Cabrera_8015.jpg,M,TRUE,,,,32,representante,PIP,,,FALSE,FALSE,
-Jesús Manuel,Ortíz González,/static/images/profile_images/Jesus_Manuel_Ortiz_Gonzalez_4340.jpg,M,TRUE,912,,,,gobernador,PPD,,,FALSE,TRUE,Jesús Manuel Ortiz
+Jesús Manuel,Ortíz González,/static/images/profile_images/Jesus_Manuel_Ortiz_Gonzalez_4340.jpg,M,TRUE,912,,,,gobernador,PPD,,,FALSE,TRUE,Jesús Manuel Ortíz
 Jesús (Nolo),Figueroa,/static/images/profile_images/Jesus_Manuel_Figueroa_Torres_2367.jpg,M,TRUE,,,,12,representante,PNP,,,FALSE,TRUE,
 Jhondee,Canales,/static/images/profile_images/Jhondee_Nell_Canales_Lora_4430.jpg,M,TRUE,,Loíza,,,alcalde,PNP,,,FALSE,TRUE,
 Joanie,Vélez Albino,,F,TRUE,,,,,,,,,FALSE,FALSE,
@@ -1182,7 +1182,7 @@ Manuel A. (Nolin),Sanjurjo Carrión,,M,TRUE,,,,,,,,,FALSE,FALSE,
 Manuel Antonio,Natal Albelo,static/images/profile_images/manuel-natal.png,M,TRUE,,San Juan,,,alcalde,MVC,,,FALSE,TRUE,Manuel Natal Albelo
 Manuel E.,Acevedo Rivera,/static/images/profile_images/Manuel_E_Acevedo_Rivera_3549.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
 Manuel (Goldo),Oliveras Pagán,,M,FALSE,,Ciales,,,alcalde,PNP,,,FALSE,FALSE,
-Manuel Iván,Acevedo Serrano,/static/images/profile_images/Manuel_Ivan_Acevedo_Serrano_3296.jpg,M,TRUE,,San Sebastián,,,alcalde,PIP,,,FALSE,TRUE,
+Manuel Iván,Acevedo Serrano,/static/images/profile_images/Manuel_Ivan_Acevedo_Serrano_3296.jpg,M,TRUE,,San Sebastián,,,alcalde,PIP,,,FALSE,TRUE,Manuel (Wito) Acevedo Serrano
 Manuel J.,Camacho Córdova,/static/images/profile_images/Manuel_J_Camacho_Cordova_5338.jpg,F,TRUE,,,,,,,,,FALSE,FALSE,
 Manuel (Ñeco),Velázquez Velázquez,,M,TRUE,,,,,,,,,FALSE,FALSE,
 Manuel (Neito),Orriola,/static/images/profile_images/Manuel_A_Orriola_Perez_5580.jpg,M,TRUE,,Hatillo,,,alcalde,PNP,,,FALSE,TRUE,
@@ -1212,7 +1212,7 @@ María de los A.,Cajigas Nieto,,F,TRUE,,,,,,,,,FALSE,FALSE,
 María De Los A.,Ortíz Rodríguez,,F,TRUE,,,,,,,,,FALSE,FALSE,
 María De Los A.,Zayas Rodríguez,,F,TRUE,,,,,,,,,FALSE,FALSE,
 María de Lourdes,Rolón Rivera,,M,TRUE,,,,,,,,,FALSE,FALSE,
-María de Lourdes,Santiago Negrón,/static/images/profile_images/Maria_De_Lourde_Santiago_Negron_8576.jpg,F,TRUE,848,,ACUMULACION,,senador,PIP,,,FALSE,TRUE,María De Lourdes Santiago
+María de Lourdes,Santiago Negrón,/static/images/profile_images/Maria_De_Lourde_Santiago_Negron_8576.jpg,F,TRUE,848,,ACUMULACION,,senador,PIP,,,FALSE,TRUE,María de Lourdes Santiago
 María Dolores,Márquez Masa,/static/images/profile_images/Maria_Dolore_Marquez_Masa_8408.jpg,F,TRUE,,,,,,,,,FALSE,FALSE,
 María E.,Mercado Tañon,/static/images/profile_images/Maria_E_Mercado_Tañon_5057.jpg,F,TRUE,,,,,,,,,FALSE,FALSE,
 María E.,Negrón Santiago,,F,TRUE,,,,,,,,,FALSE,FALSE,
@@ -1243,7 +1243,7 @@ Maribel,Hernández Hernández,/static/images/profile_images/Maribel_Hernandez_He
 Maribel,López Vázquez,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Maribel,Ortíz Colón,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Marie Joan,Ramos Del Valle,,F,FALSE,,,,37,representante,PPD,,,FALSE,FALSE,
-Mariela,Martínez Vera,/static/images/profile_images/Mariela_Luzmina_Martinez_Vera_4581.jpg,F,TRUE,,,6,,senador,MVC,,,FALSE,TRUE,Mariela (Luzmina) Martínez Vera
+Mariela,Martínez Vera,/static/images/profile_images/mariela-martinez-vera.jpeg,F,TRUE,,,6,,senador,MVC,,,FALSE,TRUE,Mariela (Luzmina) Martínez Vera
 Marieli,Ferrao Ayala,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Mari Laura,De Rohena Cruz,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Marilia,Rosario De Jesús,/static/images/profile_images/Marilia_Rosario_De_Jesus_3624.jpg,F,TRUE,,,,,,,,,FALSE,FALSE,
@@ -1283,7 +1283,7 @@ Melvin,Colón Maysonet,/static/images/profile_images/Melvin_Colon_Maysonet_2177.
 Melvin,Concepción Corchado,,M,FALSE,,,,16,representante,PNP,,,FALSE,FALSE,
 Melvin,Cruz Cuadrado,/static/images/profile_images/Melvin_Cruz_Cuadrado_4270.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
 Melvin,De Jesús Flores,/static/images/profile_images/Melvin_De_Jesus_Flores_7903.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
-Melvin,Lorenzo Lorenzo,static/images/profile_images/melvin-lorenzo-lorenzo.bin,M,TRUE,,Moca,,,alcalde,PD,,,FALSE,TRUE,
+Melvin,Lorenzo Lorenzo,static/images/profile_images/melvin-lorenzo-lorenzo.jpeg,M,TRUE,,Moca,,,alcalde,PD,,,FALSE,TRUE,
 Mercedita,Cruz Quiñones,/static/images/profile_images/Mercedita_Cruz_Quiñones_6702.jpg,F,TRUE,,,,,,,,,FALSE,FALSE,
 Merlyn Jacet,Rivera Zayas,/static/images/profile_images/Merlyn_Jacet_Rivera_Zayas_2454.jpg,F,TRUE,,Coamo,,,alcalde,PNP,,,FALSE,TRUE,
 Mery Mercy,Ramos Arce,/static/images/profile_images/Mery_Mercy_Ramos_Arce_3068.jpg,F,TRUE,,,,,,,,,FALSE,FALSE,
@@ -1591,7 +1591,7 @@ Rolando,Ortíz Velázquez,/static/images/profile_images/rolando-ortiz-velazquez.
 Rolando,Rivera Garratón,/static/images/profile_images/Rolando_Rivera_Garraton_0416.jpg,M,TRUE,,Vega Baja,,,alcalde,PIP,,,FALSE,TRUE,
 Román,Rivera Alejandro,/static/images/profile_images/Roman_Rivera_Alejandro_9821.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
 Rómulo Jr.,Burgos Ortíz,/static/images/profile_images/Romulo_Burgos_Ortiz_4456.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
-Rosa,Seguí Cordero,/static/images/profile_images/rosa-segui-cordero.jpeg,F,TRUE,,,1,,senador,MVC,,,FALSE,TRUE,Rosa  Seguí
+Rosa,Seguí Cordero,/static/images/profile_images/rosa-segui-cordero.jpeg,F,TRUE,,,1,,senador,MVC,,,FALSE,TRUE,Rosa Seguí
 Rosachely,Rivera Santana,/static/images/profile_images/Rosachely_Rivera_Santana_7382.jpg,F,TRUE,,Gurabo,,,alcalde,PNP,,,FALSE,TRUE,
 Rosa Julia,González Guilloty,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Rosa L.,Muñoz Marzán,,F,TRUE,,,,,,,,,FALSE,FALSE,
