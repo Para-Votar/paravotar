@@ -24,7 +24,7 @@ export default function SEO({
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${title}`}
+      titleTemplate={`${title} | Para Votar 2024`}
     >
       {/* General tags */}
       <title>{title}</title>
