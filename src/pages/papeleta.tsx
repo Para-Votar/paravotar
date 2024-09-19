@@ -86,13 +86,7 @@ export default function Papeleta() {
           {title}
         </Typography>
         <div className="w-full overflow-x-auto">
-          <div className="scale-86 origin-top-left">
-            <Ballot
-              type={ballot.type}
-              structure={ballot.structure}
-              votes={[]}
-            />
-          </div>
+          <Ballot type={ballot.type} structure={ballot.structure} votes={[]} />
         </div>
       </Container>
     </Layout>
