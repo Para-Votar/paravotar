@@ -15,6 +15,8 @@ import { Container, Layout, Typography } from "../components"
 import { useMachine } from "@xstate/react"
 import { PracticeMachine } from "../packages/practica/machines/practice"
 import useErrorMessages from "../packages/practica/hooks/use-error-messages"
+import BallotContainer from "../packages/practica/components/ballot-container"
+import { ToastContainer } from "react-toastify"
 
 interface BallotConfig {
   type: BallotType
@@ -106,15 +108,14 @@ function InteractiveBallot(props: {
     context: {
       ballotType: ballot.type,
       ballots: {
-        estatal: ballot.config,
-        legislativa: ballot.config,
-        municipal: ballot.config,
+        // TODO: Pass in only the necessary ballot config
+        estatal: ballot.config as StateBallotConfig,
+        legislativa: ballot.config as LegislativeBallotConfig,
+        municipal: ballot.config as MunicipalBallotConfig,
       },
       userInput: params.id || "004",
     },
   })
-
-  console.log('state', state.toJSON());
 
   useEffect(() => {
     send({ type: "SKIP_TO_PRACTICE" })
@@ -140,23 +141,32 @@ function InteractiveBallot(props: {
         >
           {title}
         </Typography>
-        <div className="w-full overflow-x-auto">
-          <div className="scale-86 origin-top-left">
-            <Ballot
-              type={ballot.type}
-              structure={ballot.structure}
-              votes={state.context.votes}
-              toggleVote={(candidate, position) => {
-                send("SELECTED_ELECTIVE_FIELD", {
-                  candidate,
-                  position,
-                  ballotType: ballot.type,
-                })
-                setIsPristine(false)
-              }}
-            />
-          </div>
-        </div>
+        <BallotContainer>
+          <ToastContainer
+            position="top-right"
+            autoClose={10000}
+            hideProgressBar={true}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+          />
+          <Ballot
+            type={ballot.type}
+            structure={ballot.structure}
+            votes={state.context.votes}
+            toggleVote={(candidate, position) => {
+              send("SELECTED_ELECTIVE_FIELD", {
+                candidate,
+                position,
+                ballotType: ballot.type,
+              })
+              setIsPristine(false)
+            }}
+          />
+        </BallotContainer>
       </Container>
     </Layout>
   )

@@ -79,7 +79,6 @@ export const PracticeMachine = createMachine<PracticeContext, PracticeEvent>(
           ],
           SKIP_TO_PRACTICE: {
             target: "practicing",
-            // actions: "saveActiveBallotType",
           },
         },
       },
