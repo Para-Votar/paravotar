@@ -10,6 +10,7 @@ import { BallotConfigs } from "../services/ballot-configs"
 type ControlEvent =
   | { type: "start"; userInput: string }
   | { type: "BACK" }
+  | { type: "SKIP_TO_PRACTICE" }
   | { type: "RETRY" }
   | { type: "SUBMIT" }
   | { type: "CONTINUE_PRACTICE" }
@@ -76,6 +77,9 @@ export const PracticeMachine = createMachine<PracticeContext, PracticeEvent>(
               target: "mainScreen",
             },
           ],
+          SKIP_TO_PRACTICE: {
+            target: "practicing",
+          },
         },
       },
       mainScreen: {
