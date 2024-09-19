@@ -14,7 +14,7 @@ export function Section(props: SubSectionProps) {
         props.isActive ? "bg-primary text-white" : ""
       }`}
     >
-      {URL.canParse(props.route) ? (
+      {props.route.includes("https://") ? (
         <a
           className="px-4 py-1 block w-full text-sm"
           href={props.route}

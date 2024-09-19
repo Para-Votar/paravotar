@@ -8,12 +8,10 @@ import { BallotMachine } from "../packages/generate-ballot/machines/ballot-machi
 import { BallotType, Selection } from "../ballot-validator/types"
 import { Ballot } from "../packages/generate-ballot/components"
 import { Vote } from "../packages/practica/services/vote-service"
+import { useLocation } from "react-router-dom"
 
-type PageProps = {
-  location: Location
-}
-
-export default function GenerateBallot({ location }: PageProps) {
+export default function GenerateBallot() {
+  const location = useLocation()
   const params = new URLSearchParams(location.search)
   const ballotType = params.get("ballotType")
   const ballotPath = params.get("ballotPath")

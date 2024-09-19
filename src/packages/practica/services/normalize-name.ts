@@ -5,7 +5,7 @@ const charsMap: Record<string, string> = {
   ó: "o",
   ú: "u",
   ñ: "n",
-  ü: "u",
+  ü: "u%CC%88",
 }
 
 export default function getNormalizedName(name: string) {
