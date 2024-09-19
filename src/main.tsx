@@ -16,6 +16,7 @@ import Colaboraciones from "./pages/colaboraciones"
 import { StrictMode } from "react"
 import Papeletas from "./pages/papeletas"
 import Papeleta from "./pages/papeleta"
+import GenerateBallot from "./pages/generate-ballot"
 
 i18n.use(initReactI18next).init({
   fallbackLng: "es",
@@ -58,8 +59,8 @@ const router = createBrowserRouter([
     element: <HazQueTuVotoCuente />,
   },
   {
-    path: "/generate_ballot",
-    element: <HazQueTuVotoCuente />,
+    path: "/generate-ballot",
+    element: <GenerateBallot />,
   },
   {
     path: "/404",
