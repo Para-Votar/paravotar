@@ -69,7 +69,7 @@ export default function Papeletas() {
           {t("papeletas.escoge-y-ve-directo-a-la-papeleta")}
         </Typography>
         <Typography tag="p" variant="p" className="my-4">
-          {t("papeletas.papeletas-no-interactivas")}
+          {t("papeletas.papeletas-interactivas")}
         </Typography>
         <Dropdown
           options={dropdownOptions}
