@@ -30,15 +30,8 @@ export const Practicing = ({ state, send, handleSubmit }: PracticingProps) => {
     <div>
       <ColumnHighlightProvider>
         <div className="pt-16 px-4 sm:px-8">
-          <Button
-            className="w-full"
-            onClick={handleSubmit}
-            data-testid="submit"
-          >
-            Someter
-          </Button>
           <div className="grid grid-cols-1 gap-2 mx-auto mt-2 lg:grid-cols-2">
-            <Button variant="inverse" onClick={() => setIsOpen(true)}>
+            <Button variant="primary" onClick={() => setIsOpen(true)}>
               Ver límite de votos por puestos electivos
             </Button>
             <Button variant="inverse" onClick={() => send("BACK")}>

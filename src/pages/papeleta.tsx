@@ -1,12 +1,15 @@
-import { useEffect, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import { useLocation, useParams } from "react-router-dom"
 import { CDN_URL } from "../packages/generate-ballot/constants"
 import { Ballot } from "../packages/generate-ballot/components"
 import { BallotType } from "../ballot-validator/types"
 import {
   LegislativeBallotConfig,
+  LegislativeVotesCount,
   MunicipalBallotConfig,
+  MunicipalVotesCount,
   StateBallotConfig,
+  StateVotesCount,
 } from "../packages/practica/services/ballot-configs"
 import { BallotStructure } from "../packages/practica/services/ballot-configs/types"
 import { precinctMap } from "../packages/practica/constants"
@@ -17,6 +20,18 @@ import { PracticeMachine } from "../packages/practica/machines/practice"
 import useErrorMessages from "../packages/practica/hooks/use-error-messages"
 import BallotContainer from "../packages/practica/components/ballot-container"
 import { ToastContainer } from "react-toastify"
+import Switch from "../components/switch"
+import Case from "../components/case"
+import { Results } from "../packages/practica/components/Results"
+import BallotStatus from "../packages/practica/components/ballot-status"
+import ResultsState from "../packages/practica/components/results-state"
+import useVotesTransform from "../packages/practica/hooks/use-votes-transform"
+import useVotesCount from "../packages/practica/hooks/use-votes-count"
+import ResultsMunicipal from "../packages/practica/components/results-municipal"
+import ResultsLegislative from "../packages/practica/components/results-legislative"
+import useBallotValidateAndSubmit from "../packages/practica/hooks/use-ballot-validate-and-submit"
+import Card from "../components/card"
+import { BallotsResponse } from "../packages/practica/services/types"
 
 interface BallotConfig {
   type: BallotType
@@ -43,11 +58,15 @@ function getBallotId(id?: string, ballotType?: string) {
 export default function Papeleta() {
   const [ballot, setBallot] = useState<BallotConfig | null>(null)
   const params = useParams<{ id: string; ballotType: string }>()
+  const ballotPath = useMemo(() => {
+    const ballotId = getBallotId(params.id, params.ballotType)
+
+    return `papeletas/2024/${ballotId}/`
+  }, [params])
 
   useEffect(() => {
     const getBallot = async () => {
-      const ballotId = getBallotId(params.id, params.ballotType)
-      const res = await fetch(`${CDN_URL}/papeletas/2024/${ballotId}/data.json`)
+      const res = await fetch(`${CDN_URL}/${ballotPath}data.json`)
       const result = await res.json()
 
       if (params.ballotType === "estatal") {
@@ -75,7 +94,7 @@ export default function Papeleta() {
     }
 
     getBallot()
-  }, [])
+  }, [ballotPath])
 
   if (!ballot) {
     return <div>Loading...</div>
@@ -85,6 +104,7 @@ export default function Papeleta() {
     <InteractiveBallot
       ballot={ballot}
       ballotType={params.ballotType || "municipal"}
+      ballotPath={ballotPath}
       precintId={params.id}
     />
   )
@@ -93,6 +113,7 @@ export default function Papeleta() {
 function InteractiveBallot(props: {
   ballot: BallotConfig
   ballotType: string
+  ballotPath: string
   precintId?: string
 }) {
   const { ballot, ballotType, precintId } = props
@@ -117,11 +138,6 @@ function InteractiveBallot(props: {
     },
   })
 
-  useEffect(() => {
-    send({ type: "SKIP_TO_PRACTICE" })
-    return
-  }, [])
-
   const { setIsPristine } = useErrorMessages(state as any, [
     state,
     state.value,
@@ -130,6 +146,36 @@ function InteractiveBallot(props: {
     state.context.ballots?.legislativa,
     state.context.ballots?.municipal,
   ])
+
+  const votes = state.context.votes
+  const transformedVotes = useVotesTransform(votes, state)
+  const { votesCount, setVotesCount } = useVotesCount(transformedVotes)
+  const onSubmit = useBallotValidateAndSubmit()
+
+  const handleSubmit = () => {
+    onSubmit(
+      votes,
+      ballot.type,
+      () => {
+        send("SUBMIT")
+      },
+      ballot.config
+    )
+  }
+
+  useEffect(() => {
+    send({
+      type: "SKIP_TO_PRACTICE",
+      ballotType: ballot.type,
+      // Assign the ballot paths so <Results /> can generate the PDF
+      ballotPaths: {
+        estatal: props.ballotPath,
+        municipal: props.ballotPath,
+        legislativa: props.ballotPath,
+      },
+    })
+    return
+  }, [])
 
   return (
     <Layout location={location}>
@@ -141,32 +187,63 @@ function InteractiveBallot(props: {
         >
           {title}
         </Typography>
-        <BallotContainer>
-          <ToastContainer
-            position="top-right"
-            autoClose={10000}
-            hideProgressBar={true}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-          />
-          <Ballot
-            type={ballot.type}
-            structure={ballot.structure}
-            votes={state.context.votes}
-            toggleVote={(candidate, position) => {
-              send("SELECTED_ELECTIVE_FIELD", {
-                candidate,
-                position,
-                ballotType: ballot.type,
-              })
-              setIsPristine(false)
-            }}
-          />
-        </BallotContainer>
+        <Switch state={state}>
+          <Case value="practicing">
+            <BallotContainer>
+              <ToastContainer
+                position="top-right"
+                autoClose={10000}
+                hideProgressBar={true}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+              />
+              <Ballot
+                type={ballot.type}
+                structure={ballot.structure}
+                votes={state.context.votes}
+                toggleVote={(candidate, position) => {
+                  send("SELECTED_ELECTIVE_FIELD", {
+                    candidate,
+                    position,
+                    ballotType: ballot.type,
+                  })
+                  setIsPristine(false)
+                }}
+              />
+              {votesCount && state.matches("practicing") && (
+                <BallotStatus onSubmit={handleSubmit}>
+                  {ballot.type === BallotType.state ? (
+                    <ResultsState
+                      votesCount={votesCount as StateVotesCount}
+                      votes={state.context.votes}
+                    />
+                  ) : ballot.type === BallotType.municipality ? (
+                    <ResultsMunicipal
+                      votesCount={votesCount as MunicipalVotesCount}
+                      votes={state.context.votes}
+                    />
+                  ) : ballot.type === BallotType.legislative ? (
+                    <ResultsLegislative
+                      votesCount={votesCount as LegislativeVotesCount}
+                      votes={state.context.votes}
+                    />
+                  ) : null}
+                </BallotStatus>
+              )}
+            </BallotContainer>
+          </Case>
+          <Case value="showResults">
+            <div className="practice-container mb-16 text-center w-full mx-auto lg:pt-5">
+              <Card className="practice-card flex justify-center text-center">
+                <Results state={state} send={send} returnToBallotsRoute />
+              </Card>
+            </div>
+          </Case>
+        </Switch>
       </Container>
     </Layout>
   )

@@ -1,12 +1,14 @@
 import { ReactNode, useState } from "react"
 
 import Arrows from "../../../components/arrows"
+import { Button } from "../../../components"
 
 type BallotStatusType = {
   children: ReactNode
+  onSubmit?: () => void
 }
 
-export default function BallotStatus({ children }: BallotStatusType) {
+export default function BallotStatus({ children, onSubmit }: BallotStatusType) {
   const [showFullscreen, setShowFullscreen] = useState(false)
 
   if (showFullscreen) {
@@ -27,56 +29,19 @@ export default function BallotStatus({ children }: BallotStatusType) {
             </button>
           </div>
         </div>
-        {/* <div>
-          <Typography tag="p" variant="h4" className="text-white mt-6">
-            Estado de su papeleta:
-          </Typography>
-          <div className="mt-4 mx-auto">
-            {ResultStatus.success === status ? (
-              <>
-                <img className="h-20 w-20 block mx-auto" src={Success} alt="" />
-                <Typography
-                  tag="p"
-                  variant="p"
-                  className="text-white mt-3 block capitalize"
-                >
-                  Valida
-                </Typography>
-              </>
-            ) : ResultStatus.failure === status ? (
-              <>
-                <img
-                  className="h-20 w-20 block mx-auto"
-                  src={ErrorIcon}
-                  alt=""
-                />
-                <Typography
-                  tag="p"
-                  variant="p"
-                  className="text-white mt-3  block capitalize"
-                >
-                  Invalida
-                </Typography>
-              </>
-            ) : null}
-          </div>
-        </div> */}
       </div>
     )
   }
 
   return (
-    <div className="fixed bottom-0 left-0 bg-primary p-2 text-left w-full">
-      <button
-        className="flex items-center justify-between text-white text-left lg:1/4 lg:mx-auto"
-        onClick={() => setShowFullscreen(true)}
-      >
-        Ver candidatos seleccionados
-        <Arrows
-          className="ml-4 text-white"
-          style={{ transform: "rotate(-180deg)" }}
-        />
-      </button>
+    <div className="fixed bottom-0 left-0 bg-navbar p-2 text-left w-full shadow">
+      <div className="flex space-between">
+        <Button variant="inverse" onClick={() => setShowFullscreen(true)}>
+          Ver candidatos seleccionados
+        </Button>
+        <div className="flex flex-1" />
+        <Button onClick={onSubmit}>Validar</Button>
+      </div>
     </div>
   )
 }

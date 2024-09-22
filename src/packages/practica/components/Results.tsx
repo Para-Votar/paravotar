@@ -2,7 +2,7 @@ import { template } from "lodash"
 
 import detector from "../../../ballot-validator/detector"
 import { BallotType } from "../../../ballot-validator/types"
-import { Button, Typography } from "../../../components"
+import { Button, Link, Typography } from "../../../components"
 import useVotesCount from "../hooks/use-votes-count"
 import useVotesTransform from "../hooks/use-votes-transform"
 import {
@@ -18,6 +18,7 @@ import ResultsState from "./results-state"
 interface ResultsProps {
   state: any
   send: any
+  returnToBallotsRoute?: boolean
 }
 
 const typeOfVoteConfig: {
@@ -49,7 +50,11 @@ const ballotTypeToString: { [key: string]: string } = {
   [BallotType.municipality]: "municipal",
 }
 
-export const Results = ({ state, send }: ResultsProps) => {
+export const Results = ({
+  state,
+  send,
+  returnToBallotsRoute = false,
+}: ResultsProps) => {
   const { context } = state
   const transformedVotes = useVotesTransform(context.votes, state)
   const typeOfVote =
@@ -114,13 +119,19 @@ export const Results = ({ state, send }: ResultsProps) => {
           Practica otra papeleta o practica la misma papeleta de nuevo
           precionando el botón de abajo
         </Typography>
-        <Button
-          variant="inverse"
-          className="w-full mt-4"
-          onClick={() => send("CONTINUE_PRACTICE")}
-        >
-          Continuar practicando
-        </Button>
+        {returnToBallotsRoute ? (
+          <Link to="/papeletas" variant="inverse" className="w-full mt-4">
+            Continuar practicando
+          </Link>
+        ) : (
+          <Button
+            variant="inverse"
+            className="w-full mt-4"
+            onClick={() => send("CONTINUE_PRACTICE")}
+          >
+            Continuar practicando
+          </Button>
+        )}
       </section>
       <div className="w-full border border-solid border-t-0 border-r-0 border-l-0 border-footer" />
       <section>
