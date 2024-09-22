@@ -32,6 +32,6 @@ export const BallotResource = {
   },
 
   getBallotPdf(params: string) {
-    api.get(`/getPdfUrl?${params}`)
+    return api.get(`/getPdfUrl?${params}`)
   },
 }
