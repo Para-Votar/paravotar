@@ -14,7 +14,8 @@ export default function GenerateBallot() {
   const location = useLocation()
   const params = new URLSearchParams(location.search)
   const ballotType = params.get("ballotType")
-  const ballotPath = params.get("ballotPath")
+  // Remove the leading slash from the ballot path
+  const ballotPath = params.get("ballotPath")?.replace("/", "")
   const rawVotes = params.get("votes") || "[]"
   const votes = JSON.parse(rawVotes).map(
     (vote: Vote) =>
