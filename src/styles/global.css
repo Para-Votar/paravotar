@@ -197,7 +197,7 @@ button:focus {
   }
 
   .main-content {
-    @apply mx-auto pt-3 relative;
+    @apply mx-auto pt-3 relative w-full;
   }
 
   .practice-card {

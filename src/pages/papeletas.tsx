@@ -55,7 +55,7 @@ export default function Papeletas() {
 
   return (
     <Layout location={location}>
-      <SEO title="Lista de Papeletas de Puerto Rico (2024)" />
+      <SEO title="Papeletas electorales de Puerto Rico" />
       <Container className="m-4 text-center" id="practica-tu-voto">
         <Typography tag="h2" variant="h3" className="uppercase">
           {t("papeletas.escoge-una-papeleta")}

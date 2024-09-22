@@ -19,7 +19,11 @@ function CandidateCard(props: CandidateProps) {
           <Typography variant="p" tag="p" className="font-semibold">
             {props.name}
           </Typography>
-          {qmrLink && <Link to={qmrLink}>Ver más información</Link>}
+          {qmrLink && (
+            <Link to={qmrLink} target="_blank">
+              Ver más información
+            </Link>
+          )}
         </div>
       </>
     </div>
@@ -33,7 +37,7 @@ function CandidatesSummarySection(props: {
 }) {
   return (
     <div
-      className={`border border-r-0 border-l-0 border-t-0 mb-4 ${
+      className={`border border-r-0 border-l-0 border-t-0 border-footer mb-4 ${
         props.inverse ? "" : "border-white"
       } ${props.className}`}
     >

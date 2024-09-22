@@ -27,7 +27,7 @@ const Practica = () => {
 
   return (
     <Layout location={location}>
-      <SEO title="Practica tu voto" />
+      <SEO title="Practica tu voto Puerto Rico" />
       <Container
         className="practice-container pt-16 mb-16 text-center lg:pt-5 w-full"
         id="practica-tu-voto"

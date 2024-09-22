@@ -57,7 +57,7 @@ export default function ResultsLegislative(props: LegislativeResultProps) {
         variant="h3"
         className={`mb-2 ${props.inverse ? "" : "text-white"} font-bold`}
       >
-        En esta papeleta usted ha votado por:
+        Resultado de su voto:
       </Typography>
       <CandidatesSummary.Section inverse={props.inverse}>
         {props.votesCount.districtRepresentative} candidato(a) a Representante

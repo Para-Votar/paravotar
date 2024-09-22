@@ -16,7 +16,7 @@ const HazQueTuVotoCuente = () => {
 
   return (
     <Layout location={location}>
-      <SEO title="Haz que tu voto cuente" />
+      <SEO title="Cómo votar en Puerto Rico" />
       <Container
         className="practice-container pt-16 mb-16 text-center lg:pt-5"
         id="haz-que-tu-voto-cuente"

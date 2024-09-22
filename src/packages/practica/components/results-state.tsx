@@ -35,13 +35,13 @@ export default function ResultsState(props: StateResultsProps) {
   }, [])
 
   return (
-    <div className="w-full">
+    <div className="w-full border border-solid border-t-0 border-r-0 border-l-0 border-footer">
       <Typography
         tag="p"
         variant="h3"
         className={`mb-2 ${props.inverse ? "" : "text-white"} font-bold`}
       >
-        En esta papeleta usted ha votado por:
+        Resultado de su voto:
       </Typography>
       <CandidatesSummary.Section inverse={props.inverse}>
         {props.votesCount.governor} candidato(a) a Gobernador(a)

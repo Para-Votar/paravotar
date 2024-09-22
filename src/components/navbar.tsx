@@ -10,13 +10,13 @@ import Link from "./link"
 const getSections = (pathname = "") => [
   {
     name: "¿Cómo votar?",
-    route: "/haz-que-tu-voto-cuente#como-votar",
-    isActive: pathname.includes("/haz-que-tu-voto-cuente#como-votar"),
+    route: "/haz-que-tu-voto-cuente",
+    isActive: pathname.includes("/haz-que-tu-voto-cuente"),
   },
   {
     name: "Practica tu voto",
     route: "/practica",
-    isActive: pathname.includes("/practica"),
+    isActive: pathname.includes("/practica") || pathname === "/",
   },
   {
     name: "Papeletas",

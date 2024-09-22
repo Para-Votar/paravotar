@@ -11,7 +11,7 @@ type Props = {
 }
 
 const style = {
-  link: "text-primary font-medium hover:underline",
+  link: "text-primary underline font-medium hover:underline",
   inverse:
     "flex align-center justify-center rounded border border-primary bg-transparent text-primary font-bold py-1 px-4 text-sm hover:bg-primary-hover hover:text-white active:text-white-active active:bg-primary-active",
   primary:
@@ -47,7 +47,7 @@ export default function Link({
   }
 
   return (
-    <RRLink to={to} className={`${style} ${className}`}>
+    <RRLink to={to} className={`${classes} ${className}`}>
       {children}
     </RRLink>
   )

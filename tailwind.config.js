@@ -23,7 +23,7 @@ export default {
       footer: "rgba(58,54,48, 0.24)",
       navbar: "#f5ddc0",
       socialMedia: {
-        twitter: "#1DA1F2",
+        twitter: "#000000",
         facebook: "#4267B2",
       },
     },

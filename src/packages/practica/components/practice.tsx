@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next"
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock"
 
 import { toFriendlyErrorMessages } from "../../../ballot-validator/helpers/messages"
-import { Card, Spinner, Typography } from "../../../components/index"
+import { Card, Link, Spinner, Typography } from "../../../components/index"
 import BallotValidator from "../../../ballot-validator/index"
 import { BallotType } from "../../../ballot-validator/types"
 import Arrows from "../../../components/arrows"
@@ -250,17 +250,22 @@ export default function Practice({
 
   return (
     <div className="relative w-full">
-      <Typography tag="h2" variant="h3" className="uppercase">
-        Practica tu voto
-      </Typography>
-      <Typography
-        tag="h3"
-        variant="h2"
-        weight="base"
-        className="font-normal mt-4"
-      >
-        Pon en práctica lo aprendido cuantas veces necesites
-      </Typography>
+      <div className="lg:w-3/4 m-auto">
+        <Typography tag="h2" variant="h3" className="uppercase">
+          Practica tu voto
+        </Typography>
+        <Typography
+          tag="p"
+          variant="p"
+          weight="base"
+          className="font-normal mt-4"
+        >
+          Si es tu primera vez votando o no conoces los tipos de votos que
+          puedes emitir, te recomendamos que visites la sección de{" "}
+          <Link to="/haz-que-tu-voto-cuente">¿Cómo votar?</Link> antes de
+          practicar tu voto.
+        </Typography>
+      </div>
       <Card className="practice-card flex justify-center mt-8">
         {state.nextEvents.includes("BACK") && (
           <div className="absolute top-0 -ml-1 pt-4">

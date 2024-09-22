@@ -59,91 +59,98 @@ export const Results = ({ state, send }: ResultsProps) => {
   const votes = context.votes
 
   return (
-    <div className="mx-auto lg:w-3/4" data-testid="voting-result">
-      {ballotType === BallotType.state && votesCount ? (
-        <ResultsState
-          votesCount={votesCount as StateVotesCount}
-          votes={votes}
-          inverse
+    <div
+      className="flex flex-col gap-8 mx-auto lg:w-3/4 xl:w-full"
+      data-testid="voting-result"
+    >
+      <section>
+        {ballotType === BallotType.state && votesCount ? (
+          <ResultsState
+            votesCount={votesCount as StateVotesCount}
+            votes={votes}
+            inverse
+          />
+        ) : ballotType === BallotType.municipality && votesCount ? (
+          <ResultsMunicipal
+            votesCount={votesCount as MunicipalVotesCount}
+            votes={votes}
+            inverse
+          />
+        ) : ballotType === BallotType.legislative && votesCount ? (
+          <ResultsLegislative
+            votesCount={votesCount as LegislativeVotesCount}
+            votes={votes}
+            inverse
+          />
+        ) : null}
+        <GeneratePDF
+          ballotType={ballotTypeToString[transformedVotes?.ballotType as any]}
+          ballotPath={
+            state.context.ballotPaths[
+              ballotTypeToString[transformedVotes?.ballotType as any]
+            ]
+          }
+          votes={state.context.votes}
         />
-      ) : ballotType === BallotType.municipality && votesCount ? (
-        <ResultsMunicipal
-          votesCount={votesCount as MunicipalVotesCount}
-          votes={votes}
-          inverse
-        />
-      ) : ballotType === BallotType.legislative && votesCount ? (
-        <ResultsLegislative
-          votesCount={votesCount as LegislativeVotesCount}
-          votes={votes}
-          inverse
-        />
-      ) : null}
-      <br />
-      <hr />
-      <br />
-      <Typography tag="p" variant="p">
-        <strong>
-          {typeOfVote &&
-            typeOfVoteConfig[typeOfVote].short({
-              ballotType:
-                ballotTypeToString[transformedVotes?.ballotType as any],
-            })}
-        </strong>
-      </Typography>
-      <br />
-      <Typography tag="p" variant="p">
-        {typeOfVote && typeOfVoteConfig[typeOfVote].long}
-      </Typography>
-      <GeneratePDF
-        ballotType={ballotTypeToString[transformedVotes?.ballotType as any]}
-        ballotPath={
-          state.context.ballotPaths[
-            ballotTypeToString[transformedVotes?.ballotType as any]
-          ]
-        }
-        votes={state.context.votes}
-      />
-      <Typography variant="h3" tag="h3" className="mt-12">
-        Invita a otros(as) a practicar
-      </Typography>
-      <Typography variant="p" tag="p" className="mt-2">
-        Comparte Para Votar con tus amistades y familiares para que puedan
-        conocer a sus candidatos(as) y practicar su voto el antes del día de las
-        elecciones.
-      </Typography>
-      <div className="grid grid-cols-1 gap-2 mt-6 lg:grid-cols-2">
-        <a
-          className="bg-socialMedia-facebook w-full rounded block px-4 py-1 font-bold text-white"
-          href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.paravotar.org%2Fpractica%23practica-tu-voto"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Typography tag="p" variant="p" className="mt-6">
+          <strong>
+            {typeOfVote &&
+              typeOfVoteConfig[typeOfVote].short({
+                ballotType:
+                  ballotTypeToString[transformedVotes?.ballotType as any],
+              })}
+          </strong>
+        </Typography>
+        <Typography tag="p" variant="p">
+          {typeOfVote && typeOfVoteConfig[typeOfVote].long}
+        </Typography>
+      </section>
+      <div className="w-full border border-solid border-t-0 border-r-0 border-l-0 border-footer" />
+      <section>
+        <Typography variant="h3" tag="h3">
+          ¿Quieres continuar practicando?
+        </Typography>
+        <Typography variant="p" tag="p" className="mt-2">
+          Practica otra papeleta o practica la misma papeleta de nuevo
+          precionando el botón de abajo
+        </Typography>
+        <Button
+          variant="inverse"
+          className="w-full mt-4"
+          onClick={() => send("CONTINUE_PRACTICE")}
         >
-          Facebook
-        </a>
-        <a
-          className="bg-socialMedia-twitter w-full rounded block px-4 py-1 font-bold text-white"
-          href="https://twitter.com/intent/tweet?text=¡Practica tu voto y conoce a tus candidatos y candidatas antes del día de la elección!&url=https%3A%2F%2Fwww.paravotar.org%2Fpractica%23practica-tu-voto&via=paravotarpr"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          X
-        </a>
-      </div>
-      <Typography variant="h3" tag="h3" className="mt-12">
-        ¿Quieres continuar practicando?
-      </Typography>
-      <Typography variant="p" tag="p" className="mt-2">
-        Practica otra papeleta o practica la misma papeleta de nuevo precionando
-        el botón de abajo
-      </Typography>
-      <Button
-        variant="inverse"
-        className="w-full mt-4"
-        onClick={() => send("CONTINUE_PRACTICE")}
-      >
-        Continuar practicando
-      </Button>
+          Continuar practicando
+        </Button>
+      </section>
+      <div className="w-full border border-solid border-t-0 border-r-0 border-l-0 border-footer" />
+      <section>
+        <Typography variant="h3" tag="h3">
+          Invita a otros(as) a practicar
+        </Typography>
+        <Typography variant="p" tag="p" className="mt-2">
+          Comparte Para Votar con tus amistades y familiares para que puedan
+          conocer a sus candidatos(as) y practicar su voto el antes del día de
+          las elecciones.
+        </Typography>
+        <div className="grid grid-cols-1 gap-2 mt-6 lg:grid-cols-2">
+          <a
+            className="bg-socialMedia-facebook w-full rounded block px-4 py-1 font-bold text-white"
+            href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.paravotar.org%2Fpractica%23practica-tu-voto"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Facebook
+          </a>
+          <a
+            className="bg-socialMedia-twitter w-full rounded block px-4 py-1 font-bold text-white"
+            href="https://twitter.com/intent/tweet?text=¡Practica tu voto y conoce a tus candidatos y candidatas antes del día de la elección!&url=https%3A%2F%2Fwww.paravotar.org%2Fpractica%23practica-tu-voto&via=paravotarpr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X
+          </a>
+        </div>
+      </section>
     </div>
   )
 }
