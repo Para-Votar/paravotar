@@ -199,6 +199,10 @@ const BallotService = {
 
     const result = await BallotResource.getBallotPdf(params.toString())
 
+    if (result == null) {
+      throw new Error("Failed to get PDF URL.")
+    }
+
     return result
   },
 }

@@ -46,7 +46,9 @@ export const generatePdfMachine = Machine<{
               onDone: {
                 target: "#generatePdfMachine.generatedPdf",
                 actions: [
-                  assign({ pdfUrl: (_, event) => event.data.url }),
+                  assign({
+                    pdfUrl: (_, event) => (event.data ? event.data.url : null),
+                  }),
                   assign({
                     pollingCount: ({ pollingCount }) => pollingCount + 1,
                   }),
