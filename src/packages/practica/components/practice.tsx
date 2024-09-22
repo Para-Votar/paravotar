@@ -266,9 +266,16 @@ export default function Practice({
           practicar tu voto.
         </Typography>
       </div>
-      <Card className="practice-card flex justify-center mt-8">
+      <Card
+        className="practice-card flex justify-center mt-8"
+        applyContainerPadding={!state.matches("practicing")}
+      >
         {state.nextEvents.includes("BACK") && (
-          <div className="absolute top-0 -ml-1 pt-4">
+          <div
+            className={`absolute top-0 -ml-1 pt-4 ${
+              state.matches("practicing") ? "px-4 sm:px-8" : ""
+            }`}
+          >
             <button
               className="mb-4 inline-flex items-center border-none text-primary font-semibold hover:underline"
               onClick={() => send("BACK")}
@@ -290,21 +297,6 @@ export default function Practice({
               selectVoterId={() => send("SELECTED_VOTER_ID")}
               selectPrecint={() => send("SELECTED_PRECINT")}
             />
-          </Case>
-          <Case value="enterVoterId">
-            <EnterVoterIdForm
-              errorMessage={
-                state.matches({ enterVoterId: "empty" })
-                  ? "Favor entre un número electoral."
-                  : null
-              }
-              onSubmit={({ userInput, findBy }) => {
-                send("ADDED_VOTER_ID", { userInput, findBy })
-              }}
-            />
-          </Case>
-          <Case value="noVoterIdFound">
-            <NoVoterIdFound send={send} />
           </Case>
           <Case value="enterPrecint">
             <PrecintNumberForm

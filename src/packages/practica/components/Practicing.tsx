@@ -29,7 +29,7 @@ export const Practicing = ({ state, send, handleSubmit }: PracticingProps) => {
   return (
     <div>
       <ColumnHighlightProvider>
-        <div className="mt-6 mb-6">
+        <div className="pt-16 px-4 sm:px-8">
           <Button
             className="w-full"
             onClick={handleSubmit}
@@ -45,11 +45,11 @@ export const Practicing = ({ state, send, handleSubmit }: PracticingProps) => {
               Escoger papeletas
             </Button>
           </div>
+          <Typography tag="p" variant="p" className="text-xs italic mt-8">
+            *Para ver otros partidos desliza hacia la derecha y para ver más
+            candidatos desliza hacia abajo.
+          </Typography>
         </div>
-        <Typography tag="p" variant="p" className="text-xs italic">
-          *Para ver otros partidos desliza hacia la derecha y para ver más
-          candidatos desliza hacia abajo.
-        </Typography>
         {state.context.ballotType === BallotType.state &&
           state.context.ballots.estatal && (
             <BallotContainer>

@@ -11,7 +11,7 @@ type BallotContainerProps = {
 
 export default function BallotContainer(props: BallotContainerProps) {
   return (
-    <div id="ballot-container" className="overflow-scroll -mx-8 mt-6">
+    <div id="ballot-container" className="overflow-scroll mt-6">
       {props.children}
     </div>
   )

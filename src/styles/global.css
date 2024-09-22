@@ -182,18 +182,9 @@ button:focus {
 }
 
 @screen lg {
-  .wrapper {
-    @apply grid;
-  }
-
   .sidebar {
     @apply grid relative border border-solid border-b-0 border-t-0 border-l-0 border-footer bg-navbar;
     grid-column-start: 1;
-  }
-
-  .main {
-    @apply grid w-full;
-    grid-column-start: 2;
   }
 
   .main-content {
@@ -202,27 +193,6 @@ button:focus {
 
   .practice-card {
     min-height: 300px;
-  }
-
-  .main-content-with-sidebar {
-    max-width: calc(100vw - 275px);
-    min-width: calc(100vw - 275px);
-  }
-
-  .main-with-sidebar {
-    grid-column-start: 2;
-  }
-
-  .main-without-sidebar {
-    grid-column-start: 1;
-  }
-
-  .wrapper-with-sidebar {
-    grid-template-columns: 275px auto;
-  }
-
-  .wrapper-without-sidebar {
-    grid-template-columns: "auto";
   }
 
   .ballot-summary {

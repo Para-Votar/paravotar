@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <Container
       tag="footer"
-      className="text-center p-4 border border-solid border-b-0 border-r-0 border-l-0 border-footer md:w-10/12"
+      className="text-center p-4 border border-solid border-b-0 border-r-0 border-l-0 border-footer mt-8 md:w-10/12"
     >
       <Link
         to="https://github.com/Para-Votar/paravotar/blob/master/CONTRIBUTING.md"

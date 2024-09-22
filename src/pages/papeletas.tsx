@@ -56,7 +56,10 @@ export default function Papeletas() {
   return (
     <Layout location={location}>
       <SEO title="Papeletas electorales de Puerto Rico" />
-      <Container className="m-4 text-center" id="practica-tu-voto">
+      <Container
+        className="w-11/12 pt-16 text-center lg:w-10/12 lg:mb-32 lg:pt-5"
+        id="practica-tu-voto"
+      >
         <Typography tag="h2" variant="h3" className="uppercase">
           {t("papeletas.escoge-una-papeleta")}
         </Typography>

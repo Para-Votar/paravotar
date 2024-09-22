@@ -35,7 +35,7 @@ export default function ResultsState(props: StateResultsProps) {
   }, [])
 
   return (
-    <div className="w-full border border-solid border-t-0 border-r-0 border-l-0 border-footer">
+    <div className="w-full">
       <Typography
         tag="p"
         variant="h3"
