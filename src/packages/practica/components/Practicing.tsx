@@ -29,18 +29,27 @@ export const Practicing = ({ state, send, handleSubmit }: PracticingProps) => {
   return (
     <div>
       <ColumnHighlightProvider>
-        <Typography tag="p" variant="p" className="text-xs italic mt-6 mb-6">
-          *Para ver otros partidos realiza un scroll hacia tu derecha y para ver
-          más candidatos realiza scroll hacia abajo.
-        </Typography>
-        <div className="grid grid-cols-1 gap-2 mx-auto lg:grid-cols-2 lg:w-3/4">
-          <Button onClick={handleSubmit} data-testid="submit">
-            Continuar
+        <div className="mt-6 mb-6">
+          <Button
+            className="w-full"
+            onClick={handleSubmit}
+            data-testid="submit"
+          >
+            Someter
           </Button>
-          <Button variant="inverse" onClick={() => setIsOpen(true)}>
-            Ver límite de votos por puestos electivos
-          </Button>
+          <div className="grid grid-cols-1 gap-2 mx-auto mt-2 lg:grid-cols-2">
+            <Button variant="inverse" onClick={() => setIsOpen(true)}>
+              Ver límite de votos por puestos electivos
+            </Button>
+            <Button variant="inverse" onClick={() => send("BACK")}>
+              Escoger papeletas
+            </Button>
+          </div>
         </div>
+        <Typography tag="p" variant="p" className="text-xs italic">
+          *Para ver otros partidos desliza hacia la derecha y para ver más
+          candidatos desliza hacia abajo.
+        </Typography>
         {state.context.ballotType === BallotType.state &&
           state.context.ballots.estatal && (
             <BallotContainer>
