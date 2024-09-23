@@ -7664,7 +7664,11 @@ export default {
     firstName: "Javier",
     lastName: "Smith Torres",
   },
-  "Javier Córdova": { id: "869", firstName: "Javier", lastName: "Córdova" },
+  "Javier Córdova Iturregui": {
+    id: "869",
+    firstName: "Javier",
+    lastName: "Córdova",
+  },
   "Javier Jiménez Pérez": {
     id: "1972",
     firstName: "Javier",
@@ -12512,7 +12516,7 @@ export default {
     firstName: "Marialejandra",
     lastName: "Pérez Vélez",
   },
-  "Marially González": {
+  "Marially González Huertas": {
     id: "1674",
     firstName: "Marially",
     lastName: "González",
@@ -15647,7 +15651,7 @@ export default {
     firstName: "Raúl",
     lastName: "Román Freytes",
   },
-  "Raúl Tirado": { id: "4515", firstName: "Raúl", lastName: "Tirado" },
+  "Raúl Tirado (Hijo)": { id: "4515", firstName: "Raúl", lastName: "Tirado" },
   "Raúl Figueroa Berríos": {
     id: "1373",
     firstName: "Raúl",
