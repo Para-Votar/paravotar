@@ -18581,4 +18581,124 @@ export default {
     firstName: "Zulma I.",
     lastName: "Figueroa Pérez",
   },
+  "Yesenia Feliciano Camacho": {
+    id: "1302",
+    firstName: "Yesenia",
+    lastName: "Feliciano Camacho",
+  },
+  "Benito Matos": {
+    id: "2438",
+    firstName: "Benito",
+    lastName: "Matos",
+  },
+  "Gabriela Noelis Santiago Morales": {
+    id: "5061",
+    firstName: "Gabriela Noelis",
+    lastName: "Santiago Morales",
+  },
+  "Maribel Bonano Márquez": {
+    id: "425",
+    firstName: "Maribel",
+    lastName: "Bonano Márquez",
+  },
+  "Raúl Alberto Darauche Andújar": {
+    id: "5068",
+    firstName: "Raúl Alberto",
+    lastName: "Darauche Andújar",
+  },
+  "César Rivera Tiburcio": {
+    id: "3708",
+    firstName: "César",
+    lastName: "Rivera Tiburcio",
+  },
+  "Alexander Burgos Otero": {
+    id: "483",
+    firstName: "Alexander",
+    lastName: "Burgos Otero",
+  },
+  "Lilliam Santiago Guevara": {
+    id: "4299",
+    firstName: "Lilliam",
+    lastName: "Santiago Guevara",
+  },
+  "Javier Capestany Figueroa": {
+    id: "558",
+    firstName: "Javier",
+    lastName: "Capestany Figueroa",
+  },
+  "Carlos Isaías Rodríguez Ortiz": {
+    id: "3918",
+    firstName: "Carlos Isaías",
+    lastName: "Rodríguez Ortiz",
+  },
+  "Ivelisse Durand Vélez": {
+    id: "1231",
+    firstName: "Ivelisse",
+    lastName: "Duránd Vélez",
+  },
+  "Ramón (Ramoncito) Hernández": {
+    id: "1886",
+    firstName: "Ramón (Ramoncito)",
+    lastName: "Hernández",
+  },
+  "Eli Samuel Morales Morales": {
+    id: "2715",
+    firstName: "Eli Samuel",
+    lastName: "Morales Morales",
+  },
+  "Juan J. González Elizalde": {
+    id: "1613",
+    firstName: "Juan J.",
+    lastName: "González Elizalde",
+  },
+  "Virgilio Sánchez Figueroa": {
+    id: "4205",
+    firstName: "Virgilio",
+    lastName: "Sánchez Figueroa",
+  },
+  "Julimar Fuentes Mercado ": {
+    id: "1467",
+    firstName: "Julimar",
+    lastName: "Fuentes Mercado ",
+  },
+  "Loyda Inés Rivera Febres": {
+    id: "5070",
+    firstName: "Loyda Inés",
+    lastName: "Rivera Febres",
+  },
+  "Sinia E. Saavedra Morales": {
+    id: "4164",
+    firstName: "Sinia E.",
+    lastName: "Saavedra Morales",
+  },
+  "Alberto J. Giménez Cruz": {
+    id: "1588",
+    firstName: "Alberto J.",
+    lastName: "Giménez Cruz",
+  },
+  "José (Pepe) Varela": {
+    id: "4716",
+    firstName: "José (Pepe)",
+    lastName: "Varela",
+  },
+  "Carmen Ruth Pérez Hernández": {
+    id: "5112",
+    firstName: "Carmen Ruth",
+    lastName: "Pérez Hernández",
+  },
+  "Jerry Solís González": {
+    id: "5113",
+    firstName: "Jerry",
+    lastName: "Solís González",
+  },
+  "Betzaida Mackenzie Marín ": {
+    id: "2214",
+    firstName: "Betzaida",
+    lastName: "Mackenzie Marín",
+  },
+  "Fabián Carrión": {
+    id: "3098",
+    firstName: "Frabián",
+    lastName: "Pagán",
+  },
 }
