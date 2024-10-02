@@ -33,7 +33,8 @@ export default {
     },
     extend: {
       scale: {
-        86: "0.86",
+        85: "0.85",
+        72: "0.72",
       },
       fontSize: {
         "9xl": "72px",

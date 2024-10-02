@@ -23,7 +23,7 @@ export default function Candidate(props: CandidateProps) {
   return (
     <div className="border">
       <div
-        className="candidate items-center mx-auto py-1 px-3"
+        className="candidate items-center mx-auto py-1 px-2"
         data-vote-type={props.voteType}
       >
         {!props.accumulationNumber ? (

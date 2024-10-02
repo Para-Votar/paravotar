@@ -30,13 +30,24 @@ type BallotProps = {
   ) => void
 }
 
+const BallotBackground = {
+  [BallotType.legislative]: "bg-ballots-legislative",
+  [BallotType.municipality]: "bg-ballots-municipal",
+  [BallotType.state]: "bg-ballots-governmental",
+}
+
+const ScaleAdjustment = {
+  "4": "scale-90 sm:scale-100 origin-center",
+  "5": "scale-90 sm:scale-100 origin-center",
+  "6": "scale-90 sm:scale-85 origin-top-left",
+  "7": "scale-90 sm:scale-72 origin-top-left",
+}
+
 export default function BaseBallot(props: BallotProps) {
-  const ballotBg =
-    props.type === BallotType.state
-      ? "bg-ballots-governmental"
-      : props.type === BallotType.municipality
-        ? "bg-ballots-municipal"
-        : "bg-ballots-legislative"
+  const ballotBg = BallotBackground[props.type]
+  const scale =
+    ScaleAdjustment[`${props.structure[0].length}`] ??
+    "scale-100 origin-top-left"
   const { highlightedColumn } = useColumnHighlight()
   const isLegislativeBallot = props.type === BallotType.legislative
   const ballotWidth =
@@ -45,148 +56,150 @@ export default function BaseBallot(props: BallotProps) {
       : 2000
 
   return (
-    <div className="bg-black" style={{ width: ballotWidth }}>
-      {props.structure.map(
-        (row: CandidatesRow | PartyRow | Header[], rowIndex: number) => {
-          return (
-            <div
-              key={`state-ballot-${rowIndex}`}
-              className={`grid ${rowIndex !== 0 ? ballotBg : ""}`}
-              style={{
-                gridTemplateColumns: `repeat(${row.length}, 295px)`,
-              }}
-            >
-              {row.map((col, colIndex) => {
-                const vote = props.votes.find((vote) => {
-                  return (
-                    vote.position.row === rowIndex &&
-                    vote.position.column === colIndex
-                  )
-                })
-                const hasVote = !!vote
-                const isExplicitVote = hasVote
-                  ? (vote as Vote).wasSelectedExplictly()
-                  : false
-                const isImplicitVote = hasVote
-                  ? (vote as Vote).wasSelectedImplicitly()
-                  : false
-                const isHighlighted = colIndex === highlightedColumn
-                const voteType = isExplicitVote
-                  ? "explicit-vote"
-                  : isImplicitVote
-                    ? "implicit-vote"
-                    : "no-vote"
-                const voteOpacity = isExplicitVote
-                  ? "opacity-100"
-                  : isImplicitVote
-                    ? "opacity-25"
-                    : ""
+    <div className={`bg-black ${scale}`}>
+      <div className="bg-black" style={{ width: ballotWidth }}>
+        {props.structure.map(
+          (row: CandidatesRow | PartyRow | Header[], rowIndex: number) => {
+            return (
+              <div
+                key={`state-ballot-${rowIndex}`}
+                className={`grid ${rowIndex !== 0 ? ballotBg : ""}`}
+                style={{
+                  gridTemplateColumns: `repeat(${row.length}, 295px)`,
+                }}
+              >
+                {row.map((col, colIndex) => {
+                  const vote = props.votes.find((vote) => {
+                    return (
+                      vote.position.row === rowIndex &&
+                      vote.position.column === colIndex
+                    )
+                  })
+                  const hasVote = !!vote
+                  const isExplicitVote = hasVote
+                    ? (vote as Vote).wasSelectedExplictly()
+                    : false
+                  const isImplicitVote = hasVote
+                    ? (vote as Vote).wasSelectedImplicitly()
+                    : false
+                  const isHighlighted = colIndex === highlightedColumn
+                  const voteType = isExplicitVote
+                    ? "explicit-vote"
+                    : isImplicitVote
+                      ? "implicit-vote"
+                      : "no-vote"
+                  const voteOpacity = isExplicitVote
+                    ? "opacity-100"
+                    : isImplicitVote
+                      ? "opacity-25"
+                      : ""
 
-                if (col instanceof Party) {
+                  if (col instanceof Party) {
+                    return (
+                      <Ballot.PoliticalParty
+                        key={col.id}
+                        voteType={voteType}
+                        logo={col.insignia}
+                        ocrResult={col.name}
+                        hasVote={hasVote}
+                        voteOpacity={voteOpacity}
+                        position={colIndex}
+                        isHighlighted={isHighlighted}
+                        toggleVote={() => {
+                          if (props.toggleVote == null) return
+
+                          props.toggleVote(col, {
+                            row: rowIndex,
+                            column: colIndex,
+                          })
+                        }}
+                      />
+                    )
+                  }
+
+                  if (col instanceof WriteInRules) {
+                    return (
+                      <Ballot.WriteInRules
+                        key={col.id}
+                        esTitle={col.esTitle}
+                        esRules={col.esRules}
+                        enTitle={col.enTitle}
+                        enRules={col.enRules}
+                      />
+                    )
+                  }
+
+                  if (col instanceof Rule) {
+                    return <Ballot.Rule key={col.id} ocrResult={col.rule} />
+                  }
+
+                  if (col instanceof Candidate) {
+                    return (
+                      <Ballot.Candidate
+                        key={col.id}
+                        img={col.img}
+                        name={col.name}
+                        hasVote={hasVote}
+                        voteType={voteType}
+                        voteOpacity={voteOpacity}
+                        accumulationNumber={col.accumulationNumber}
+                        isHighlighted={isHighlighted}
+                        isPartyHighlighted={
+                          isLegislativeBallot
+                            ? col.receivesImpicitVote && isHighlighted
+                            : isHighlighted
+                        }
+                        toggleVote={() => {
+                          if (props.toggleVote == null) return
+
+                          props.toggleVote(col, {
+                            row: rowIndex,
+                            column: colIndex,
+                          })
+                        }}
+                      />
+                    )
+                  }
+
+                  if (col instanceof WriteInCandidate) {
+                    return (
+                      <Ballot.WriteIn
+                        key={col.id}
+                        accumulationNumber={col.accumulationNumber}
+                        hasVote={hasVote}
+                        voteOpacity={voteOpacity}
+                        voteType={voteType}
+                        toggleVote={() => {
+                          if (props.toggleVote == null) return
+
+                          props.toggleVote(col, {
+                            row: rowIndex,
+                            column: colIndex,
+                          })
+                        }}
+                        initialTextValue={col.name || vote?.candidate?.name}
+                        updateName={(name: string) => col.setName(name)}
+                      />
+                    )
+                  }
+
+                  if (col instanceof EmptyCandidacy) {
+                    return <Ballot.EmptyCandidacy key={col.id} />
+                  }
+
                   return (
-                    <Ballot.PoliticalParty
+                    <Ballot.SectionHeader
                       key={col.id}
-                      voteType={voteType}
-                      logo={col.insignia}
-                      ocrResult={col.name}
-                      hasVote={hasVote}
-                      voteOpacity={voteOpacity}
-                      position={colIndex}
-                      isHighlighted={isHighlighted}
-                      toggleVote={() => {
-                        if (props.toggleVote == null) return
-
-                        props.toggleVote(col, {
-                          row: rowIndex,
-                          column: colIndex,
-                        })
-                      }}
+                      ocrResult={col.info}
+                      slug={col.slug}
                     />
                   )
-                }
-
-                if (col instanceof WriteInRules) {
-                  return (
-                    <Ballot.WriteInRules
-                      key={col.id}
-                      esTitle={col.esTitle}
-                      esRules={col.esRules}
-                      enTitle={col.enTitle}
-                      enRules={col.enRules}
-                    />
-                  )
-                }
-
-                if (col instanceof Rule) {
-                  return <Ballot.Rule key={col.id} ocrResult={col.rule} />
-                }
-
-                if (col instanceof Candidate) {
-                  return (
-                    <Ballot.Candidate
-                      key={col.id}
-                      img={col.img}
-                      name={col.name}
-                      hasVote={hasVote}
-                      voteType={voteType}
-                      voteOpacity={voteOpacity}
-                      accumulationNumber={col.accumulationNumber}
-                      isHighlighted={isHighlighted}
-                      isPartyHighlighted={
-                        isLegislativeBallot
-                          ? col.receivesImpicitVote && isHighlighted
-                          : isHighlighted
-                      }
-                      toggleVote={() => {
-                        if (props.toggleVote == null) return
-
-                        props.toggleVote(col, {
-                          row: rowIndex,
-                          column: colIndex,
-                        })
-                      }}
-                    />
-                  )
-                }
-
-                if (col instanceof WriteInCandidate) {
-                  return (
-                    <Ballot.WriteIn
-                      key={col.id}
-                      accumulationNumber={col.accumulationNumber}
-                      hasVote={hasVote}
-                      voteOpacity={voteOpacity}
-                      voteType={voteType}
-                      toggleVote={() => {
-                        if (props.toggleVote == null) return
-
-                        props.toggleVote(col, {
-                          row: rowIndex,
-                          column: colIndex,
-                        })
-                      }}
-                      initialTextValue={col.name || vote?.candidate?.name}
-                      updateName={(name: string) => col.setName(name)}
-                    />
-                  )
-                }
-
-                if (col instanceof EmptyCandidacy) {
-                  return <Ballot.EmptyCandidacy key={col.id} />
-                }
-
-                return (
-                  <Ballot.SectionHeader
-                    key={col.id}
-                    ocrResult={col.info}
-                    slug={col.slug}
-                  />
-                )
-              })}
-            </div>
-          )
-        }
-      )}
+                })}
+              </div>
+            )
+          }
+        )}
+      </div>
     </div>
   )
 }
