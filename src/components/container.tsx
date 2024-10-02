@@ -21,7 +21,7 @@ export default function Container({
     tag,
     {
       id,
-      className: `max-w-screen-2xl mx-auto ${className}`,
+      className: `mx-auto ${className}`,
       tabIndex,
       ref,
       "data-testid": id,

@@ -31,7 +31,6 @@ import ResultsMunicipal from "../packages/practica/components/results-municipal"
 import ResultsLegislative from "../packages/practica/components/results-legislative"
 import useBallotValidateAndSubmit from "../packages/practica/hooks/use-ballot-validate-and-submit"
 import Card from "../components/card"
-import { BallotsResponse } from "../packages/practica/services/types"
 
 interface BallotConfig {
   type: BallotType

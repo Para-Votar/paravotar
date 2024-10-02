@@ -1,5 +1,5 @@
 .candidate {
   display: grid;
-  grid-template-columns: 1.5rem 40px 40px auto;
+  grid-template-columns: 1.2rem 32px 36px auto;
   gap: 0.25rem;
 }

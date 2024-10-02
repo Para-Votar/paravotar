@@ -43,14 +43,17 @@ export default function Candidate(props: CandidateProps) {
         />
         {props.img ? (
           <img
-            className="h-10 w-10 object-cover"
+            className="h-9 w-9 object-cover"
             src={props.img}
             alt={`Foto de ${props.name}`}
           />
         ) : (
-          <div className="h-10 w-10"></div>
+          <div className="h-9 w-9"></div>
         )}
-        <p className="whitespace-pre-wrap ml-1 text-left text-sm">
+        <p
+          className="whitespace-pre-wrap ml-1 text-left text-sm line-clamp-2"
+          title={props.name}
+        >
           {qmrLink ? (
             <a
               className="underline"
