@@ -44,7 +44,8 @@ export default function BaseBallot(props: BallotProps) {
   const ballotBg = BallotBackground[props.type]
   const { highlightedColumn } = useColumnHighlight()
   const isLegislativeBallot = props.type === BallotType.legislative
-  const columnWidthByWindowSize = window.innerWidth / columns
+  const windowWidth = window ? window.innerWidth : 2000
+  const columnWidthByWindowSize = windowWidth / columns
   const columnWidth =
     columnWidthByWindowSize < MIN_COL_SIZE
       ? MIN_COL_SIZE
