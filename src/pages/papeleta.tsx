@@ -31,6 +31,7 @@ import ResultsMunicipal from "../packages/practica/components/results-municipal"
 import ResultsLegislative from "../packages/practica/components/results-legislative"
 import useBallotValidateAndSubmit from "../packages/practica/hooks/use-ballot-validate-and-submit"
 import Card from "../components/card"
+import SEO from "../components/seo"
 
 interface BallotConfig {
   type: BallotType
@@ -178,6 +179,7 @@ function InteractiveBallot(props: {
 
   return (
     <Layout location={location}>
+      <SEO title={title} />
       <Container className="overflow-hidden">
         <Typography
           tag="h2"
