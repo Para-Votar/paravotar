@@ -141,7 +141,7 @@ export default function Papeletas() {
         <Typography tag="p" variant="p" className="my-4">
           {t("papeletas.papeletas-interactivas")}
         </Typography>
-        <div className="flex flex-row justify-center gap-6 py-4">
+        <div className="flex flex-row justify-center gap-6 py-4 flex-wrap">
           <Typography tag="p" variant="p">
             Mostrar por:
           </Typography>
@@ -158,16 +158,6 @@ export default function Papeletas() {
           </Link>
           <Link
             variant={
-              searchParams.get("displayBy") === DisplayBy.DistrictRep
-                ? "primary"
-                : "inverse"
-            }
-            to={`?displayBy=${DisplayBy.DistrictRep}`}
-          >
-            Distritos Representativos
-          </Link>
-          <Link
-            variant={
               searchParams.get("displayBy") === DisplayBy.DistrictSen
                 ? "primary"
                 : "inverse"
@@ -175,6 +165,16 @@ export default function Papeletas() {
             to={`?displayBy=${DisplayBy.DistrictSen}`}
           >
             Distritos Senatoriales
+          </Link>
+          <Link
+            variant={
+              searchParams.get("displayBy") === DisplayBy.DistrictRep
+                ? "primary"
+                : "inverse"
+            }
+            to={`?displayBy=${DisplayBy.DistrictRep}`}
+          >
+            Distritos Representativos
           </Link>
         </div>
         <section className="grid grid-cols-1 gap-x-4 gap-y-8 pt-8 md:grid-cols-4">
