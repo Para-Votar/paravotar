@@ -1,9 +1,19 @@
-import { useLocation } from "react-router-dom"
+import { useTranslation } from "react-i18next"
+import { useLocation, useSearchParams } from "react-router-dom"
+import { groupBy } from "lodash"
+
 import { precintList } from "../packages/practica/constants"
 import { Container, Layout, Link, Typography } from "../components"
 import getNormalizedName from "../packages/practica/services/normalize-name"
 import SEO from "../components/seo"
-import { useTranslation } from "react-i18next"
+
+function titleCase(str: string) {
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ")
+}
 
 function getBallots() {
   return precintList.reduce<{ [municipality: string]: string[] }>(
@@ -28,6 +38,9 @@ function getBallots() {
   )
 }
 
+const precinctsByDistrictRep = groupBy(precintList, "districtRep")
+const precinctsByDistrictSen = groupBy(precintList, "districtSen")
+
 const allBallots = {
   state: { url: "estatal", name: "Estatal" },
   municipalities: Object.entries(getBallots()).map(
@@ -46,11 +59,74 @@ const allBallots = {
       }
     }
   ),
+  districtRep: Object.entries(precinctsByDistrictRep).map(
+    ([districtResp, precinct]) => {
+      const precinctsByMunicipality = groupBy(precinct, "municipality")
+
+      return {
+        name: `Distrito Rep. ${districtResp}`,
+        url: `distrito-representativo/${districtResp}`,
+        municipalities: Object.entries(precinctsByMunicipality).map(
+          ([municipality, precincts]) => {
+            return {
+              name: `${titleCase(municipality)}`,
+              url: `municipal/${getNormalizedName(municipality)}`,
+              precincts: precincts.map((precinct) => {
+                return {
+                  url: `legislativa/${precinct.precint}`,
+                  name: `${precinct.precint}`,
+                }
+              }),
+            }
+          }
+        ),
+      }
+    }
+  ),
+  districtSen: Object.entries(precinctsByDistrictSen).map(
+    ([districtSen, precinct]) => {
+      const precinctsByMunicipality = groupBy(precinct, "municipality")
+
+      return {
+        name: `Distrito Senatorial ${districtSen}`,
+        url: `distrito-senatorial/${districtSen}`,
+        municipalities: Object.entries(precinctsByMunicipality).map(
+          ([municipality, precincts]) => {
+            return {
+              name: `${titleCase(municipality)}`,
+              url: `municipal/${getNormalizedName(municipality)}`,
+              precincts: precincts.map((precinct) => {
+                return {
+                  url: `legislativa/${precinct.precint}`,
+                  name: `${precinct.precint}`,
+                }
+              }),
+            }
+          }
+        ),
+        precincts: precinct.map((precinct) => {
+          return {
+            url: `legislativa/${precinct.precint}`,
+            name: `Legislativa - Precinto ${precinct.precint}`,
+          }
+        }),
+      }
+    }
+  ),
+}
+
+enum DisplayBy {
+  Municipality = "municipality",
+  DistrictRep = "district-rep",
+  DistrictSen = "district-sen",
 }
 
 export default function Papeletas() {
+  const [searchParams] = useSearchParams()
   const { t } = useTranslation()
   const location = useLocation()
+
+  console.log({ searchParams })
 
   return (
     <Layout location={location}>
@@ -62,48 +138,154 @@ export default function Papeletas() {
         <Typography tag="h2" variant="h3" className="uppercase">
           {t("papeletas.escoge-una-papeleta")}
         </Typography>
-        <Typography
-          tag="h3"
-          variant="h2"
-          weight="base"
-          className="font-normal mt-4"
-        >
-          {t("papeletas.escoge-y-ve-directo-a-la-papeleta")}
-        </Typography>
         <Typography tag="p" variant="p" className="my-4">
           {t("papeletas.papeletas-interactivas")}
         </Typography>
+        <div className="flex flex-row justify-center gap-6 py-4">
+          <Typography tag="p" variant="p">
+            Mostrar por:
+          </Typography>
+          <Link
+            variant={
+              !searchParams.has("displayBy") ||
+              searchParams.get("displayBy") === DisplayBy.Municipality
+                ? "primary"
+                : "inverse"
+            }
+            to={`?displayBy=${DisplayBy.Municipality}`}
+          >
+            Municipios
+          </Link>
+          <Link
+            variant={
+              searchParams.get("displayBy") === DisplayBy.DistrictRep
+                ? "primary"
+                : "inverse"
+            }
+            to={`?displayBy=${DisplayBy.DistrictRep}`}
+          >
+            Distritos Representativos
+          </Link>
+          <Link
+            variant={
+              searchParams.get("displayBy") === DisplayBy.DistrictSen
+                ? "primary"
+                : "inverse"
+            }
+            to={`?displayBy=${DisplayBy.DistrictSen}`}
+          >
+            Distritos Senatoriales
+          </Link>
+        </div>
         <section className="grid grid-cols-1 gap-x-4 gap-y-8 pt-8 md:grid-cols-4">
-          <div>
-            <Typography tag="h3" variant="h3" className="uppercase">
-              {allBallots.state.name}
-            </Typography>
-            <Link to={`/papeletas/${allBallots.state.url}`} className="block">
-              Papeleta
-            </Link>
-          </div>
-          {allBallots.municipalities.map((municipality) => (
-            <div>
-              <Typography tag="h3" variant="h3" className="uppercase">
-                {municipality.name}
-              </Typography>
-              <Link
-                to={`/papeletas/${municipality.url}`}
-                className="block my-2"
-              >
-                Municipal
-              </Link>
-              {municipality.precincts.map((option) => (
+          {(!searchParams.has("displayBy") ||
+            searchParams.get("displayBy") === DisplayBy.Municipality) && (
+            <>
+              <div>
+                <Typography tag="h3" variant="h3" className="uppercase">
+                  {allBallots.state.name}
+                </Typography>
                 <Link
-                  key={option.url}
-                  to={`/papeletas/${option.url}`}
-                  className="block my-2"
+                  to={`/papeletas/${allBallots.state.url}`}
+                  className="block"
                 >
-                  {option.name}
+                  Papeleta
                 </Link>
+              </div>
+              {allBallots.municipalities.map((municipality) => (
+                <div>
+                  <Typography tag="h3" variant="h3" className="uppercase">
+                    {municipality.name}
+                  </Typography>
+                  <Link
+                    to={`/papeletas/${municipality.url}`}
+                    className="block my-2"
+                  >
+                    Municipal
+                  </Link>
+                  {municipality.precincts.map((option) => (
+                    <Link
+                      key={option.url}
+                      to={`/papeletas/${option.url}`}
+                      className="block my-2"
+                    >
+                      {option.name}
+                    </Link>
+                  ))}
+                </div>
               ))}
-            </div>
-          ))}
+            </>
+          )}
+          {searchParams.get("displayBy") === DisplayBy.DistrictRep &&
+            allBallots.districtRep.map((districtRep) => (
+              <div>
+                <Typography tag="h3" variant="h3" className="uppercase">
+                  {districtRep.name}
+                </Typography>
+                <div className="flex flex-col justify-center gap-y-6">
+                  {districtRep.municipalities.map((municipality) => (
+                    <div>
+                      <Link
+                        key={municipality.url}
+                        to={`/papeletas/${municipality.url}`}
+                        className="block my-2"
+                      >
+                        {municipality.name}
+                      </Link>
+                      <Typography tag="p" variant="p">
+                        Precintos:
+                      </Typography>
+                      <div className="flex justify-center gap-2">
+                        {municipality.precincts.map((option) => (
+                          <Link
+                            key={option.url}
+                            to={`/papeletas/${option.url}`}
+                            className="my-2"
+                          >
+                            {option.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          {searchParams.get("displayBy") === DisplayBy.DistrictSen &&
+            allBallots.districtSen.map((districtSen) => (
+              <div>
+                <Typography tag="h3" variant="h3" className="uppercase">
+                  {districtSen.name}
+                </Typography>
+                <div className="flex flex-col justify-center gap-y-6">
+                  {districtSen.municipalities.map((municipality) => (
+                    <div>
+                      <Link
+                        key={municipality.url}
+                        to={`/papeletas/${municipality.url}`}
+                        className="block my-2"
+                      >
+                        {municipality.name}
+                      </Link>
+                      <Typography tag="p" variant="p">
+                        Precintos:
+                      </Typography>
+                      <div className="flex justify-center gap-2">
+                        {municipality.precincts.map((option) => (
+                          <Link
+                            key={option.url}
+                            to={`/papeletas/${option.url}`}
+                            className="my-2"
+                          >
+                            {option.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
         </section>
       </Container>
     </Layout>
