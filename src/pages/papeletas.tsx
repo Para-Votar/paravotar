@@ -172,7 +172,7 @@ export default function Papeletas() {
             Distritos Representativos
           </Link>
         </div>
-        <section className="grid grid-cols-1 gap-x-4 gap-y-8 pt-8 md:grid-cols-4">
+        <section className="grid grid-cols-1 gap-x-4 gap-y-16 pt-8 md:grid-cols-4">
           {(!searchParams.has("displayBy") ||
             searchParams.get("displayBy") === DisplayBy.Municipality) && (
             <BallotsByMunicipalities
