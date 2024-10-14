@@ -4,6 +4,7 @@ export const precintList = [
     precint: "055",
     districtRep: 22,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "adjuntas",
   },
   {
@@ -11,6 +12,7 @@ export const precintList = [
     precint: "111",
     districtRep: 23,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "adjuntas",
   },
   {
@@ -18,6 +20,7 @@ export const precintList = [
     precint: "038",
     districtRep: 18,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "aguada",
   },
   {
@@ -25,6 +28,7 @@ export const precintList = [
     precint: "035",
     districtRep: 17,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "aguadilla",
   },
   {
@@ -32,6 +36,7 @@ export const precintList = [
     precint: "085",
     districtRep: 16,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "aguadilla",
   },
   {
@@ -39,6 +44,7 @@ export const precintList = [
     precint: "081",
     districtRep: 5,
     districtSen: 1,
+    districtSenName: "San Juan",
     municipality: "aguas buenas",
   },
   {
@@ -46,6 +52,7 @@ export const precintList = [
     precint: "069",
     districtRep: 27,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "aibonito",
   },
   {
@@ -53,6 +60,7 @@ export const precintList = [
     precint: "026",
     districtRep: 13,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "arecibo",
   },
   {
@@ -60,6 +68,7 @@ export const precintList = [
     precint: "027",
     districtRep: 14,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "arecibo",
   },
   {
@@ -67,6 +76,7 @@ export const precintList = [
     precint: "080",
     districtRep: 30,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "arroyo",
   },
   {
@@ -74,6 +84,7 @@ export const precintList = [
     precint: "040",
     districtRep: 18,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "añasco",
   },
   {
@@ -81,6 +92,7 @@ export const precintList = [
     precint: "025",
     districtRep: 13,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "barceloneta",
   },
   {
@@ -88,6 +100,7 @@ export const precintList = [
     precint: "070",
     districtRep: 26,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "barranquitas",
   },
   {
@@ -95,6 +108,7 @@ export const precintList = [
     precint: "071",
     districtRep: 28,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "barranquitas",
   },
   {
@@ -102,6 +116,7 @@ export const precintList = [
     precint: "010",
     districtRep: 7,
     districtSen: 2,
+    districtSenName: "Bayamón",
     municipality: "bayamón",
   },
   {
@@ -109,6 +124,7 @@ export const precintList = [
     precint: "011",
     districtRep: 8,
     districtSen: 2,
+    districtSenName: "Bayamón",
     municipality: "bayamón",
   },
   {
@@ -116,6 +132,7 @@ export const precintList = [
     precint: "012",
     districtRep: 9,
     districtSen: 2,
+    districtSenName: "Bayamón",
     municipality: "bayamón",
   },
   {
@@ -123,6 +140,7 @@ export const precintList = [
     precint: "041",
     districtRep: 6,
     districtSen: 2,
+    districtSenName: "Bayamón",
     municipality: "bayamón",
   },
   {
@@ -130,6 +148,7 @@ export const precintList = [
     precint: "046",
     districtRep: 20,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "cabo rojo",
   },
   {
@@ -137,6 +156,7 @@ export const precintList = [
     precint: "082",
     districtRep: 31,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "caguas",
   },
   {
@@ -144,6 +164,7 @@ export const precintList = [
     precint: "083",
     districtRep: 32,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "caguas",
   },
   {
@@ -151,6 +172,7 @@ export const precintList = [
     precint: "030",
     districtRep: 15,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "camuy",
   },
   {
@@ -158,6 +180,7 @@ export const precintList = [
     precint: "104",
     districtRep: 37,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "canóvanas",
   },
   {
@@ -165,6 +188,7 @@ export const precintList = [
     precint: "105",
     districtRep: 38,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "canóvanas",
   },
   {
@@ -172,6 +196,7 @@ export const precintList = [
     precint: "106",
     districtRep: 38,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "carolina",
   },
   {
@@ -179,6 +204,7 @@ export const precintList = [
     precint: "107",
     districtRep: 39,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "carolina",
   },
   {
@@ -186,6 +212,7 @@ export const precintList = [
     precint: "108",
     districtRep: 40,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "carolina",
   },
   {
@@ -193,6 +220,7 @@ export const precintList = [
     precint: "008",
     districtRep: 6,
     districtSen: 2,
+    districtSenName: "Bayamón",
     municipality: "cataño",
   },
   {
@@ -200,6 +228,7 @@ export const precintList = [
     precint: "009",
     districtRep: 10,
     districtSen: 2,
+    districtSenName: "Bayamón",
     municipality: "cataño",
   },
   {
@@ -207,6 +236,7 @@ export const precintList = [
     precint: "077",
     districtRep: 29,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "cayey",
   },
   {
@@ -214,6 +244,7 @@ export const precintList = [
     precint: "098",
     districtRep: 36,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "ceiba",
   },
   {
@@ -221,6 +252,7 @@ export const precintList = [
     precint: "023",
     districtRep: 22,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "ciales",
   },
   {
@@ -228,6 +260,7 @@ export const precintList = [
     precint: "076",
     districtRep: 29,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "cidra",
   },
   {
@@ -235,6 +268,7 @@ export const precintList = [
     precint: "068",
     districtRep: 26,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "coamo",
   },
   {
@@ -242,6 +276,7 @@ export const precintList = [
     precint: "075",
     districtRep: 27,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "coamo",
   },
   {
@@ -249,6 +284,7 @@ export const precintList = [
     precint: "074",
     districtRep: 28,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "comerío",
   },
   {
@@ -256,6 +292,7 @@ export const precintList = [
     precint: "072",
     districtRep: 28,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "corozal",
   },
   {
@@ -263,6 +300,7 @@ export const precintList = [
     precint: "112",
     districtRep: 26,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "corozal",
   },
   {
@@ -270,6 +308,7 @@ export const precintList = [
     precint: "097",
     districtRep: 36,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "culebra",
   },
   {
@@ -277,6 +316,7 @@ export const precintList = [
     precint: "015",
     districtRep: 11,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "dorado",
   },
   {
@@ -284,6 +324,7 @@ export const precintList = [
     precint: "099",
     districtRep: 36,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "fajardo",
   },
   {
@@ -291,6 +332,7 @@ export const precintList = [
     precint: "024",
     districtRep: 13,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "florida",
   },
   {
@@ -298,6 +340,7 @@ export const precintList = [
     precint: "079",
     districtRep: 30,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "guayama",
   },
   {
@@ -305,6 +348,7 @@ export const precintList = [
     precint: "058",
     districtRep: 23,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "guayanilla",
   },
   {
@@ -312,6 +356,7 @@ export const precintList = [
     precint: "006",
     districtRep: 5,
     districtSen: 1,
+    districtSenName: "San Juan",
     municipality: "guaynabo",
   },
   {
@@ -319,6 +364,7 @@ export const precintList = [
     precint: "007",
     districtRep: 6,
     districtSen: 2,
+    districtSenName: "Bayamón",
     municipality: "guaynabo",
   },
   {
@@ -326,6 +372,7 @@ export const precintList = [
     precint: "084",
     districtRep: 31,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "gurabo",
   },
   {
@@ -333,6 +380,7 @@ export const precintList = [
     precint: "114",
     districtRep: 33,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "gurabo",
   },
   {
@@ -340,6 +388,7 @@ export const precintList = [
     precint: "048",
     districtRep: 21,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "guánica",
   },
   {
@@ -347,6 +396,7 @@ export const precintList = [
     precint: "028",
     districtRep: 14,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "hatillo",
   },
   {
@@ -354,6 +404,7 @@ export const precintList = [
     precint: "029",
     districtRep: 15,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "hatillo",
   },
   {
@@ -361,6 +412,7 @@ export const precintList = [
     precint: "045",
     districtRep: 20,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "hormigueros",
   },
   {
@@ -368,6 +420,7 @@ export const precintList = [
     precint: "094",
     districtRep: 35,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "humacao",
   },
   {
@@ -375,6 +428,7 @@ export const precintList = [
     precint: "032",
     districtRep: 16,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "isabela",
   },
   {
@@ -382,6 +436,7 @@ export const precintList = [
     precint: "056",
     districtRep: 22,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "jayuya",
   },
   {
@@ -389,6 +444,7 @@ export const precintList = [
     precint: "057",
     districtRep: 25,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "jayuya",
   },
   {
@@ -396,6 +452,7 @@ export const precintList = [
     precint: "063",
     districtRep: 25,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "juana díaz",
   },
   {
@@ -403,6 +460,7 @@ export const precintList = [
     precint: "064",
     districtRep: 27,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "juana díaz",
   },
   {
@@ -410,6 +468,7 @@ export const precintList = [
     precint: "088",
     districtRep: 33,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "juncos",
   },
   {
@@ -417,6 +476,7 @@ export const precintList = [
     precint: "047",
     districtRep: 21,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "lajas",
   },
   {
@@ -424,6 +484,7 @@ export const precintList = [
     precint: "053",
     districtRep: 22,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "lares",
   },
   {
@@ -431,6 +492,7 @@ export const precintList = [
     precint: "034",
     districtRep: 21,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "las marias",
   },
   {
@@ -438,6 +500,7 @@ export const precintList = [
     precint: "089",
     districtRep: 33,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "las piedras",
   },
   {
@@ -445,6 +508,7 @@ export const precintList = [
     precint: "090",
     districtRep: 35,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "las piedras",
   },
   {
@@ -452,6 +516,7 @@ export const precintList = [
     precint: "103",
     districtRep: 37,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "loíza",
   },
   {
@@ -459,6 +524,7 @@ export const precintList = [
     precint: "100",
     districtRep: 36,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "luquillo",
   },
   {
@@ -466,6 +532,7 @@ export const precintList = [
     precint: "021",
     districtRep: 12,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "manatí",
   },
   {
@@ -473,6 +540,7 @@ export const precintList = [
     precint: "022",
     districtRep: 13,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "manatí",
   },
   {
@@ -480,6 +548,7 @@ export const precintList = [
     precint: "050",
     districtRep: 21,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "maricao",
   },
   {
@@ -487,6 +556,7 @@ export const precintList = [
     precint: "092",
     districtRep: 34,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "maunabo",
   },
   {
@@ -494,6 +564,7 @@ export const precintList = [
     precint: "042",
     districtRep: 19,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "mayagüez",
   },
   {
@@ -501,6 +572,7 @@ export const precintList = [
     precint: "036",
     districtRep: 17,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "moca",
   },
   {
@@ -508,6 +580,7 @@ export const precintList = [
     precint: "037",
     districtRep: 18,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "moca",
   },
   {
@@ -515,6 +588,7 @@ export const precintList = [
     precint: "020",
     districtRep: 12,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "morovis",
   },
   {
@@ -522,6 +596,7 @@ export const precintList = [
     precint: "095",
     districtRep: 35,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "naguabo",
   },
   {
@@ -529,6 +604,7 @@ export const precintList = [
     precint: "073",
     districtRep: 28,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "naranjito",
   },
   {
@@ -536,6 +612,7 @@ export const precintList = [
     precint: "066",
     districtRep: 26,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "orocovis",
   },
   {
@@ -543,6 +620,7 @@ export const precintList = [
     precint: "091",
     districtRep: 34,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "patillas",
   },
   {
@@ -550,6 +628,7 @@ export const precintList = [
     precint: "059",
     districtRep: 23,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "peñuelas",
   },
   {
@@ -557,6 +636,7 @@ export const precintList = [
     precint: "060",
     districtRep: 23,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "ponce",
   },
   {
@@ -564,6 +644,7 @@ export const precintList = [
     precint: "061",
     districtRep: 24,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "ponce",
   },
   {
@@ -571,6 +652,7 @@ export const precintList = [
     precint: "062",
     districtRep: 25,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "ponce",
   },
   {
@@ -578,6 +660,7 @@ export const precintList = [
     precint: "031",
     districtRep: 15,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "quebradillas",
   },
   {
@@ -585,6 +668,7 @@ export const precintList = [
     precint: "039",
     districtRep: 18,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "rincón",
   },
   {
@@ -592,6 +676,7 @@ export const precintList = [
     precint: "101",
     districtRep: 36,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "río grande",
   },
   {
@@ -599,6 +684,7 @@ export const precintList = [
     precint: "102",
     districtRep: 37,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "río grande",
   },
   {
@@ -606,6 +692,7 @@ export const precintList = [
     precint: "078",
     districtRep: 30,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "salinas",
   },
   {
@@ -613,6 +700,7 @@ export const precintList = [
     precint: "043",
     districtRep: 19,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "san germán",
   },
   {
@@ -620,6 +708,7 @@ export const precintList = [
     precint: "044",
     districtRep: 20,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "san germán",
   },
   {
@@ -627,6 +716,7 @@ export const precintList = [
     precint: "001",
     districtRep: 1,
     districtSen: 1,
+    districtSenName: "San Juan",
     municipality: "san juan",
   },
   {
@@ -634,6 +724,7 @@ export const precintList = [
     precint: "002",
     districtRep: 2,
     districtSen: 1,
+    districtSenName: "San Juan",
     municipality: "san juan",
   },
   {
@@ -641,6 +732,7 @@ export const precintList = [
     precint: "003",
     districtRep: 3,
     districtSen: 1,
+    districtSenName: "San Juan",
     municipality: "san juan",
   },
   {
@@ -648,6 +740,7 @@ export const precintList = [
     precint: "004",
     districtRep: 4,
     districtSen: 1,
+    districtSenName: "San Juan",
     municipality: "san juan",
   },
   {
@@ -655,6 +748,7 @@ export const precintList = [
     precint: "005",
     districtRep: 5,
     districtSen: 1,
+    districtSenName: "San Juan",
     municipality: "san juan",
   },
   {
@@ -662,6 +756,7 @@ export const precintList = [
     precint: "086",
     districtRep: 33,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "san lorenzo",
   },
   {
@@ -669,6 +764,7 @@ export const precintList = [
     precint: "087",
     districtRep: 34,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "san lorenzo",
   },
   {
@@ -676,6 +772,7 @@ export const precintList = [
     precint: "033",
     districtRep: 16,
     districtSen: 4,
+    districtSenName: "Mayagüez",
     municipality: "san sebastián",
   },
   {
@@ -683,6 +780,7 @@ export const precintList = [
     precint: "067",
     districtRep: 27,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "santa isabel",
   },
   {
@@ -690,6 +788,7 @@ export const precintList = [
     precint: "113",
     districtRep: 30,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "santa isabel",
   },
   {
@@ -697,6 +796,7 @@ export const precintList = [
     precint: "049",
     districtRep: 21,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "sábana grande",
   },
   {
@@ -704,6 +804,7 @@ export const precintList = [
     precint: "013",
     districtRep: 9,
     districtSen: 2,
+    districtSenName: "Bayamón",
     municipality: "toa alta",
   },
   {
@@ -711,6 +812,7 @@ export const precintList = [
     precint: "014",
     districtRep: 10,
     districtSen: 2,
+    districtSenName: "Bayamón",
     municipality: "toa baja",
   },
   {
@@ -718,6 +820,7 @@ export const precintList = [
     precint: "109",
     districtRep: 38,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "trujillo alto",
   },
   {
@@ -725,6 +828,7 @@ export const precintList = [
     precint: "110",
     districtRep: 39,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "trujillo alto",
   },
   {
@@ -732,6 +836,7 @@ export const precintList = [
     precint: "054",
     districtRep: 22,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "utuado",
   },
   {
@@ -739,6 +844,7 @@ export const precintList = [
     precint: "016",
     districtRep: 11,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "vega alta",
   },
   {
@@ -746,6 +852,7 @@ export const precintList = [
     precint: "017",
     districtRep: 12,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "vega alta",
   },
   {
@@ -753,6 +860,7 @@ export const precintList = [
     precint: "018",
     districtRep: 11,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "vega baja",
   },
   {
@@ -760,6 +868,7 @@ export const precintList = [
     precint: "019",
     districtRep: 12,
     districtSen: 3,
+    districtSenName: "Arecibo",
     municipality: "vega baja",
   },
   {
@@ -767,6 +876,7 @@ export const precintList = [
     precint: "096",
     districtRep: 36,
     districtSen: 8,
+    districtSenName: "Carolina",
     municipality: "vieques",
   },
   {
@@ -774,6 +884,7 @@ export const precintList = [
     precint: "065",
     districtRep: 26,
     districtSen: 6,
+    districtSenName: "Guayama",
     municipality: "villalba",
   },
   {
@@ -781,6 +892,7 @@ export const precintList = [
     precint: "093",
     districtRep: 34,
     districtSen: 7,
+    districtSenName: "Humacao",
     municipality: "yabucoa",
   },
   {
@@ -788,6 +900,7 @@ export const precintList = [
     precint: "051",
     districtRep: 21,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "yauco",
   },
   {
@@ -795,6 +908,7 @@ export const precintList = [
     precint: "052",
     districtRep: 23,
     districtSen: 5,
+    districtSenName: "Ponce",
     municipality: "yauco",
   },
 ]

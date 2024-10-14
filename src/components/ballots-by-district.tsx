@@ -1,18 +1,6 @@
 import Link from "./link"
+import { DistrictInformation } from "./types"
 import Typography from "./typography"
-
-interface BallotInformation {
-  name: string
-  url: string
-}
-
-interface MunicipalityInformation extends BallotInformation {
-  precincts: BallotInformation[]
-}
-
-export interface DistrictInformation extends BallotInformation {
-  municipalities: MunicipalityInformation[]
-}
 
 export default function BallotsByDistrict({
   districts,
@@ -23,7 +11,11 @@ export default function BallotsByDistrict({
     <>
       {districts.map((districtSen) => (
         <div>
-          <Typography tag="h3" variant="h3" className="uppercase">
+          <Typography
+            tag="h3"
+            variant="h3"
+            className="uppercase whitespace-pre"
+          >
             {districtSen.name}
           </Typography>
           <div className="flex flex-col justify-center gap-y-6">

@@ -71,7 +71,7 @@ const allBallots = {
         municipalities: Object.entries(precinctsByMunicipality).map(
           ([municipality, precincts]) => {
             return {
-              name: `${titleCase(municipality)}`,
+              name: titleCase(municipality),
               url: `municipal/${getNormalizedName(municipality)}`,
               precincts: precincts.map((precinct) => {
                 return {
@@ -88,14 +88,15 @@ const allBallots = {
   districtSen: Object.entries(precinctsByDistrictSen).map(
     ([districtSen, precinct]) => {
       const precinctsByMunicipality = groupBy(precinct, "municipality")
+      const districtSenName = precinct[0].districtSenName
 
       return {
-        name: `Distrito Senatorial ${districtSen}`,
+        name: `Distrito Senatorial ${districtSen} \n ${districtSenName}`,
         url: `distrito-senatorial/${districtSen}`,
         municipalities: Object.entries(precinctsByMunicipality).map(
           ([municipality, precincts]) => {
             return {
-              name: `${titleCase(municipality)}`,
+              name: titleCase(municipality),
               url: `municipal/${getNormalizedName(municipality)}`,
               precincts: precincts.map((precinct) => {
                 return {
@@ -106,12 +107,6 @@ const allBallots = {
             }
           }
         ),
-        precincts: precinct.map((precinct) => {
-          return {
-            url: `legislativa/${precinct.precint}`,
-            name: `Legislativa - Precinto ${precinct.precint}`,
-          }
-        }),
       }
     }
   ),
@@ -127,8 +122,6 @@ export default function Papeletas() {
   const [searchParams] = useSearchParams()
   const { t } = useTranslation()
   const location = useLocation()
-
-  console.log({ searchParams })
 
   return (
     <Layout location={location}>
