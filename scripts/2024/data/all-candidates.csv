@@ -661,7 +661,7 @@ Humberto Félix,Cobo Estrella,/static/images/profile_images/Humberto_Felix_Cobo_
 Idalia,Del Río Rubio,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Ileana,Torres Morales,,M,TRUE,,,,,,,,,FALSE,FALSE,
 Ileana Noelia,Padilla Santana,,F,FALSE,,San Germán,,,alcalde,PNP,,,FALSE,FALSE,
-Ileannexis,Pereira Padro,,F,TRUE,,Vieques,,,alcalde,PD,,,FALSE,TRUE,
+Ileannexis,Pereira Padro,/static/images/profile_images/ileannexis-pereira-padro-202409251836.jpeg,F,TRUE,,Vieques,,,alcalde,PD,,,FALSE,TRUE,
 Ilyenett,Matías Vega,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Ineabelle (Ini),Medina González,,F,FALSE,,Utuado,,,alcalde,PPD,,,FALSE,FALSE,
 Ines Margarita,Claudio Martínez,,F,TRUE,,,,,,,,,FALSE,FALSE,
@@ -871,8 +871,8 @@ José Antonio (Junito),Corcino Acevedo,/static/images/profile_images/Jose_Antoni
 José A. (Tebo),Meléndez Fraguada,/static/images/profile_images/Jose_A_Melendez_Fraguada_8014.jpg,M,TRUE,,Canóvanas,,,alcalde,INDT,,,FALSE,TRUE,
 José Bernardo,Márquez Reyes,/static/images/profile_images/Jose_Bernardo_Marquez_Reyes_1917.jpg,M,TRUE,913,,2,,senador,MVC,,,FALSE,TRUE,José Bernardo 'Betito' Márquez
 José Carlos,Aponte Dalmau,/static/images/profile_images/Jose_C_Aponte_Dalmau_6215.jpg,M,TRUE,,Carolina,,,alcalde,PPD,,,FALSE,TRUE,
-José Carlos,González,static/images/profile_images/jose-carlos-gonzalez.bin,M,TRUE,,Río Grande,,,alcalde,PD,,,FALSE,TRUE,José Carlos Hernández González
-José Carlos,Rivera Santiago,static/images/profile_images/jose-carlos-rivera-santiago.jpeg,M,TRUE,,Cayey,,,alcalde,MVC,,,FALSE,TRUE,
+José Carlos,González,/static/images/profile_images/jose-carlos-hernandez-gonzalez.jpeg,M,TRUE,,Río Grande,,,alcalde,PD,,,FALSE,TRUE,José Carlos Hernández González
+José Carlos,Rivera Santiago,/static/images/profile_images/jose-carlos-rivera-santiago.jpeg,M,TRUE,,Cayey,,,alcalde,MVC,,,FALSE,TRUE,
 José (Che),Pérez,/static/images/profile_images/Jose_Jesus_Perez_Cordero_8034.jpg,M,TRUE,,,,ACUMULACION,representante,PNP,,,FALSE,TRUE,
 José (Cheiito) Manuel,Peraza González,,M,TRUE,,,,,,,,,FALSE,FALSE,
 José (Cheito),Hernández Concepción,/static/images/profile_images/Jose_Antonio_Hernandez_Concepcion_3774.jpg,M,TRUE,,,,3,representante,PNP,,,FALSE,TRUE,José (Cheito) Hernández 
@@ -891,7 +891,7 @@ José Emmanuel,Rodríguez Cuevas,,M,TRUE,,,,,,,,,FALSE,FALSE,
 José Enrique,Martínez Rivera,/static/images/profile_images/Jose_Enrique_Martinez_Rivera_4957.jpg,M,TRUE,,,,,,,,,FALSE,FALSE,
 José Enrique (Quiquito),Meléndez Ortíz,/static/images/profile_images/Jose_Enrique_Melendez_Ortiz_8469.jpg,M,TRUE,911,,,,,,,,FALSE,FALSE,
 José F.,Cintrón Ramos,,M,TRUE,,,,,,,,,FALSE,FALSE,
-José F.,Córdova Iturregui,static/images/profile_images/jose-f.-cordova-iturregui.bin,M,TRUE,,Aguas Buenas,,,alcalde,MVC,,,FALSE,TRUE,José (Pepe) Córdova
+José F.,Córdova Iturregui,static/images/profile_images/jose-f.-cordova-iturregui.jpeg,M,TRUE,,Aguas Buenas,,,alcalde,MVC,,,FALSE,TRUE,José (Pepe) Córdova
 José Francisco,Vargas Cruz,/static/images/profile_images/Jose_Francisco_Vargas_Cruz_4166.jpg,M,TRUE,,San Juan,,,alcalde,INDT,,,FALSE,TRUE,José (Joe) Vargas
 José F. (Tato),Ruíz Morales,,M,FALSE,,Hatillo,,,alcalde,PPD,,,FALSE,FALSE,
 José G.,Santiago Vélez,,M,TRUE,,,,,,,,,FALSE,FALSE,
@@ -1000,7 +1000,7 @@ Juan (Veguita),Vega,/static/images/profile_images/Juan_Eduardo_Vega_Quiñones_60
 Judith,Delgado Colón,/static/images/profile_images/Judith_Delgado_Colon_6896.jpg,F,TRUE,,,,,,,,,FALSE,FALSE,
 Julia M.,Nazario Fuentes,/static/images/profile_images/Julia_M_Nazario_Fuentes_0364.jpg,F,TRUE,,Loíza,,,alcalde,PPD,,,FALSE,TRUE,
 Juliana Isabel,Ortíz Rodríguez,/static/images/profile_images/Juliana_Isabel_Ortiz_Rodriguez_2793.jpg,F,TRUE,,,,20,representante,PIP,,,FALSE,TRUE,Juliana I. Ortíz Rodríguez
-Julian José,Crespo López,,M,TRUE,,Naranjito,,,alcalde,PPD,,,FALSE,TRUE,
+Julian José,Crespo López,/static/images/profile_images/julian-jose-crespo-lopez-202409251832.jpeg,M,TRUE,,Naranjito,,,alcalde,PPD,,,FALSE,TRUE,
 Julia Rita,Rodríguez Sánchez,/static/images/profile_images/Julia_Rita_Rodriguez_Sanchez_9524.jpg,F,TRUE,,,4,,senador,PIP,,,FALSE,TRUE,
 Julimar,Fuentes Mercado,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Julio,Alicea Vasallo,/static/images/profile_images/Julio_Alicea_Vasallo_2579.jpg,M,TRUE,,Cataño,,,alcalde,PNP,,,FALSE,TRUE,
@@ -1265,7 +1265,7 @@ Maritza,Rosas Rojas,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Maritza,Sánchez Neris,/static/images/profile_images/Maritza_Sanchez_Neris_8783.jpg,F,TRUE,,Patillas,,,alcalde,PNP,,,FALSE,TRUE,
 Marla,López Rosa,,F,FALSE,,Isabela,,,alcalde,PNP,,,FALSE,FALSE,
 Marlene,Maldonado,,F,FALSE,,,ACUMULACION,,senador,PNP,,,FALSE,FALSE,
-Marlese,Sifre Rodríguez,,F,TRUE,,Ponce,,,alcalde,PPD,,,FALSE,TRUE,Marlese Sifre
+Marlese,Sifre Rodríguez,/static/images/profile_images/marlese-sifre-rodriguez-202409251833.jpeg,F,TRUE,,Ponce,,,alcalde,PPD,,,FALSE,TRUE,Marlese Sifre
 Marta,Díaz Soto,/static/images/profile_images/Marta_Diaz_Soto_7525.jpg,F,TRUE,,,,,,,,,FALSE,FALSE,
 Marta Rosa,Miranda Miranda,/static/images/profile_images/Marta_Rosa_Miranda_Miranda_1551.jpg,F,TRUE,,,,,,,,,FALSE,FALSE,
 Marta V.,González Rodríguez,/static/images/profile_images/Marta_V_Gonzalez_Rodriguez_5510.jpg,F,TRUE,,,,,,,,,FALSE,FALSE,
@@ -1803,7 +1803,7 @@ Yeidimar,Meléndez Ortíz,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Yeila Sofía,Cuadrado Sanjurjo,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Yeimy,Rivera Ureña,/static/images/profile_images/Yeimy_Sujel_Rivera_Ureña_3720.jpg,F,TRUE,,Carolina,,,alcalde,PD,,,FALSE,TRUE,Yeinny Rivera Ureña
 Yeltsin,Medina Fuentes,,F,TRUE,,,,,,,,,FALSE,FALSE,
-Yesenia,Feliciano Camacho,,F,TRUE,,Yabucoa,,,alcalde,PNP,,,FALSE,TRUE,
+Yesenia,Feliciano Camacho,/static/images/profile_images/yesenia-feliciano-camacho.jpeg,F,TRUE,,Yabucoa,,,alcalde,PNP,,,FALSE,TRUE,
 Yetzaira,Echevarría Echevarría,,F,TRUE,,,,,,,,,FALSE,FALSE,
 Yoadis,Rodríguez Berríos,/static/images/profile_images/Yoadis_Rodriguez_Berrios_2440.jpg,F,TRUE,,,,,,,,,FALSE,FALSE,
 Yohao,Lugo Díaz,,M,FALSE,,,,40,representante,PNP,,,FALSE,FALSE,
@@ -1823,7 +1823,7 @@ Reynaldo,Acevedo Vélez,/static/images/profile_images/Reynaldo_Acevedo_Velez_617
 Karina,García,/static/images/profile_images/karina-garcia.jpeg,F,TRUE,,,,14,representante,PIP,,,FALSE,TRUE,
 Carlos A.,Sánchez Rivera,/static/images/profile_images/carlos-a.-sanchez-rivera.jpeg,M,TRUE,,,,8,representante,PPD,,,FALSE,TRUE,
 Juan Gabriel,Zayas Monge,,M,TRUE,,,,2,representante,PD,,,FALSE,TRUE,
-Alexander,Burgos Otero,,M,TRUE,,Ciales,,,alcalde,PNP,,,FALSE,TRUE,
+Alexander,Burgos Otero,/static/images/profile_images/Alexander_Burgos_Otero_7082.jpg,M,TRUE,,Ciales,,,alcalde,PNP,,,FALSE,TRUE,
 Jacinto A.,Jiménez Carlo,/static/images/profile_images/Jacinto_A_Jimenez_Carlo_1925.jpg,M,TRUE,,Culebra,,,alcalde,PIP,,,FALSE,FALSE,
 Elvin Josué,Rodríguez Hernández,/static/images/profile_images/elvin-josue-rodriguez-hernandez.jpeg,M,TRUE,,Fajardo,,,alcalde,PPD,,,FALSE,TRUE,
 Ramón (Ramoncito),Hernández,/static/images/profile_images/Ramon_Hernandez_Torres_3060.jpg,M,TRUE,,Juana Díaz,,,alcalde,PPD,,,FALSE,TRUE,
