@@ -171,8 +171,8 @@
   "practice": {
     "make-your-vote-count": "Haz que tu voto cuente",
     "learn-signs": "Conoce cuál es la marca válida que debes usar para votar",
-    "the-only-valid-sign": "Solo se contará como marca válida la equis “X”— que esté dentro de un rectángulo en blanco.",
-    "your-vote-discarded": "No se contará la que esté encima del nombre de un candidato o la que esté sobre su foto.",
+    "the-only-valid-sign": "Por recomendación de la Comisión Estatal de Elecciones, debes ennegrecer el recuadro junto a su partido o candidato de preferencia.",
+    "your-vote-discarded": "Las máquinas de escrutinio electrónico están teniendo problemas en contar la X como una marca valida.",
     "how-to-vote": "¿Cómo votar?",
     "type-of-votes": "Conoce los distintos tipos de votos que puedes ejercer el día de las elecciones",
     "ballot-example-disclaimer": "Esta papeleta es un modelo que utilizado para ilustrar los tipos de votos. Code 4 Puerto Rico y Para Votar no endosa ni se solidarizan con ningún partido ni candidato.",
