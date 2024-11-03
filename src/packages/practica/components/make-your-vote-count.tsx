@@ -18,14 +18,10 @@ export default function MakeYourVoteCount() {
         {t("practice.learn-signs")}
       </Typography>
       <div className="mt-8">
-        <div className="lg:w-10/12 lg:mx-auto">
-          <div className="lg:flex">
-            <Typography tag="p" variant="p" className="text-center">
-              {t("practice.the-only-valid-sign")} <br />
-              <b>{t("practice.your-vote-discarded")}</b>
-            </Typography>
-          </div>
-        </div>
+        <Typography tag="p" variant="p" className="text-center">
+          {t("practice.the-only-valid-sign")} <br />
+          <b>{t("practice.your-vote-discarded")}</b>
+        </Typography>
       </div>
     </>
   )
