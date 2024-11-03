@@ -29,10 +29,14 @@ export default function Checkbox(props: CheckboxProps) {
         data-testid={props.id}
       >
         {props.checked ? (
-          <img
-            className={`h-6 w-8 ${props.voteOpacity}`}
-            src={VoteCross}
-            alt=""
+          <div
+            className={`${props.voteOpacity}`}
+            style={{
+              background: "rgba(0, 0, 0, 0.8)",
+              backgroundSize: "cover",
+              height: "100%",
+              width: "100%",
+            }}
           />
         ) : null}
       </button>

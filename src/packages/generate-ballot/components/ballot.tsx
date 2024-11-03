@@ -90,7 +90,7 @@ export default function BaseBallot(props: BallotProps) {
                 const voteOpacity = isExplicitVote
                   ? "opacity-100"
                   : isImplicitVote
-                    ? "opacity-25"
+                    ? "opacity-50"
                     : ""
 
                 if (col instanceof Party) {
