@@ -27,6 +27,7 @@ export default function Checkbox(props: CheckboxProps) {
         onMouseLeave={props.onMouseLeave}
         onClick={props.onClick}
         data-testid={props.id}
+        style={{ padding: 1 }}
       >
         {props.checked ? (
           <img
