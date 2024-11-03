@@ -1,4 +1,4 @@
-import VoteCross from "../../../../assets/icons/vote-cross.svg?url"
+import VoteSquare from "../../../../assets/icons/vote-square.svg?url"
 
 type CheckboxProps = {
   type: "candidate" | "party"
@@ -30,8 +30,9 @@ export default function Checkbox(props: CheckboxProps) {
       >
         {props.checked ? (
           <img
-            className={`h-6 w-8 ${props.voteOpacity}`}
-            src={VoteCross}
+            className={`${props.voteOpacity}`}
+            style={{ width: "100%", height: "100%" }}
+            src={VoteSquare}
             alt=""
           />
         ) : null}
