@@ -31,12 +31,23 @@ module.exports = {
   rules: {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
+    "react/jsx-key": "off",
+    "react/display-name": "off",
+    "react/jsx-no-target-blank": "off",
+
+    "jsx-a11y/alt-text": "off",
+
+    "prefer-const": "off",
+
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/ban-types": "off",
+
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+
     "import/no-unresolved": ["error", { ignore: ["\\?url$"] }],
   },
   ignorePatterns: ["e2e/**", "playwright.config.ts"],

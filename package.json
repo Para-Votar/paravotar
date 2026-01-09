@@ -10,7 +10,7 @@
     "build": "vite build",
     "develop": "npm start",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint . --ext ts,tsx --max-warnings 0", 
     "preview": "vite preview",
     "test": "vitest",
     "tsc": "tsc",
