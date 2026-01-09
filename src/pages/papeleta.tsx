@@ -94,7 +94,7 @@ export default function Papeleta() {
     }
 
     getBallot()
-  }, [ballotPath])
+  }, [ballotPath, params.ballotType])
 
   if (!ballot) {
     return <div>Loading...</div>
@@ -149,7 +149,7 @@ function InteractiveBallot(props: {
 
   const votes = state.context.votes
   const transformedVotes = useVotesTransform(votes, state)
-  const { votesCount, setVotesCount } = useVotesCount(transformedVotes)
+  const { votesCount, setVotesCount: _setVotesCount } = useVotesCount(transformedVotes)
   const onSubmit = useBallotValidateAndSubmit()
 
   const handleSubmit = () => {
@@ -175,6 +175,7 @@ function InteractiveBallot(props: {
       },
     })
     return
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

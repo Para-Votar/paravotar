@@ -153,7 +153,7 @@ export const PracticeMachine = createMachine<PracticeContext, PracticeEvent>(
         },
       },
       fetchBallots: {
-        // @ts-ignore
+        // @ts-expect-error - xstate invoke typing is complex
         invoke: {
           id: "fetchBallots",
           src: BallotService.fetchBallots,
@@ -189,7 +189,7 @@ export const PracticeMachine = createMachine<PracticeContext, PracticeEvent>(
         },
       },
       findingVotingCenterInfo: {
-        // @ts-ignore
+        // @ts-expect-error - xstate invoke typing is complex
         invoke: {
           id: "findingVotingCenterInfo",
           src: BallotService.fetchBallots,

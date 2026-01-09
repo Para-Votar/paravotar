@@ -18,6 +18,7 @@ import Papeletas from "./pages/papeletas"
 import Papeleta from "./pages/papeleta"
 import GenerateBallot from "./pages/generate-ballot"
 
+// eslint-disable-next-line import/no-named-as-default-member
 i18n.use(initReactI18next).init({
   fallbackLng: "es",
   resources: {

@@ -13,7 +13,7 @@ interface PracticingProps {
   handleSubmit: VoidFunction
 }
 
-export const Practicing = ({ state, send, handleSubmit }: PracticingProps) => {
+export const Practicing = ({ state, send, handleSubmit: _handleSubmit }: PracticingProps) => {
   const { setIsOpen } = useTour()
   const { setIsPristine } = useErrorMessages(state, [
     state,
