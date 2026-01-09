@@ -1,142 +1,222 @@
-import { test, expect, Page } from '@playwright/test';
-import { ballotsByPrecint, stateBallot, municipalBallot, legislativeBallot } from './fixtures';
+import { test, expect, Page } from "@playwright/test"
+import {
+  ballotsByPrecint,
+  legislativeBallot,
+  municipalBallot,
+  stateBallot,
+} from "./fixtures"
 
-// Setup API mocking for all tests
 async function setupApiMocks(page: Page) {
-  await page.route('**/*', async (route) => {
-    const url = route.request().url();
-    
-    // Mock the ballot by precint endpoint (AWS Lambda API)
-    if (url.includes('ballots/ByPrecint')) {
+  await page.route("**/*", async (route) => {
+    const url = route.request().url()
+
+    if (url.includes("ballots/ByPrecint")) {
       return route.fulfill({
         status: 200,
-        contentType: 'application/json',
+        contentType: "application/json",
         body: JSON.stringify(ballotsByPrecint),
-      });
+      })
     }
-    
-    // Mock the ballot data endpoints (CDN)
-    if (url.includes('data.json') && url.includes('papeletas')) {
-      let data;
-      if (url.includes('estatal')) {
-        data = stateBallot;
-      } else if (url.includes('legislativa')) {
-        data = legislativeBallot;
-      } else {
-        data = municipalBallot;
-      }
+
+    if (url.includes("data.json") && url.includes("papeletas")) {
+      let data
+      if (url.includes("estatal")) data = stateBallot
+      else if (url.includes("legislativa")) data = legislativeBallot
+      else data = municipalBallot
+
       return route.fulfill({
         status: 200,
-        contentType: 'application/json',
+        contentType: "application/json",
         body: JSON.stringify(data),
-      });
+      })
     }
-    
-    // Continue with default handling for other requests
-    return route.continue();
-  });
+
+    return route.continue()
+  })
 }
 
-test.describe('Practica - Navigation', () => {
+async function navigateToBallot(
+  page: Page,
+  ballotType: "state-ballot" | "municipal-ballot" | "legislative-ballot"
+) {
+  await page.goto("/practica")
+  await page.getByTestId("start-practice").click()
+
+  // Match the legacy Cypress flow (precinct lookup + confirmation)
+  await page.getByTestId("find-by-precint").click()
+  await page.getByTestId("confirm-precint").click()
+
+  await page.getByTestId(ballotType).click()
+}
+
+test.describe("Practica", () => {
   test.beforeEach(async ({ page }) => {
-    await setupApiMocks(page);
-  });
+    await setupApiMocks(page)
+  })
 
-  test('visiting /practica shows the practice page', async ({ page }) => {
-    await page.goto('/practica');
-    await expect(page.locator('#practica-tu-voto')).toBeVisible();
-  });
+  test("visiting /practica", async ({ page }) => {
+    await page.goto("/practica")
+    await expect(page.getByTestId("practica-tu-voto")).toBeVisible()
+  })
 
-  test('root route renders practica page', async ({ page }) => {
-    await page.goto('/');
-    await expect(page.locator('#practica-tu-voto')).toBeVisible();
-  });
+  test("root route should redirect to /practica", async ({ page }) => {
+    await page.goto("/")
+    await expect(page).toHaveURL(/.*\/practica/)
+  })
+})
 
-  test('can start practice and select precinct', async ({ page }) => {
-    await page.goto('/practica');
-    
-    // Click start practice
-    await page.getByTestId('start-practice').click();
-    
-    // Should show precinct selection
-    await expect(page.getByRole('button', { name: 'Continuar' })).toBeVisible();
-  });
-
-  test('can navigate to ballot selection after selecting precinct', async ({ page }) => {
-    await page.goto('/practica');
-    
-    await page.getByTestId('start-practice').click();
-    await page.getByRole('button', { name: 'Continuar' }).click();
-    
-    // Should show ballot type selection
-    await expect(page.getByTestId('state-ballot')).toBeVisible();
-    await expect(page.getByTestId('legislative-ballot')).toBeVisible();
-    await expect(page.getByTestId('municipal-ballot')).toBeVisible();
-  });
-});
-
-test.describe('Practica - State Ballot', () => {
+test.describe("Practice - State Ballot", () => {
   test.beforeEach(async ({ page }) => {
-    await setupApiMocks(page);
-  });
+    await setupApiMocks(page)
+  })
 
-  test('can open state ballot', async ({ page }) => {
-    await page.goto('/practica');
-    
-    await page.getByTestId('start-practice').click();
-    await page.getByRole('button', { name: 'Continuar' }).click();
-    await page.getByTestId('state-ballot').click();
-    
-    // Should show the ballot with party headers
-    await expect(page.getByText('PARTIDO NUEVO PROGRESISTA')).toBeVisible();
-    await expect(page.getByText('PARTIDO POPULAR')).toBeVisible();
-  });
+  test("should be able to emit a straight party vote on the state ballot", async ({
+    page,
+  }) => {
+    await navigateToBallot(page, "state-ballot")
+    await page.getByTestId("partido-nuevo-progresista").click()
 
-  test('can vote for a party on state ballot', async ({ page }) => {
-    await page.goto('/practica');
-    
-    await page.getByTestId('start-practice').click();
-    await page.getByRole('button', { name: 'Continuar' }).click();
-    await page.getByTestId('state-ballot').click();
-    
-    // Click on party checkbox
-    await page.getByTestId('partido-nuevo-progresista').click();
-    
-    // Should show explicit vote
-    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(1);
-  });
-});
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(1)
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(2)
 
-test.describe('Practica - Municipal Ballot', () => {
+    await page.getByTestId("submit").click()
+    await expect(page.getByTestId("voting-result")).toBeVisible()
+  })
+
+  test("should be able to emit a mixed party vote on the state ballot", async ({
+    page,
+  }) => {
+    await navigateToBallot(page, "state-ballot")
+    await page.getByTestId("partido-popular--democrático").click()
+    await page.getByTestId("luis-roberto-piñero").click()
+
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(2)
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(1)
+
+    await page.getByTestId("submit").click()
+    await expect(page.getByTestId("voting-result")).toBeVisible()
+  })
+
+  test("should be able to vote for candidates on the state ballot", async ({
+    page,
+  }) => {
+    await navigateToBallot(page, "state-ballot")
+    await page.getByTestId("eliezer-molina-pérez").click()
+    await page.getByTestId("luis-roberto-piñero").click()
+
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(2)
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(0)
+
+    await page.getByTestId("submit").click()
+    await expect(page.getByTestId("voting-result")).toBeVisible()
+  })
+})
+
+test.describe("Practice - Municipal Ballot", () => {
   test.beforeEach(async ({ page }) => {
-    await setupApiMocks(page);
-  });
+    await setupApiMocks(page)
+  })
 
-  test('can open municipal ballot', async ({ page }) => {
-    await page.goto('/practica');
-    
-    await page.getByTestId('start-practice').click();
-    await page.getByRole('button', { name: 'Continuar' }).click();
-    await page.getByTestId('municipal-ballot').click();
-    
-    // Should show the ballot with party headers (using regex for flexible match)
-    await expect(page.getByText(/PARTIDO NUEVO PROGRESISTA/i)).toBeVisible();
-  });
-});
+  test("should be able to emit a straight party vote", async ({ page }) => {
+    await navigateToBallot(page, "municipal-ballot")
+    await page.getByTestId("partido-independentista--puertorriqueño").click()
 
-test.describe('Practica - Legislative Ballot', () => {
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(1)
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(10)
+
+    await page.getByTestId("submit").click()
+    await expect(page.getByTestId("voting-result")).toBeVisible()
+  })
+
+  test("should be able to emit a mixed party vote", async ({ page }) => {
+    await navigateToBallot(page, "municipal-ballot")
+    await page.getByTestId("partido-independentista--puertorriqueño").click()
+    await page.getByTestId("elvin-gil-boneta").click()
+    await page.getByTestId("arcelio-gonzález-vélez").click()
+
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(3)
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(8)
+
+    await page.getByTestId("submit").click()
+    await expect(page.getByTestId("voting-result")).toBeVisible()
+  })
+
+  test("should be able to emit a mixed party vote by choosing a different mayor", async ({
+    page,
+  }) => {
+    await navigateToBallot(page, "municipal-ballot")
+    await page.getByTestId("partido-independentista--puertorriqueño").click()
+    await page.getByTestId("josé-hiram-soto--rivera").click()
+
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(2)
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(9)
+
+    await page.getByTestId("submit").click()
+    await expect(page.getByTestId("voting-result")).toBeVisible()
+  })
+
+  test("should be able to candidate vote", async ({ page }) => {
+    await navigateToBallot(page, "municipal-ballot")
+    await page.getByTestId("josé-hiram-soto--rivera").click()
+    await page.getByTestId("elvin-gil-boneta").click()
+    await page.getByTestId("arcelio-gonzález-vélez").click()
+    await page.getByTestId("adalberto-lugo-boneta").click()
+    await page.getByTestId("axel-medina-caraballo").click()
+    await page.getByTestId("félix-colón-mercado").click()
+    await page.getByTestId("guadalupe-rivera-oquendo").click()
+    await page.getByTestId("carmen-cotty-pabón").click()
+    await page.getByTestId("rafael-pérez-núñez").click()
+    await page.getByTestId("jeniffer-arroyo-lópez").click()
+
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(10)
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(0)
+
+    await page.getByTestId("submit").click()
+    await expect(page.getByTestId("voting-result")).toBeVisible()
+  })
+})
+
+test.describe("Practice - Legislative Ballot", () => {
   test.beforeEach(async ({ page }) => {
-    await setupApiMocks(page);
-  });
+    await setupApiMocks(page)
+  })
 
-  test('can open legislative ballot', async ({ page }) => {
-    await page.goto('/practica');
-    
-    await page.getByTestId('start-practice').click();
-    await page.getByRole('button', { name: 'Continuar' }).click();
-    await page.getByTestId('legislative-ballot').click();
-    
-    // Should show the ballot with party headers
-    await expect(page.getByText(/PARTIDO/i).first()).toBeVisible();
-  });
-});
+  test("should be able to emit a straight party vote", async ({ page }) => {
+    await navigateToBallot(page, "legislative-ballot")
+    await page.getByTestId("partido-popular--democrático").click()
+
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(1)
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(5)
+
+    await page.getByTestId("submit").click()
+    await expect(page.getByTestId("voting-result")).toBeVisible()
+  })
+
+  test("should be able to emit a mixed party vote", async ({ page }) => {
+    await navigateToBallot(page, "legislative-ballot")
+    await page.getByTestId("partido-popular--democrático").click()
+    await page.getByTestId("josé-(maché)-ortiz").click()
+    await page.getByTestId("josé-antonio-vargas-vidot").click({ force: true })
+
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(3)
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(3)
+
+    await page.getByTestId("submit").click()
+    await expect(page.getByTestId("voting-result")).toBeVisible()
+  })
+
+  test("should be able to vote for individual candidates", async ({ page }) => {
+    await navigateToBallot(page, "legislative-ballot")
+    await page.getByTestId("edia-quiñones").click()
+    await page.getByTestId("josé-(maché)-ortiz").click()
+    await page.getByTestId("daniel-(danny)-ortiz").click()
+    await page.getByTestId("héctor-ferrer").click()
+    await page.getByTestId("josé-antonio-vargas-vidot").click({ force: true })
+
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(5)
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(0)
+
+    await page.getByTestId("submit").click()
+    await expect(page.getByTestId("voting-result")).toBeVisible()
+  })
+})
