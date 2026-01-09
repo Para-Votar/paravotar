@@ -76,8 +76,12 @@ test.describe("Practice - State Ballot", () => {
     await navigateToBallot(page, "state-ballot")
     await page.getByTestId("partido-nuevo-progresista").click()
 
-    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(1)
-    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(2)
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
+      1
+    )
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(
+      2
+    )
 
     await page.getByTestId("submit").click()
     await expect(page.getByTestId("voting-result")).toBeVisible()
@@ -90,8 +94,12 @@ test.describe("Practice - State Ballot", () => {
     await page.getByTestId("partido-popular--democrático").click()
     await page.getByTestId("luis-roberto-piñero").click()
 
-    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(2)
-    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(1)
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
+      2
+    )
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(
+      1
+    )
 
     await page.getByTestId("submit").click()
     await expect(page.getByTestId("voting-result")).toBeVisible()
@@ -104,8 +112,12 @@ test.describe("Practice - State Ballot", () => {
     await page.getByTestId("eliezer-molina-pérez").click()
     await page.getByTestId("luis-roberto-piñero").click()
 
-    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(2)
-    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(0)
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
+      2
+    )
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(
+      0
+    )
 
     await page.getByTestId("submit").click()
     await expect(page.getByTestId("voting-result")).toBeVisible()
@@ -121,8 +133,12 @@ test.describe("Practice - Municipal Ballot", () => {
     await navigateToBallot(page, "municipal-ballot")
     await page.getByTestId("partido-independentista--puertorriqueño").click()
 
-    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(1)
-    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(10)
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
+      1
+    )
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(
+      10
+    )
 
     await page.getByTestId("submit").click()
     await expect(page.getByTestId("voting-result")).toBeVisible()
@@ -134,8 +150,12 @@ test.describe("Practice - Municipal Ballot", () => {
     await page.getByTestId("elvin-gil-boneta").click()
     await page.getByTestId("arcelio-gonzález-vélez").click()
 
-    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(3)
-    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(8)
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
+      3
+    )
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(
+      8
+    )
 
     await page.getByTestId("submit").click()
     await expect(page.getByTestId("voting-result")).toBeVisible()
@@ -148,8 +168,12 @@ test.describe("Practice - Municipal Ballot", () => {
     await page.getByTestId("partido-independentista--puertorriqueño").click()
     await page.getByTestId("josé-hiram-soto--rivera").click()
 
-    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(2)
-    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(9)
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
+      2
+    )
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(
+      9
+    )
 
     await page.getByTestId("submit").click()
     await expect(page.getByTestId("voting-result")).toBeVisible()
@@ -168,8 +192,12 @@ test.describe("Practice - Municipal Ballot", () => {
     await page.getByTestId("rafael-pérez-núñez").click()
     await page.getByTestId("jeniffer-arroyo-lópez").click()
 
-    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(10)
-    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(0)
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
+      10
+    )
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(
+      0
+    )
 
     await page.getByTestId("submit").click()
     await expect(page.getByTestId("voting-result")).toBeVisible()
@@ -185,8 +213,12 @@ test.describe("Practice - Legislative Ballot", () => {
     await navigateToBallot(page, "legislative-ballot")
     await page.getByTestId("partido-popular--democrático").click()
 
-    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(1)
-    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(5)
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
+      1
+    )
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(
+      5
+    )
 
     await page.getByTestId("submit").click()
     await expect(page.getByTestId("voting-result")).toBeVisible()
@@ -198,8 +230,12 @@ test.describe("Practice - Legislative Ballot", () => {
     await page.getByTestId("josé-(maché)-ortiz").click()
     await page.getByTestId("josé-antonio-vargas-vidot").click({ force: true })
 
-    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(3)
-    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(3)
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
+      3
+    )
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(
+      3
+    )
 
     await page.getByTestId("submit").click()
     await expect(page.getByTestId("voting-result")).toBeVisible()
@@ -213,8 +249,12 @@ test.describe("Practice - Legislative Ballot", () => {
     await page.getByTestId("héctor-ferrer").click()
     await page.getByTestId("josé-antonio-vargas-vidot").click({ force: true })
 
-    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(5)
-    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(0)
+    await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
+      5
+    )
+    await expect(page.locator('[data-vote-type="implicit-vote"]')).toHaveCount(
+      0
+    )
 
     await page.getByTestId("submit").click()
     await expect(page.getByTestId("voting-result")).toBeVisible()
