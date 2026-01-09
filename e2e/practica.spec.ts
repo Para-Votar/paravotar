@@ -42,8 +42,8 @@ async function navigateToBallot(
   await page.goto("/practica")
   await page.getByTestId("start-practice").click()
 
-  // Match the legacy Cypress flow (precinct lookup + confirmation)
-  await page.getByTestId("find-by-precint").click()
+  // The precinct dropdown has a default selection (Adjuntas - 055),
+  // so we just need to click confirm to proceed
   await page.getByTestId("confirm-precint").click()
 
   await page.getByTestId(ballotType).click()
@@ -59,9 +59,10 @@ test.describe("Practica", () => {
     await expect(page.getByTestId("practica-tu-voto")).toBeVisible()
   })
 
-  test("root route should redirect to /practica", async ({ page }) => {
+  test("root route renders practica page", async ({ page }) => {
     await page.goto("/")
-    await expect(page).toHaveURL(/.*\/practica/)
+    // "/" renders the Practica component directly (same as /practica)
+    await expect(page.getByTestId("practica-tu-voto")).toBeVisible()
   })
 })
 
@@ -228,7 +229,9 @@ test.describe("Practice - Legislative Ballot", () => {
     await navigateToBallot(page, "legislative-ballot")
     await page.getByTestId("partido-popular--democrático").click()
     await page.getByTestId("josé-(maché)-ortiz").click()
-    await page.getByTestId("josé-antonio-vargas-vidot").click({ force: true })
+    // Use joanne-rodríguez-veve instead of josé-antonio-vargas-vidot
+    // (Vargas Vidot is in the write-in column position so doesn't have a testId)
+    await page.getByTestId("joanne-rodríguez-veve").click()
 
     await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
       3
@@ -247,7 +250,9 @@ test.describe("Practice - Legislative Ballot", () => {
     await page.getByTestId("josé-(maché)-ortiz").click()
     await page.getByTestId("daniel-(danny)-ortiz").click()
     await page.getByTestId("héctor-ferrer").click()
-    await page.getByTestId("josé-antonio-vargas-vidot").click({ force: true })
+    // Use joanne-rodríguez-veve instead of josé-antonio-vargas-vidot
+    // (Vargas Vidot is in the write-in column position so doesn't have a testId)
+    await page.getByTestId("joanne-rodríguez-veve").click()
 
     await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
       5

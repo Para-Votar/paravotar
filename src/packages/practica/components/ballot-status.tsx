@@ -40,7 +40,7 @@ export default function BallotStatus({ children, onSubmit }: BallotStatusType) {
           Ver candidatos seleccionados
         </Button>
         <div className="flex flex-1" />
-        <Button onClick={onSubmit}>Validar</Button>
+        <Button onClick={onSubmit} data-testid="submit">Validar</Button>
       </div>
     </div>
   )
