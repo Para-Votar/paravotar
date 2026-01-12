@@ -1,9 +1,7 @@
 import { useTranslation } from "react-i18next"
 
 import { Typography, Card, Link } from "../../../components"
-import Microjuris from "../../../assets/images/microjuris.png"
 import Proyecto85 from "../../../assets/images/proyecto-85.jpg"
-import TuVotoNoSeDeja from "../../../assets/images/tu-voto-no-se-deja.jpg"
 import QuienMeRepresenta from "../../../assets/images/quien-me-representa.svg?url"
 import PTV from "../../../assets/images/ptv.png"
 
@@ -24,20 +22,6 @@ export default function Collabs() {
       name: "¿Quién me representa?",
       description: t("collabs.quien-me-representa"),
       url: "https://www.quienmerepresentapr.com",
-    },
-    {
-      id: "tu-voto-no-se-deja",
-      logo: TuVotoNoSeDeja,
-      name: "Tu Voto No Se Deja",
-      description: t("collabs.tu-voto-no-se-deja"),
-      url: "https://www.facebook.com/tuvotonosedeja",
-    },
-    {
-      id: "microjuris",
-      logo: Microjuris,
-      name: "Microjuris",
-      description: t("collabs.microjuris"),
-      url: "https://aldia.microjuris.com/",
     },
     {
       id: "practica-tu-voto",

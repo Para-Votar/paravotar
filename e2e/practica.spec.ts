@@ -229,9 +229,7 @@ test.describe("Practice - Legislative Ballot", () => {
     await navigateToBallot(page, "legislative-ballot")
     await page.getByTestId("partido-popular--democrático").click()
     await page.getByTestId("josé-(maché)-ortiz").click()
-    // Use joanne-rodríguez-veve instead of josé-antonio-vargas-vidot
-    // (Vargas Vidot is in the write-in column position so doesn't have a testId)
-    await page.getByTestId("joanne-rodríguez-veve").click()
+    await page.getByTestId("ana-irma-rivera--lassén").click()
 
     await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
       3
@@ -250,9 +248,7 @@ test.describe("Practice - Legislative Ballot", () => {
     await page.getByTestId("josé-(maché)-ortiz").click()
     await page.getByTestId("daniel-(danny)-ortiz").click()
     await page.getByTestId("héctor-ferrer").click()
-    // Use joanne-rodríguez-veve instead of josé-antonio-vargas-vidot
-    // (Vargas Vidot is in the write-in column position so doesn't have a testId)
-    await page.getByTestId("joanne-rodríguez-veve").click()
+    await page.getByTestId("ana-irma-rivera--lassén").click()
 
     await expect(page.locator('[data-vote-type="explicit-vote"]')).toHaveCount(
       5
