@@ -69,6 +69,6 @@ export function getElectivePositionLimit(
   if (!(position in limitsByBallotType))
     throw new Error("Position not found in ballot.")
 
-  // @ts-ignore
+  // @ts-expect-error - position is validated above
   return limitsByBallotType[position]
 }

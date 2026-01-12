@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next"
 
-import Code4PR from "../assets/icons/code-4-pr.svg?url"
 import Heart from "../assets/icons/heart.svg?url"
 import { Container, Link } from "../components/index"
 

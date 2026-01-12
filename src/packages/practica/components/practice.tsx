@@ -1,9 +1,7 @@
-import { useEffect, useMemo } from "react"
-import _ from "lodash"
+import { useEffect, useMemo, useCallback } from "react"
 
 import { useMachine } from "@xstate/react"
 import { ToastContainer } from "react-toastify"
-import { useTranslation } from "react-i18next"
 import { disableBodyScroll, enableBodyScroll } from "body-scroll-lock"
 
 import { Card, Link, Spinner, Typography } from "../../../components/index"
@@ -105,7 +103,6 @@ export default function Practice({
   initialPrecint: string | null
   initialBallotType?: BallotType
 }) {
-  const { t } = useTranslation()
   const [state, send] = useMachine(PracticeMachine, {
     context: {
       ballotType: initialBallotType,
@@ -114,6 +111,7 @@ export default function Practice({
 
   useEffect(() => {
     send("start", { userInput: initialPrecint, findBy: FindByType.precint })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const votes = state.context.votes
@@ -124,20 +122,19 @@ export default function Practice({
   const { votesCount, setVotesCount } = useVotesCount(transformedVotes)
   const onSubmit = useBallotValidateAndSubmit()
 
-  const handleSubmit = (
-    votes: Vote[],
-    ballotType: BallotType,
-    ballot?: BallotConfigs
-  ) => {
-    onSubmit(
-      votes,
-      ballotType,
-      () => {
-        send("SUBMIT")
-      },
-      ballot
-    )
-  }
+  const handleSubmit = useCallback(
+    (votes: Vote[], ballotType: BallotType, ballot?: BallotConfigs) => {
+      onSubmit(
+        votes,
+        ballotType,
+        () => {
+          send("SUBMIT")
+        },
+        ballot
+      )
+    },
+    [onSubmit, send]
+  )
 
   const selectBallot = (
     selectedBallot: BallotSelectionEvent["type"],

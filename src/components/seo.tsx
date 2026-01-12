@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-named-as-default
 import Helmet from "react-helmet"
 
 import Banner from "../../static/meta/banner.png"

@@ -6,7 +6,7 @@ import { TransformedVotes } from "../services/types"
 import { Vote } from "../services/vote-service"
 import useDeepCompareEffect from "./use-deep-compare-effect"
 
-// @ts-ignore
+// @ts-expect-error - state type from xstate is complex
 function getBallot(state) {
   const { ballots, ballotType: contextBallotType } = state.context
 
@@ -30,7 +30,7 @@ function getBallot(state) {
   }
 }
 
-// @ts-ignore
+// @ts-expect-error - state type from xstate is complex
 export default function useVotesTransform(votes: Vote[], state) {
   const [transformedVotes, setTransformedVotes] =
     useState<TransformedVotes | null>(null)
